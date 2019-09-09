@@ -67,7 +67,7 @@
                     <img src="./assets/images/bg.png" alt="">
                 </div>
                 <div class="price">
-                    <p>&#8377;1273</p>
+                    <p>&#8377;1</p>
                 </div>
                 <div class="cartTag">
                     <button type="submit">
@@ -77,7 +77,7 @@
               </div>
               </a>
           </div>
-              <div class="item">
+              <div class="item black">
               <a href="#">
               <img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt="" />
               <div class="inner">
@@ -85,7 +85,7 @@
                         <img src="./assets/images/bg.png" alt="">
                     </div>
                     <div class="price">
-                        <p>&#8377;1273</p>
+                        <p>&#8377;2</p>
                     </div>
                     <div class="cartTag">
                         <button type="submit">
@@ -95,17 +95,17 @@
                   </div>
               </a>
           </div>
-              <div class="item">
+              <div class="item black">
               <a href="#">
-              <center>
+              <!-- <center> -->
                     <img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt="" />
-              </center>
+              <!-- </center> -->
               <div class="inner">
                     <div class="innerImg">
                         <img src="./assets/images/bg.png" alt="">
                     </div>
                     <div class="price">
-                        <p>&#8377;1273</p>
+                        <p>&#8377;3</p>
                     </div>
                     <div class="cartTag">
                         <button type="submit">
@@ -123,43 +123,7 @@
                         <img src="./assets/images/bg.png" alt="">
                     </div>
                     <div class="price">
-                        <p>&#8377;1273</p>
-                    </div>
-                    <div class="cartTag">
-                        <button type="submit">
-                                <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                  </div>
-              </a>
-          </div>
-              <div class="item">
-              <a href="#">
-              <img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt="" />
-              <div class="inner">
-                    <div class="innerImg">
-                        <img src="./assets/images/bg.png" alt="">
-                    </div>
-                    <div class="price">
-                        <p>&#8377;1273</p>
-                    </div>
-                    <div class="cartTag">
-                        <button type="submit">
-                                <i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                  </div>
-              </a>
-          </div>
-           <div class="item black">
-              <a href="#">
-              <img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt="" />
-              <div class="inner">
-                    <div class="innerImg">
-                        <img src="./assets/images/bg.png" alt="">
-                    </div>
-                    <div class="price">
-                        <p>&#8377;1273</p>
+                        <p>&#8377;4</p>
                     </div>
                     <div class="cartTag">
                         <button type="submit">
@@ -182,9 +146,25 @@
                     </div>
                     <div class="col-4 particleUpper">
                             <img src="./assets/images/Particles (1).png" alt="">
-                        </div>    
+                        </div>  
                 </div>
             </div>
+        <div class="bannerCircles">
+            <div class="flex">
+                <div class="circles">
+                    <span id="c1" class="circleIt circleActive opacityHigh"><img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c2" class="circleIt opacityLow"><img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c3" class="circleIt opacityLow"><img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c4" class="circleIt opacityLow"><img src="./assets/images/MASTERCLASS-AIR-2.0-STAINLESS-STEEL-VISOR (1).png" alt=""></span>
+                </div>
+            </div>
+        </div>
 
 
     <!-- Banner Starts  -->
@@ -1284,17 +1264,20 @@
         
     </script>
     <script>
+        // const owl=document.querySelector('.owl-carousel');
+        // owl.owlCarousel();
         $('.owl-carousel').owlCarousel({
     stagePadding: 200,
     loop:true,
+    center:true,
     margin:10,
     nav:false,
-    items:1,
+    items:4,
     lazyLoad: false,
     nav:true,
   responsive:{
         0:{
-            items:3,
+            items:1,
             stagePadding: 60
         },
         600:{
@@ -1315,7 +1298,7 @@
         },
         1600:{
             items:1,
-            stagePadding: 350
+            stagePadding: 300
         },
         1800:{
             items:1,
@@ -1323,6 +1306,23 @@
         }
     }
 })
+        $('.circleIt').click(function(){
+            const curId=$(this).attr("id");
+            $('.bannerCircles span.circleActive').removeClass('circleActive');
+    $(this).addClass('circleActive');
+    $('.bannerCircles span').removeClass('opacityHigh');
+    $('.bannerCircles span').addClass('opacityLow');
+    $(this).addClass('opacityHigh');
+    $('.owl-item').each(function(){
+    if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+    } 
+});
+    $('.owl-carousel').trigger('to.owl.carousel', parseInt((curId.charAt(1))-1));
+    // $('.owl-carousel').on('changed.owl.carousel',function(event) {
+    //     console.log(event);
+    // })
+  });
     </script>
 </body>
 </html>
