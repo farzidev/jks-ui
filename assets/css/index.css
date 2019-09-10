@@ -859,20 +859,16 @@ transform:scale(0.55);
 .owl-carousel {
     position: relative;
     background-color:#eeecec;
-    /* padding-bottom:4rem; */
     margin-bottom: -13px;
     z-index: -10;
 }
 .owl-item {
-    /* margin-top:6rem; */
-    /* margin-left:1rem; */
 }
 .owl-controls {
     display:none;
 }
 .item img {
     z-index:10000;
-    /* width:100% !important; */
 }
 .owl-carousel {
     position: relative;

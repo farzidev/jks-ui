@@ -1,0 +1,33 @@
+@media only screen and (max-width: 37.5em) {
+    .main-header .header-item img{
+        margin: 0 auto;
+        height: 10rem;
+        width: 10rem;
+    }
+    /* .main-header .header-item .price-tag {
+        position: absolute;
+        left: 86%;
+        top: 67%;
+    } */
+    .header-vector-1{
+        position: absolute;
+        height: 50%;
+    }
+    .header-vector-2{
+        position: absolute;
+        height: 50%;
+    }
+    .header-vector-3{
+        position: absolute;
+        height: 50%;    
+    }
+    .product-tag{
+        top: 68%;
+        left: 60%;
+    }
+    .logoImage img {
+        width:90%;
+    }
+  }
+
+  
