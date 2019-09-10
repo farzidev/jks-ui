@@ -84,6 +84,7 @@ nav .lists {
     margin: 0 auto;
     height: 20rem;
     width: 20rem;
+    transform: rotate(26deg);
 }
 .main-header .header-item {
     opacity: .3;
@@ -108,20 +109,21 @@ nav .lists {
 .header-vector-1{
     position: absolute;
     height: 70%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-100%, -10%)
+    left: 57%;
+    top: 40%;
+    transform: translate(-100%, -10%) rotate(10deg);
+    
 }
 .header-vector-2{
     position: absolute;
     height: 70%;
-    left: 50%;
-    top: 50%;
-    transform: translate(10%, -60%)
+    left: 40%;
+    top: 45%;
+    transform: translate(10%, -60%) rotate(10deg);
 }
 .header-vector-3{
     position: absolute;
-    height: 70%;
+    height: 65%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%)
