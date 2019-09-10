@@ -9,6 +9,7 @@
     <style>
         body {
             margin: 0;
+            background-color: #eeecec;
         }
         .relative {
             position: relative;
@@ -27,16 +28,16 @@
         }
         .banner-image-1 {
             left: 50%;
-            top: 60%;
+            top: 70%;
             transform: translateX(-50%);
         }
         .banner-image-2 {
             left: 40%;
-            top: 10%;
+            top: -60%;
         }
         .banner-image-3 {
-            left: 20%;
-            top: 100%;
+            left: 26%;
+            top: 200%;
         }
         .thumbnails-container {
             margin-top: 100px;
@@ -58,12 +59,36 @@
         .slider-image.tns-slide-active {
             opacity: 1;
         }
+        
         .slider-image img {
             max-width: 100%;
+            transform: rotate(15deg);
             margin: auto;
         }
         li {
             list-style-type: none;
+        }
+        .slider-image.tns-item.tns-slide-active.Random {
+            opacity: 1;
+        }
+        .slider-image.tns-item.tns-slide-active {
+            opacity: 0.6;
+        }
+        .price-tag {
+            background-color: #051026;
+            padding: 20px;
+            font-size: 28px;
+            color: #fff;
+            font-style: italic;
+        }
+        .flex {
+            display: flex;
+        }
+        .vertical-center {
+            align-items: center;
+        }
+        .shrink-0 {
+            flex-shrink: 0;
         }
         
         @media screen and (max-width: 900px) {
@@ -115,7 +140,10 @@
     </div>
     <div class="my-slider">
         <div class="slider-image">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/AJAX.PNG" alt="">
+            <div class="flex vertical-center">
+                <img class="shrink-0" src="https://farzidev.github.io/jks-ui/assets/images/AJAX.PNG" alt="">
+                <span class="price-tag">1234</span>
+            </div>
         </div>
         <div class="slider-image">
             <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
@@ -126,6 +154,15 @@
         <div class="slider-image">
             <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
         </div>
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+        </div>
+        <div class="slider-image">
+                <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+            </div>
     </div>
     <div class="thumbnails-container relative">
         <ul class="thumbnails" id="customize-thumbnails" aria-label="Carousel Pagination">
@@ -133,6 +170,9 @@
                 <img src="https://source.unsplash.com/collection/993239/600x400" alt="" width="600" height="400">
             </li>
             <li data-nav="1" aria-label="Carousel Page 2" aria-controls="customize" class="" tabindex="-1">
+                <img src="https://source.unsplash.com/collection/1673600/600x400" alt="" width="600" height="400">
+            </li>
+            <li data-nav="2" aria-label="Carousel Page 2" aria-controls="customize" class="" tabindex="-1">
                 <img src="https://source.unsplash.com/collection/1673600/600x400" alt="" width="600" height="400">
             </li>
         </ul>
@@ -152,7 +192,8 @@
             "navContainer": "#customize-thumbnails",
             "swipeAngle": false,
             "navAsThumbnails": true,
-            autoplay: true
+            autoplay: false,
+            controls: false
         });
         }
         else {
@@ -164,9 +205,28 @@
             "navContainer": "#customize-thumbnails",
             "navAsThumbnails": true,
             "swipeAngle": false,
-            autoplay: true
-        });
+            autoplay: false,
+            controlsText: false,
+            controls: false
+            
+            });
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log('Working');
+            var customizedFunction = function (info, eventName) {
+            // direct access to info object
+            console.log('Aajksnda')
+                let allImg = document.querySelectorAll(`.slider-image`);
+                allImg.forEach(function(item) {
+                    item.classList.remove('Random');
+                })
+                let currentImg = document.querySelector(`#tns1-item${info.displayIndex}`);
+                currentImg.classList.add('Random');
+
+            }
+            slider.events.on('indexChanged', customizedFunction);
+        });
+
         
     </script>
     
