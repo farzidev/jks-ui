@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        .relative {
+            position: relative;
+        }
+        .banner-images {
+            padding-top: 100px;
+        }
+        .banner-images img {
+            height: 400px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .banner-image {
+            position: absolute;
+        }
+        .banner-image-1 {
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%);
+        }
+        .banner-image-2 {
+            left: 40%;
+            top: 10%;
+        }
+        .banner-image-3 {
+            left: 20%;
+            top: 100%;
+        }
+        .thumbnails-container {
+            margin-top: 100px;
+        }
+        .thumbnails {
+            display: flex;
+        }
+        .thumbnails img {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        .slider-image {
+            text-align: center;
+            opacity: 0.6;
+        }
+        .slider-image.tns-slide-active {
+            opacity: 1;
+        }
+        .slider-image img {
+            max-width: 100%;
+            margin: auto;
+        }
+        li {
+            list-style-type: none;
+        }
+        
+        @media screen and (max-width: 900px) {
+            .banner-image-3 {
+                left: 0;
+            }
+            .banner-image img {
+                height: auto;
+            }
+            
+            .banner-images .banner-image-1 {
+                width: 100%;
+            }
+            .banner-images .banner-image-2 {
+                height: 100px;
+            }
+            .banner-images .banner-image-3 {
+                height: 100px;
+            }
+            .slider-image img {
+                width: 60%;
+                max-width: 100%;
+            }
+            .thumbnails-container {
+                margin-top: 200px;
+            }
+            .thumbnails {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 0;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="relative banner-images">
+        <div class="banner-image banner-image-1">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/BG-lines.png" alt="">
+        </div>
+        <div class="banner-image banner-image-2">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/Particles%20(1).png" alt="">
+        </div>
+        <div class="banner-image banner-image-3">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/Particles.png" alt="">
+        </div>
+    </div>
+    <div class="my-slider">
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AJAX.PNG" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AJAX.PNG" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+        </div>
+    </div>
+    <div class="thumbnails-container relative">
+        <ul class="thumbnails" id="customize-thumbnails" aria-label="Carousel Pagination">
+            <li data-nav="0" aria-label="Carousel Page 1 (Current Slide)" aria-controls="customize" class="tns-nav-active">
+                <img src="https://source.unsplash.com/collection/993239/600x400" alt="" width="600" height="400">
+            </li>
+            <li data-nav="1" aria-label="Carousel Page 2" aria-controls="customize" class="" tabindex="-1">
+                <img src="https://source.unsplash.com/collection/1673600/600x400" alt="" width="600" height="400">
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        function isMobile() {
+            return (window.innerWidth <= 900);
+        }
+        
+        if(isMobile()) {
+            var slider = tns({
+            container: '.my-slider',
+            "gutter": 250,
+            items: 1,
+            slideBy: 'page',
+            "navContainer": "#customize-thumbnails",
+            "swipeAngle": false,
+            "navAsThumbnails": true,
+            autoplay: true
+        });
+        }
+        else {
+            var slider = tns({
+            container: '.my-slider',
+            "gutter": 250,
+            items: 3,
+            slideBy: 'page',
+            "navContainer": "#customize-thumbnails",
+            "navAsThumbnails": true,
+            "swipeAngle": false,
+            autoplay: true
+        });
+        }
+        
+    </script>
+    
+</body>
+</html>
