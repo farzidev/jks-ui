@@ -267,15 +267,16 @@ background-color: #5a1834;
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: bolder;
+    z-index:1000;
     text-transform: uppercase;
 }
 .featured .rpRight .helmet {
     position:absolute;
-    top: 3.8rem;
-    left: -2rem;
+    top: 9rem;
+    right: -9rem;
 }
 .featured .rpRight .helmet img {
-    width: 87%;
+    width: 60%;
     height:100%;
 }
 .featured .rpRight .circleOnHelmet {
@@ -649,7 +650,10 @@ background-color: #e02352;
 }
 .rpRecommends .recommendImage img {
     margin-top:-3rem;
+    width: 50%;
+    height: 100%;
 }
+
 .rpRecommends .recommendTopic h4 {
     font-style:italic;
     color:#051026;
@@ -662,6 +666,10 @@ background-color: #e02352;
 }
 .rpRecommends .recommendImage {
     text-align: center;
+    margin-top: 6rem;
+}
+.moreWeight .recommendImage  {
+    margin-top:0px !important;
 }
 .rpRecommends .loadMore {
     color:white;
@@ -753,6 +761,8 @@ background-color: #e02352;
 }
 #mostPopular .recommendImage img {
     margin-top:-3rem;
+    width:70%;
+    height:70%;
 }
 #mostPopular .recommendTopic h4 {
     font-style:italic;
@@ -853,6 +863,10 @@ transform:scale(0.55);
     margin-bottom: -13px;
     z-index: -10;
 }
+.owl-item {
+    /* margin-top:6rem; */
+    /* margin-left:1rem; */
+}
 .owl-controls {
     display:none;
 }
@@ -898,7 +912,7 @@ transform:scale(0.55);
     }
     .bannerAbsolute .bgLines {
         position: absolute;
-    left: 32rem;
+    left: 30rem;
     /* top: -64rem; */
     top: 13.5rem;
     z-index: 1000;
@@ -965,10 +979,10 @@ transform:scale(0.55);
 @media(max-width:1860px) {
     .bannerAbsolute .bgLines {
         position: absolute;
-    left: 36.5rem;
-    /* top: -64rem; */
-    top: 15.5rem;
-    z-index: 1000;
+        left: 32.5rem;
+        /* top: -64rem; */
+        top: 10.5rem;
+        z-index: 1000;
     }
     .bannerAbsolute .particleBelow {
         position: absolute;
