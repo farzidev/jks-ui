@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>JKS</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css"> -->
-    <link rel="stylesheet" href="./assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./assets/css/index.css">
     
     <script src="https://kit.fontawesome.com/e5c02bf7e0.js"></script>
     <style>
-    </style>
+            .frame-container {
+                position: relative;
+                padding-top: 56.25%;
+            }
+            @media screen and (max-width: 900px) {
+                    .frame-container {
+                        margin-bottom: 100px;
+                        position: relative;
+                        padding-top: 200%;
+                    }
+                }
+        </style>
    
 </head>
 <body>
@@ -54,24 +64,118 @@
                 </div>
             </div>
           </nav>
+          
+            <div class="frame-container">    <iframe src="main.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px"}(this));' style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+            </div>
 
     <!-- Navbar Ends -->
-    <style>
-        .frame-container {
-            position: relative;
-            padding-top: 56.25%;
-        }
-        @media screen and (max-width: 900px) {
-                .frame-container {
-                    margin-bottom: 100px;
-                    position: relative;
-                    padding-top: 200%;
-                }
-            }
-        }
-    </style>
-    <div class="frame-container">    <iframe src="main.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px"}(this));' style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <!-- <div class="owl-carousel">
+            <div class="item">
+              <a href="#">
+              <img src="./assets/images/AJAX.PNG" alt="" />
+              <div class="inner">
+                <div class="innerImg">
+                    <img src="./assets/images/bg.png" alt="">
+                </div>
+                <div class="price">
+                    <p>&#8377;1</p>
+                </div>
+                <div class="cartTag">
+                    <button type="submit">
+                            <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+              </div>
+              </a>
+          </div>
+              <div class="item black">
+              <a href="#">
+              <img src="./assets/images/AIDAN (1).PNG" alt="" />
+              <div class="inner">
+                    <div class="innerImg">
+                        <img src="./assets/images/bg.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p>&#8377;2</p>
+                    </div>
+                    <div class="cartTag">
+                        <button type="submit">
+                                <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                  </div>
+              </a>
+          </div>
+              <div class="item black">
+              <a href="#">
+                    <img src="./assets/images/BORAC.PNG" alt="" />
+              <div class="inner">
+                    <div class="innerImg">
+                        <img src="./assets/images/bg.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p>&#8377;3</p>
+                    </div>
+                    <div class="cartTag">
+                        <button type="submit">
+                                <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                  </div>
+              </a>
+          </div>
+              <div class="item black">
+              <a href="#">
+              <img src="./assets/images/AIDAN COMBO.PNG" alt="" />
+              <div class="inner">
+                    <div class="innerImg">
+                        <img src="./assets/images/bg.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p>&#8377;4</p>
+                    </div>
+                    <div class="cartTag">
+                        <button type="submit">
+                                <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                  </div>
+              </a>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="bannerAbsolute">
+                <div class="row">
+                    <div class="col-5 bgLines">
+                        <img src="./assets/images/BG-lines.png" alt="">
+                    </div>
+                    <div class="col-4 particleBelow">
+                        <img src="./assets/images/Particles.png" alt="">
+                    </div>
+                    <div class="col-4 particleUpper">
+                            <img src="./assets/images/Particles (1).png" alt="">
+                        </div>  
+                </div>
+            </div> -->
+        <!-- <div class="bannerCircles">
+            <div class="flex">
+                <div class="circles">
+                    <span id="c1" class="circleIt circleActive opacityHigh"><img src="./assets/images/AJAX.PNG" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c2" class="circleIt opacityLow"><img src="./assets/images/AIDAN (1).PNG" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c3" class="circleIt opacityLow"><img src="./assets/images/BORAC.PNG" alt=""></span>
+                </div>
+                <div class="circles">
+                        <span id="c4" class="circleIt opacityLow"><img src="./assets/images/AIDAN COMBO.PNG" alt=""></span>
+                </div>
+            </div>
+        </div> -->
+
+
     <!-- Banner Starts  -->
 
 
@@ -83,235 +187,153 @@
     <div class="theMostPop">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3 mostPopRotate">
-                        <div class="flex">
-                                <div class="lineMost">
-                                        <!-- <span class="line"></span>  -->
+                    <div class="col-3 mostPopRotate">
+                            <div class="flex">
+                                    <div class="lineMost">
+                                            <!-- <span class="line"></span>  -->
+                                    </div>
+                                <div>
+                                        <span class="topicMost">THE MOST</span>
+                                        <br>
+                                        <span class="popularMost">POPULAR</span>
                                 </div>
-                            <div>
-                                    <span class="topicMost">THE MOST</span>
-                                    <br>
-                                    <span class="popularMost">POPULAR</span>
+                                <div class="popularImg">
+                                    <img src="./assets/images/shapes-small.png" alt="">
+                                </div> 
+                    </div>
+                </div>
+                <div class="col-9" id="mostPopular">
+                    <div class="owl-carousel">
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>FALCON</h4>
+                                                <p>WicketKeeper Pads</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AIDAN.PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>   
                             </div>
-                            <div class="popularImg">
-                                <img src="./assets/images/shapes-small.png" alt="">
-                            </div> 
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>NINJA</h4>
+                                                <p>WicketKeeper Gloves</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AJAX (1).PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>
+                            </div>
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>TEKNO</h4>
+                                                <p>Batsman Gloves</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AJAX (2).PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>
+                            </div>
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>AIDAN</h4>
+                                                <p>WicketKeeper Pads</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AIDAN.PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>   
+                            </div>
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>AJAX</h4>
+                                                <p>WicketKeeper Gloves</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AJAX (1).PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>
+                            </div>
+                            <div class="mpDiv">
+                                    <div class="flex recommendGap">
+                                            <div class="recommendTopic">
+                                                <h4>AJAX</h4>
+                                                <p>Batsman Gloves</p>
+                                            </div>
+                                            <div class="rateList">
+                                                <ul>
+                                                    <li><a href="#">&#8377;127</a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="recommendImage">
+                                            <img src="./assets/images/AJAX (2).PNG" alt="">
+                                        </div>
+                                        <div class="quality">
+                                            <small>Fast Hands needs ninja speed</small>
+                                        </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-9">
-                    <div id="mostPopular" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators indicateMostPopular">
-                              <li data-target="#mostPopular" data-slide-to="0" class="active"></li>
-                              <li data-target="#mostPopular" data-slide-to="1"></li>
-                              <li data-target="#mostPopular" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>FALCON</h4>
-                                                        <p>WicketKeeper Pads</p>
-                                                    </div>
-                                                    <div class="rateList greyBackGround">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AIDAN.PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>   
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>NINJA</h4>
-                                                        <p>WicketKeeper Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>TEKNO</h4>
-                                                        <p>Batsman Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                </div> 
-                              </div>
-                              <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AIDAN</h4>
-                                                        <p>WicketKeeper Pads</p>
-                                                    </div>
-                                                    <div class="rateList greyBackGround">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AIDAN.PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>   
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AJAX</h4>
-                                                        <p>WicketKeeper Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AJAX</h4>
-                                                        <p>Batsman Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                </div> 
-                              </div>
-                              <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AIDAN</h4>
-                                                        <p>WicketKeeper Pads</p>
-                                                    </div>
-                                                    <div class="rateList greyBackGround">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AIDAN.PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>   
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AJAX</h4>
-                                                        <p>WicketKeeper Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                    <div class="col-4">
-                                            <div class="flex recommendGap">
-                                                    <div class="recommendTopic">
-                                                        <h4>AJAX</h4>
-                                                        <p>Batsman Gloves</p>
-                                                    </div>
-                                                    <div class="rateList">
-                                                        <ul>
-                                                            <li><a href="#">&#8377;127</a></li>
-                                                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="recommendImage">
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                                </div>
-                                                <div class="quality">
-                                                    <small>Fast Hands needs ninja speed</small>
-                                                </div>
-                                    </div>
-                                </div> 
-                              </div>
-                            </div>
-                          </div>
-            </div>
         </div>
-    </div>
     </div>
     <!-- The Most Popular Ends -->
 
@@ -390,7 +412,6 @@
 
     <!-- Popular Categories starts -->
 
-
     <div class="popularCategories">
         <div class="container-fluid">
             <div class="row">
@@ -402,151 +423,50 @@
                             <div>
                                     <p class="topic">POPULAR CATEGORIES</p>
                             </div>
+                        </div> 
+                </div>
+            </div>
+            <div class="owl-carousel">
+                    <div class="oneBrand">
+                            <div class="topicPop">
+                                <h4>BATSMAN GLOVES</h4>
+                            </div>
+                            <div class="catImage">
+                               <center>
+                                    <img src="./assets/images/AJAX (2).PNG" alt="">
+                               </center>
+                            </div>
+                    </div>
+                    <div class="oneBrand">
+                            <div class="topicPop">
+                                <h4>KEEPING PADS</h4>
+                            </div>
+                            <div class="catImage">
+                               <center>
+                                    <img src="./assets/images/AIDAN.PNG" alt="">
+                               </center>
+                            </div>
                         </div>
-                </div>
-                <div class="col-12">
-                        <div id="popCat" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators indicateNow">
-                                  <li data-target="#popCat" data-slide-to="0" class="active"></li>
-                                  <li data-target="#popCat" data-slide-to="1"></li>
-                                  <li data-target="#popCat" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-3 oneBrand">
-                                            <div class="topicPop">
-                                                <h4>BATSMAN GLOVES</h4>
-                                            </div>
-                                            <div class="catImage">
-                                               <center>
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                               </center>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 oneBrand">
-                                                <div class="topicPop">
-                                                    <h4>KEEPING PADS</h4>
-                                                </div>
-                                                <div class="catImage">
-                                                   <center>
-                                                        <img src="./assets/images/AIDAN.PNG" alt="">
-                                                   </center>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 oneBrand">
-                                                    <div class="topicPop">
-                                                        <h4>THIGH PADS</h4>
-                                                    </div>
-                                                    <div class="catImage">
-                                                       <center>
-                                                            <img src="./assets/images/AIDAN COMBO.PNG" alt="">
-                                                       </center>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 oneBrand">
-                                                        <div class="topicPop">
-                                                            <h4>WICKET KEEPER GLOVES</h4>
-                                                        </div>
-                                                        <div class="catImage">
-                                                           <center>
-                                                                <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                           </center>
-                                                        </div>
-                                                    </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-3 oneBrand">
-                                            <div class="topicPop">
-                                                <h4>BATSMAN GLOVES</h4>
-                                            </div>
-                                            <div class="catImage">
-                                               <center>
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                               </center>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 oneBrand">
-                                                <div class="topicPop">
-                                                    <h4>KEEPING PADS</h4>
-                                                </div>
-                                                <div class="catImage">
-                                                   <center>
-                                                        <img src="./assets/images/AIDAN.PNG" alt="">
-                                                   </center>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 oneBrand">
-                                                    <div class="topicPop">
-                                                        <h4>THIGH PADS</h4>
-                                                    </div>
-                                                    <div class="catImage">
-                                                       <center>
-                                                            <img src="./assets/images/AIDAN COMBO.PNG" alt="">
-                                                       </center>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 oneBrand">
-                                                        <div class="topicPop">
-                                                            <h4>WICKET KEEPER GLOVES</h4>
-                                                        </div>
-                                                        <div class="catImage">
-                                                           <center>
-                                                                <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                           </center>
-                                                        </div>
-                                                    </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-3 oneBrand">
-                                            <div class="topicPop">
-                                                <h4>BATSMAN GLOVES</h4>
-                                            </div>
-                                            <div class="catImage">
-                                               <center>
-                                                    <img src="./assets/images/AJAX (2).PNG" alt="">
-                                               </center>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 oneBrand">
-                                                <div class="topicPop">
-                                                    <h4>KEEPING PADS</h4>
-                                                </div>
-                                                <div class="catImage">
-                                                   <center>
-                                                        <img src="./assets/images/AIDAN.PNG" alt="">
-                                                   </center>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 oneBrand">
-                                                    <div class="topicPop">
-                                                        <h4>THIGH PADS</h4>
-                                                    </div>
-                                                    <div class="catImage">
-                                                       <center>
-                                                            <img src="./assets/images/AIDAN COMBO.PNG" alt="">
-                                                       </center>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 oneBrand">
-                                                        <div class="topicPop">
-                                                            <h4>WICKET KEEPER GLOVES</h4>
-                                                        </div>
-                                                        <div class="catImage">
-                                                           <center>
-                                                                <img src="./assets/images/AJAX (1).PNG" alt="">
-                                                           </center>
-                                                        </div>
-                                                    </div>
-                                    </div>
-                                  </div>
+                        <div class="oneBrand">
+                                <div class="topicPop">
+                                    <h4>THIGH PADS</h4>
                                 </div>
-                              </div>
-                </div>
+                                <div class="catImage">
+                                   <center>
+                                        <img src="./assets/images/AIDAN COMBO.PNG" alt="">
+                                   </center>
+                                </div>
+                            </div>
+                            <div class="oneBrand">
+                                    <div class="topicPop">
+                                        <h4>WICKET KEEPER GLOVES</h4>
+                                    </div>
+                                    <div class="catImage">
+                                       <center>
+                                            <img src="./assets/images/AJAX (1).PNG" alt="">
+                                       </center>
+                                    </div>
+                                </div>
             </div>
         </div>
     </div>
@@ -573,13 +493,13 @@
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-6 moreWeight recommendTopics">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-11 moreWeight recommendTopics">
                             <div class="flex recommendGap">
                                 <div class="recommendTopic">
                                     <h4>AIDAN</h4>
                                     <p>WicketKeeper Pads</p>
                                 </div>
-                                <div class="rateList greyBackGround">
+                                <div class="rateList">
                                     <ul>
                                         <li><a href="#">&#8377;127</a></li>
                                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -594,7 +514,7 @@
                                 <small>For Durable and strong choice</small>
                             </div>
                         </div>
-                        <div class="col-3 recommendTopics">
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-11 recommendTopics">
                                 <div class="flex recommendGap">
                                         <div class="recommendTopic">
                                             <h4>AJAX</h4>
@@ -615,7 +535,7 @@
                                         <small>Fast Hands needs ninja speed</small>
                                     </div>
                         </div>
-                        <div class="col-3 recommendTopics">
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-11 recommendTopics">
                                 <div class="flex recommendGap">
                                         <div class="recommendTopic">
                                             <h4>AJAX</h4>
@@ -641,7 +561,7 @@
                 <div class="col-12">
                         <div class="row">
                            
-                            <div class="col-3 recommendTopics">
+                            <div class="col-xl-3 col-lg-3 col-md-5 col-11 recommendTopics">
                                     <div class="flex recommendGap">
                                             <div class="recommendTopic">
                                                 <h4>AIDAN COMBO</h4>
@@ -662,13 +582,13 @@
                                             <small>Fast Hands needs ninja speed</small>
                                         </div>
                             </div>
-                            <div class="col-6 moreWeight recommendTopics">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-11 moreWeight recommendTopics">
                                     <div class="flex recommendGap">
                                         <div class="recommendTopic">
                                             <h4>AIDAN</h4>
                                             <p>WicketKeeper Pads</p>
                                         </div>
-                                        <div class="rateList greyBackGround">
+                                        <div class="rateList">
                                             <ul>
                                                 <li><a href="#">&#8377;127</a></li>
                                                 <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -683,7 +603,7 @@
                                         <small>For Durable and strong choice</small>
                                     </div>
                                 </div>
-                            <div class="col-3 recommendTopics">
+                            <div class="col-xl-3 col-lg-3 col-md-5 col-11 recommendTopics">
                                     <div class="flex recommendGap">
                                             <div class="recommendTopic">
                                                 <h4>AJAX</h4>
@@ -722,16 +642,16 @@
     <!-- Kit Bag Banner Starts -->
     <div class="container kitBackground">
         <div class="row">
-            <div class="col-5 kitImage">
+            <div class="col-xl-6 col-lg-8 col-md-6 col-12 kitImage">
                 <div><img src="./assets/images/Junior_Kit_Bags_copy.png" alt=""></div>
             </div>
-            <div class="col-2">
+            <div class="col-xl-2 priceKit col-lg-4 col-md-6 col-12">
                 <p><del><span class="rupeeSign">&#8377;</span><span class="cost">1999</span></del></p><br>
                 <span class="costImg"><img src="./assets/images/bg.png" alt=""></span>
                 
 
             </div>
-            <div class="col-5">
+            <div class="col-xl-4 wholeKit col-12">
                <div class="kits">
                 <p class="topicKits">KITS</p>
                </div>
@@ -751,321 +671,190 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                        <div class="flex">
-                                <div class="line">
-                                        <!-- <span class="line"></span> -->
-                                </div>
-                            <div>
-                                    <p class="topic">Our star Reviews</p>
+                    <div class="flex">
+                            <div class="line">
+                                    <!-- <span class="line"></span> -->
                             </div>
+                        <div>
+                                <p class="topic">Our star Reviews</p>
                         </div>
+                    </div>
+            </div> 
+            </div>
+        </div>
+        <div class="owl-carousel">
+            <div class="starReviewAbout">
+                    <div class="rating">
+                            <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+            <div class="starImage">
+                <img src="./assets/images/GettyImages-123382206.png" alt="">
+            </div>
+            <div class="aboutStar">
+                <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products. For every promising young cricketer I recommend JKS stuff to unleash their true potential.</p>
+                <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products.</p>
+            </div>
+            <div class="flex nameRating">
+                <div class="name">
+                    <p>rudra pratap singh</p>
                 </div>
-                <div class="col-12">
-                        <div id="starRating" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators indicateNow">
-                                  <li data-target="#starRating" data-slide-to="0" class="active"></li>
-                                  <li data-target="#starRating" data-slide-to="1"></li>
-                                  <li data-target="#starRating" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-3 starReviewAboutRp starReviewAbout">
-                                            <div class="starImage">
-                                                <img src="./assets/images/GettyImages-123382206.png" alt="">
-                                            </div>
-                                            <div class="aboutStar">
-                                                <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products. For every promising young cricketer I recommend JKS stuff to unleash their true potential.</p>
-                                                <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products.</p>
-                                            </div>
-                                            <div class="flex nameRating">
-                                                <div class="name">
-                                                    <p>rudra <br> pratap singh</p>
-                                                </div>
-                                                <div class="rating">
-                                                    <span>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 starReviewAbout">
-                                                <div class="starImage">
-                                                    <img src="./assets/images/VIRATKOHLI-KESAVAN.png" alt="">
-                                                </div>
-                                                <div class="aboutStar">
-                                                    <p>I purchased the Nike Airzoom Winflo 4 at a sale to wear it mostly as a dressing shoe as the White Nike swoosh on the black fabric looked the part.</p>
-                                                    <p>Never did I realize then that these would become my favorite neutral running shoe. I’ll nit-pick everything I can in the review below of Nike Air Zoom Winflo 4.</p>
-                                                </div>
-                                                <div class="flex nameRating">
-                                                    <div class="name">
-                                                        <p>virat <br> kohli</p>
-                                                    </div>
-                                                    <div class="rating">
-                                                        <span>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 starReviewAbout" >
-                                                    <div class="starImage">
-                                                        <img src="./assets/images/MS-Dhoni-6.png" alt="">
-                                                    </div>
-                                                    <div class="aboutStar">
-                                                        <p>That may sound too good to be true but on my first go in the Uncaged I ran my fastest 10K for 18 months and the following day equalled my 10K PB set nearly three years ago. 
-                                                            </p>
-                                                        <p>But if you don’t want to spend $180 on a “fashion runner,” then don’t, but don’t let the Ultra Boost Uncaged fool you-it performs as well or better than ANY other shoe out there, provided you acknowledge the support factor.</p>
-                                                    </div>
-                                                    <div class="flex nameRating">
-                                                        <div class="name">
-                                                            <p>mahendra <br> singh dhoni</p>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <span>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 starReviewAbout">
-                                                        <div class="starImage">
-                                                            <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
-                                                        </div>
-                                                        <div class="aboutStar">
-                                                            <p>Start the Journey <br>
-                                                                    Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
-                                                            <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
-                                                        </div>
-                                                        <div class="flex nameRating">
-                                                            <div class="name">
-                                                                <p>rohit <br> sharma</p>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <span>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                        <div class="row">
-                                                <div class="col-3 starReviewAboutRp starReviewAbout">
-                                                    <div class="starImage">
-                                                        <img src="./assets/images/GettyImages-123382206.png" alt="">
-                                                    </div>
-                                                    <div class="aboutStar">
-                                                        <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products. For every promising young cricketer I recommend JKS stuff to unleash their true potential.</p>
-                                                        <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products.</p>
-                                                    </div>
-                                                    <div class="flex nameRating">
-                                                        <div class="name">
-                                                            <p>rudra <br> pratap singh</p>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <span>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 starReviewAbout">
-                                                        <div class="starImage">
-                                                            <img src="./assets/images/VIRATKOHLI-KESAVAN.png" alt="">
-                                                        </div>
-                                                        <div class="aboutStar">
-                                                            <p>I purchased the Nike Airzoom Winflo 4 at a sale to wear it mostly as a dressing shoe as the White Nike swoosh on the black fabric looked the part.</p>
-                                                            <p>Never did I realize then that these would become my favorite neutral running shoe. I’ll nit-pick everything I can in the review below of Nike Air Zoom Winflo 4.</p>
-                                                        </div>
-                                                        <div class="flex nameRating">
-                                                            <div class="name">
-                                                                <p>virat <br> kohli</p>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <span>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3 starReviewAbout" >
-                                                            <div class="starImage">
-                                                                <img src="./assets/images/MS-Dhoni-6.png" alt="">
-                                                            </div>
-                                                            <div class="aboutStar">
-                                                                <p>That may sound too good to be true but on my first go in the Uncaged I ran my fastest 10K for 18 months and the following day equalled my 10K PB set nearly three years ago. 
-                                                                    </p>
-                                                                <p>But if you don’t want to spend $180 on a “fashion runner,” then don’t, but don’t let the Ultra Boost Uncaged fool you-it performs as well or better than ANY other shoe out there, provided you acknowledge the support factor.</p>
-                                                            </div>
-                                                            <div class="flex nameRating">
-                                                                <div class="name">
-                                                                    <p>mahendra <br> singh dhoni</p>
-                                                                </div>
-                                                                <div class="rating">
-                                                                    <span>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3 starReviewAbout">
-                                                                <div class="starImage">
-                                                                    <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
-                                                                </div>
-                                                                <div class="aboutStar">
-                                                                    <p>Start the Journey <br>
-                                                                            Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
-                                                                    <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
-                                                                </div>
-                                                                <div class="flex nameRating">
-                                                                    <div class="name">
-                                                                        <p>rohit <br> sharma</p>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <span>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                            </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                        <div class="row">
-                                                <div class="col-3 starReviewAboutRp starReviewAbout">
-                                                    <div class="starImage">
-                                                        <img src="./assets/images/GettyImages-123382206.png" alt="">
-                                                    </div>
-                                                    <div class="aboutStar">
-                                                        <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products. For every promising young cricketer I recommend JKS stuff to unleash their true potential.</p>
-                                                        <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products.</p>
-                                                    </div>
-                                                    <div class="flex nameRating">
-                                                        <div class="name">
-                                                            <p>rudra <br> pratap singh</p>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <span>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                                    <i class="fas fa-star"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3 starReviewAbout">
-                                                        <div class="starImage">
-                                                            <img src="./assets/images/VIRATKOHLI-KESAVAN.png" alt="">
-                                                        </div>
-                                                        <div class="aboutStar">
-                                                            <p>I purchased the Nike Airzoom Winflo 4 at a sale to wear it mostly as a dressing shoe as the White Nike swoosh on the black fabric looked the part.</p>
-                                                            <p>Never did I realize then that these would become my favorite neutral running shoe. I’ll nit-pick everything I can in the review below of Nike Air Zoom Winflo 4.</p>
-                                                        </div>
-                                                        <div class="flex nameRating">
-                                                            <div class="name">
-                                                                <p>virat <br> kohli</p>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <span>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                        <i class="fas fa-star"></i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3 starReviewAbout" >
-                                                            <div class="starImage">
-                                                                <img src="./assets/images/MS-Dhoni-6.png" alt="">
-                                                            </div>
-                                                            <div class="aboutStar">
-                                                                <p>That may sound too good to be true but on my first go in the Uncaged I ran my fastest 10K for 18 months and the following day equalled my 10K PB set nearly three years ago. 
-                                                                    </p>
-                                                                <p>But if you don’t want to spend $180 on a “fashion runner,” then don’t, but don’t let the Ultra Boost Uncaged fool you-it performs as well or better than ANY other shoe out there, provided you acknowledge the support factor.</p>
-                                                            </div>
-                                                            <div class="flex nameRating">
-                                                                <div class="name">
-                                                                    <p>mahendra <br> singh dhoni</p>
-                                                                </div>
-                                                                <div class="rating">
-                                                                    <span>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                            <i class="fas fa-star"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3 starReviewAbout">
-                                                                <div class="starImage">
-                                                                    <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
-                                                                </div>
-                                                                <div class="aboutStar">
-                                                                    <p>Start the Journey <br>
-                                                                            Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
-                                                                    <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
-                                                                </div>
-                                                                <div class="flex nameRating">
-                                                                    <div class="name">
-                                                                        <p>rohit <br> sharma</p>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <span>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                                <i class="fas fa-star"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                            </div>
-                                  </div>
-                                </div>
-                              </div>
+                
+            </div>
+        </div>
+        <div class="starReviewAbout">
+                <div class="rating">
+                        <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                <div class="starImage">
+                    <img src="./assets/images/VIRATKOHLI-KESAVAN.png" alt="">
+                </div>
+                <div class="aboutStar">
+                    <p>I purchased the Nike Airzoom Winflo 4 at a sale to wear it mostly as a dressing shoe as the White Nike swoosh on the black fabric looked the part.</p>
+                    <p>Never did I realize then that these would become my favorite neutral running shoe. I’ll nit-pick everything I can in the review below of Nike Air Zoom Winflo 4.</p>
+                </div>
+                <div class="flex nameRating">
+                    <div class="name">
+                        <p>virat kohli</p>
+                    </div>
+                   
                 </div>
             </div>
+            <div class="starReviewAbout" >
+                    <div class="rating">
+                            <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    <div class="starImage">
+                        <img src="./assets/images/MS-Dhoni-6.png" alt="">
+                    </div>
+                    <div class="aboutStar">
+                        <p>That may sound too good to be true but on my first go in the Uncaged I ran my fastest 10K for 18 months and the following day equalled my 10K PB set nearly three years ago. 
+                            </p>
+                        <p>But if you don’t want to spend $180 on a “fashion runner,” then don’t, but don’t let the Ultra Boost Uncaged fool you-it performs as well or better than ANY other shoe out there, provided you acknowledge the support factor.</p>
+                    </div>
+                    <div class="flex nameRating">
+                        <div class="name">
+                            <p>mahendra dhoni</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="starReviewAbout">
+                        <div class="rating">
+                                <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        <div class="starImage">
+                            <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
+                        </div>
+                        <div class="aboutStar">
+                            <p>Start the Journey <br>
+                                    Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
+                            <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
+                        </div>
+                        <div class="flex nameRating">
+                            <div class="name">
+                                <p>rohit sharma</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div class="starReviewAbout">
+                        <div class="rating">
+                                <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        <div class="starImage">
+                            <img src="./assets/images/GettyImages-123382206.png" alt="">
+                        </div>
+                        <div class="aboutStar">
+                            <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products. For every promising young cricketer I recommend JKS stuff to unleash their true potential.</p>
+                            <p>My experience with JKS cricket gears is awesome. You can clearly feel the science and craftsmanship involved in each of their products.</p>
+                        </div>
+                        <div class="flex nameRating">
+                            <div class="name">
+                                <p>rudra pratap singh</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="starReviewAbout">
+                            <div class="rating">
+                                    <span>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            <div class="starImage">
+                                <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
+                            </div>
+                            <div class="aboutStar">
+                                <p>Start the Journey <br>
+                                        Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
+                                <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
+                            </div>
+                            <div class="flex nameRating">
+                                <div class="name">
+                                    <p>rohit sharma</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="starReviewAbout">
+                                <div class="rating">
+                                        <span>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                        </span>
+                                    </div>
+                                <div class="starImage">
+                                    <img src="./assets/images/Rohit-Sharma-IPL.png" alt="">
+                                </div>
+                                <div class="aboutStar">
+                                    <p>Start the Journey <br>
+                                            Looks are only the start of the journey because when you first try them on, you will feel like floating. A plane taking off will be the rush felt with these on your feet.</p>
+                                    <p>The sock liner material of this shoe welcomes you and provides a comfortable step without the compromise of a heavy shoe.</p>
+                                </div>
+                                <div class="flex nameRating">
+                                    <div class="name">
+                                        <p>rohit sharma</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
         </div>
     </div>
 
@@ -1078,8 +867,8 @@
     <!-- Footer starts -->
     <div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="row fleFooter">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12">
                 <div class="footerTopic">
                     <p>Top Categories</p>
                 </div>
@@ -1095,7 +884,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12">
                     <div class="footerTopic">
                             <p>Help</p>
                         </div>
@@ -1109,7 +898,7 @@
                             </ul>
                         </div>
             </div>
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12">
                     <div class="footerTopic">
                             <p>About Us</p>
                         </div>
@@ -1122,7 +911,7 @@
                             </ul>
                         </div> 
             </div>
-            <div class="col-3">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12">
                     <div class="footerTopic">
                             <p>Feedback</p>
                         </div>
@@ -1142,9 +931,14 @@
                     <p>Receive product news and updates in your inbox</p>
                 </div>
                 <!-- <form action="#"> -->
-                    <label for="emailId"></label>
-                    <input type="email" placeholder="Email Address">
-                    <button type="submit" id="mailButton"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    <div class="mailIdBox">
+                            <label for="emailId"></label>
+                            <input type="email" placeholder="Email Address"><br>
+                            <div class="btnSend">
+                                    <button type="submit" id="mailButton"><i class="fas fa-long-arrow-alt-right"></i></button>
+                            </div>
+                    </div>
+                    
                 <!-- </form> -->
             </div>
             <div class="followUs">
@@ -1153,10 +947,10 @@
                 </div>
                 <div class="logos">
                     <ul class="flex">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
@@ -1168,69 +962,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./assets/js/carousel.js">
-        
-    </script>
-    <script>
-        // const owl=document.querySelector('.owl-carousel');
-        // owl.owlCarousel();
-        $('.owl-carousel').owlCarousel({
-    stagePadding: 200,
+    <!-- <script src="./assets/js/carousel.js"> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
     loop:true,
-    center:true,
     margin:10,
-    nav:false,
-    items:4,
-    lazyLoad: false,
-    nav:true,
-  responsive:{
-        0:{
+    responsiveClass:true,
+    responsive:{
+        605:{
             items:1,
-            stagePadding: 60
+            nav:true,
+    
         },
-        600:{
-            items:1,
-            stagePadding: 100
+        940:{
+            items:2,
+            nav:true,
+
         },
-        1000:{
-            items:1,
-            stagePadding: 200
+        1240:{
+            items:4,
+            nav:true,
         },
-        1200:{
-            items:1,
-            stagePadding: 250
+        1024: {
+            items:3,
+            nav:true
         },
-        1400:{
+    }
+  });
+  $(".owlMain").owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        605:{
             items:1,
-            stagePadding: 300
+            nav:true
         },
-        1600:{
-            items:1,
-            stagePadding: 300
+        940:{
+            items:2,
+            nav:true
         },
-        1800:{
-            items:1,
-            stagePadding: 400
+        1240:{
+            items:3,
+            nav:true
         }
     }
-})
-        $('.circleIt').click(function(){
-            const curId=$(this).attr("id");
-            $('.bannerCircles span.circleActive').removeClass('circleActive');
-    $(this).addClass('circleActive');
-    $('.bannerCircles span').removeClass('opacityHigh');
-    $('.bannerCircles span').addClass('opacityLow');
-    $(this).addClass('opacityHigh');
-    $('.owl-item').each(function(){
-    if($(this).hasClass('active')) {
-        $(this).removeClass('active');
-    } 
-});
-    $('.owl-carousel').trigger('to.owl.carousel', parseInt((curId.charAt(1))-1));
-    // $('.owl-carousel').on('changed.owl.carousel',function(event) {
-    //     console.log(event);
-    // })
   });
-    </script>
+});
+</script>
+        
+
 </body>
 </html>
