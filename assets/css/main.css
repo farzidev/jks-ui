@@ -82,7 +82,7 @@ nav .lists {
 }
 .main-header .header-item img{
     margin: 0 auto;
-    height: 20rem;
+    /* height: 20rem; */
     width: 20rem;
     transform: rotate(26deg);
 }
@@ -104,6 +104,15 @@ nav .lists {
 } */
 .main-header .active .header-item{
     opacity: 1 !important;
+    /* background-color: red; */
+}
+.header-vector{
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
     /* background-color: red; */
 }
 .header-vector-1{
