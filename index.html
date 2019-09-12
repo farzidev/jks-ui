@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./assets/css/index.css">
     
-    <script src="https://kit.fontawesome.com/e5c02bf7e0.js"></script>
+    <script src="https://kit.fontawesome.com/8a64417275.js"></script>
     <style>
             .frame-container {
                 position: relative;
@@ -23,6 +23,48 @@
                         padding-top: 200%;
                     }
                 }
+                .product-tag{
+    position: absolute;
+    top: 39%;
+    left: 2%;
+    background-color: black;
+    height: 3.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.product-tag .cart-tag{
+    background-color: #F30056;
+    position: absolute;
+    left: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    padding: .4rem;
+    font-style: italic;
+}
+.product-tag .cart-tag:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: #F30056;
+    transform: translate(-94%, -50%);
+    border-radius: 50%;
+    z-index: 98
+
+}
+.product-tag .cart-tag a{
+    z-index: 99;
+    text-decoration: none;
+    color: white;
+}
         </style>
    
 </head>
@@ -187,8 +229,8 @@
     <div class="theMostPop">
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-3 mostPopRotate">
-                            <div class="flex">
+                    <div class="col-xl-3 col-lg-3 col-12 mostPopRotate">
+                            <div class="flex mainTop">
                                     <div class="lineMost">
                                             <!-- <span class="line"></span>  -->
                                     </div>
@@ -202,7 +244,7 @@
                                 </div> 
                     </div>
                 </div>
-                <div class="col-9" id="mostPopular">
+                <div class="col-xl-9 col-lg-9 col-12" id="mostPopular">
                     <div class="owl-carousel">
                             <div class="mpDiv">
                                     <div class="flex recommendGap">
@@ -646,9 +688,20 @@
                 <div><img src="./assets/images/Junior_Kit_Bags_copy.png" alt=""></div>
             </div>
             <div class="col-xl-2 priceKit col-lg-4 col-md-6 col-12">
-                <p><del><span class="rupeeSign">&#8377;</span><span class="cost">1999</span></del></p><br>
+                <!-- <p><del><span class="rupeeSign">&#8377;</span><span class="cost">1999</span></del></p><br>
                 <span class="costImg"><img src="./assets/images/bg.png" alt=""></span>
-                
+                 -->
+                 <div>
+                        <p><del><span class="rupeeSign">&#8377;</span><span class="cost">1999</span></del></p>
+                 </div>
+                 <div class="product-tag">
+                        <div class="price-tag">
+                                &#8377; <span id="price-value">1273</span>
+                            </div>
+                    <div class="cart-tag">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
 
             </div>
             <div class="col-xl-4 wholeKit col-12">
@@ -947,10 +1000,10 @@
                 </div>
                 <div class="logos">
                     <ul class="flex">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"></a></li>
+                        <li class="logoMain"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="logoMain"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="logoMain"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="logoMain"><a href="#"><i class="fab fa-snapchat"></i></a></li>
                     </ul>
                 </div>
             </div>
