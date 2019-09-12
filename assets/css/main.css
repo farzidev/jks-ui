@@ -84,7 +84,7 @@ nav .lists {
     margin: 0 auto;
     /* height: 20rem; */
     width: 20rem;
-    transform: rotate(26deg);
+    /* transform: rotate(26deg); */
 }
 .main-header .header-item {
     opacity: .3;
