@@ -83,7 +83,7 @@ nav .lists {
 .main-header .header-item img{
     margin: 0 auto;
     /* height: 20rem; */
-    width: 20rem;
+    width: 24rem;
     /* transform: rotate(26deg); */
 }
 .main-header .header-item {
@@ -135,7 +135,7 @@ nav .lists {
     height: 65%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 .product-tag{
     position: absolute;
