@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding:0px;
     margin:0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body {
     overflow-x:hidden;
@@ -84,7 +84,7 @@ nav .lists {
 .main-header .header-item img{
     margin: 0 auto;
     /* height: 20rem; */
-    width: 24rem;
+    width: 32rem;
     /* transform: rotate(26deg); */
 }
 .main-header .header-item {

@@ -9,63 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./assets/css/index.css">
-    
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/8a64417275.js"></script>
-    <style>
-            .frame-container {
-                position: relative;
-                padding-top: 56.25%;
-            }
-            @media screen and (max-width: 900px) {
-                    .frame-container {
-                        margin-bottom: 100px;
-                        position: relative;
-                        padding-top: 200%;
-                    }
-                }
-                .product-tag{
-    position: absolute;
-    top: 39%;
-    left: 2%;
-    background-color: black;
-    height: 3.5rem;
-    width: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-}
-.product-tag .cart-tag{
-    background-color: #F30056;
-    position: absolute;
-    left: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .8rem;
-    padding: .4rem;
-    font-style: italic;
-}
-.product-tag .cart-tag:before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    height: 1rem;
-    width: 1rem;
-    background-color: #F30056;
-    transform: translate(-94%, -50%);
-    border-radius: 50%;
-    z-index: 98
-
-}
-.product-tag .cart-tag a{
-    z-index: 99;
-    text-decoration: none;
-    color: white;
-}
-        </style>
    
 </head>
 <body>
@@ -107,9 +55,108 @@
             </div>
           </nav>
           
-            <div class="frame-container">    <iframe src="main.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px"}(this));' style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
+          <section class="section-main-header">
+            <div class="header-vector">
+                <img class="header-vector-1" src="assets/images/Particles.png" alt="">
+                <img class="header-vector-2" src="assets/images/Particles (1).png" alt="">
+                <img class="header-vector-3" src="assets/images/BG-lines.png" alt="">
             </div>
-
+            <div class="product-tag">
+                    <div class="price-tag">
+                            &#8377; <span id="price-value"></span>
+                        </div>
+                <div class="cart-tag">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="owl-carousel main-header">
+                <div class="item">
+                    <div class="header-item">
+                        <!-- <div class="price-tag">
+                                Rs. 1234
+                            </div> -->
+                        <img src="assets/images/ceasar.png" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                        <div class="header-item">
+                                <!-- <div class="price-tag">
+                                        Rs. 333
+                                    </div> -->
+                            <img src="assets/images/AIDAN 2.png" alt="">
+                        </div>
+                    
+                </div>
+                <div class="item">
+                        <div class="header-item">
+                                <!-- <div class="price-tag">
+                                        Rs. 999
+                                    </div> -->
+                            <img src="assets/images/nero.png" alt="">
+                        </div>
+                </div>
+                <div class="item">
+                        <div class="header-item">
+                                <!-- <div class="price-tag">
+                                        Rs. 445
+                                    </div> -->
+                            <img src="assets/images/AIDAN 3.png" alt="">
+                        </div>
+                    
+                </div>
+                <div class="item">
+                        <div class="header-item">
+                                <!-- <div class="price-tag">
+                                        Rs. 445
+                                    </div> -->
+                            <img src="assets/images/ajax 2.png" alt="">
+                        </div>
+                </div>
+                
+            </div>
+            <div class="header-navigation">
+                <ul id='carousel-custom-dots' class='header-navigation-dots'> 
+                        <div class='header-navigation-dot header-navigation-dot-active'>
+                                <div class="header-item-img">
+                            <img src="assets/images/ceasar.png" alt="">
+                            </div>
+                        </div> 
+                        <div class='header-navigation-dot'>
+                                <div class="header-item-img">
+                                        <img src="assets/images/AIDAN 2.png" alt="">
+                                        </div>
+                        </div> 
+                        <div class='header-navigation-dot'>
+                                <div class="header-item-img">
+                                        <img src="assets/images/nero.png" alt="">
+                                        </div>
+                                
+                        </div> 
+                        <div class='header-navigation-dot'>
+                                <div class="header-item-img">
+                                        <img src="assets/images/AIDAN 3.png" alt="">
+                                        </div>
+                                
+                        </div> 
+                        <div class='header-navigation-dot'>
+                                <div class="header-item-img">
+                                        <img src="assets/images/ajax 2.png" alt="">
+                                        </div>
+                    </div> 
+                        
+                      </ul>
+    
+            </div>
+    
+            <div class="customNextBtn">
+                &nbsp;
+            </div>
+            <div class="customPrevBtn">
+            &nbsp;
+            </div>
+            
+            
+        </section>
     <!-- Navbar Ends -->
     <!-- <div class="owl-carousel">
             <div class="item">
@@ -694,7 +741,7 @@
                  <div>
                         <p><del><span class="rupeeSign">&#8377;</span><span class="cost">1999</span></del></p>
                  </div>
-                 <div class="product-tag">
+                 <div class="kit-bag">
                         <div class="price-tag">
                                 &#8377; <span id="price-value">1273</span>
                             </div>
@@ -1073,7 +1120,64 @@
   });
 });
 </script>
-        
+          <script>
+            let price_arr = [1242,2222,54555,5777,6899];
+            let rotation = 0;
+            let current_index = 0;
+            $("#price-value").html(price_arr[0]);
+            $('.main-header').owlCarousel({
+                center: true,
+                items:1.5,
+                loop:true,
+                margin:10,
+                stagePadding: 200,
+                nav: false,
+                responsiveClass:true,
+                dotsContainer: '#carousel-custom-dots',
+        responsive:{
+            0:{
+                // items:1,
+                stagePadding: 50,
+            },
+            600:{
+                stagePadding: 200,
+            },
+            500:{
+                stagePadding: 80,
+            },
+        }
+    })
+        $('.header-navigation-dot').click(function () {
+            $(this).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');;
+            $('.main-header').owlCarousel().trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+    
+            $('.main-header').owlCarousel().on('changed.owl.carousel', function(event) {
+                $("#price-value").html(price_arr[event.page.index]);
+                $(`.header-navigation-dot:nth-child(${event.page.index+1})`).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');
+                if(event.page.index > current_index){
+                    rotation+=90;
+                }
+                else{
+                    rotation-=90;
+                }
+                current_index = event.page.index;
+                // console.log(event);
+    
+                $(".header-vector").css("transform",`rotate(${rotation}deg)`);
+    });
+    
+    $('.customNextBtn').click(function() {
+        $('.main-header').owlCarousel().trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.customPrevBtn').click(function() {
+        $('.main-header').owlCarousel().trigger('prev.owl.carousel', [300]);
+    })
+    
+    
+    
+        </script>
 
 </body>
 </html>
