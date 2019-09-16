@@ -1123,6 +1123,8 @@
 </script>
           <script>
             let price_arr = [1242,2222,54555,5777,6899];
+            let verticle = 1;
+            let scale = 1;
             let rotation = 0;
             let current_index = 0;
             $("#price-value").html(price_arr[0]);
@@ -1156,19 +1158,31 @@
             $('.main-header').owlCarousel().on('changed.owl.carousel', function(event) {
                 $("#price-value").html(price_arr[event.page.index]);
                 $(`.header-navigation-dot:nth-child(${event.page.index+1})`).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');
-                delta = event.page.index - current_index
+                // delta = event.page.index - current_index
                 if(event.page.index > current_index){
-                    delta = event.page.index - current_index
-                    rotation+=60*delta;
+                    // delta = event.page.index - current_index
+                    rotation+=60;
+                    verticle+=1
                 }
                 else{
-                    delta = event.page.index - current_index
-                    rotation-=60*delta;
+                    // delta = event.page.index - current_index
+                    rotation-=60;
+                    verticle-=1
                 }
                 current_index = event.page.index;
                 // console.log(event);
+                console.log(rotation);
+                if(Math.abs(verticle)%3==0){
+                    scale = .7;
+                }
+                else if(Math.abs(verticle)%2==0){
+                    scale = .9;
+                }
+                else{
+                    scale =1;
+                }
     
-                $(".header-vector").css("transform",`rotate(${rotation}deg)`);
+                $(".header-vector").css("transform",`rotate(${rotation}deg) scale(${scale})`);
     });
     
     $('.customNextBtn').click(function() {
