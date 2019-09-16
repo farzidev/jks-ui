@@ -81,19 +81,19 @@
                 <div class="item">
                         <div class="header-item">
                                 <!-- <div class="price-tag">
+                                        Rs. 999
+                                    </div> -->
+                            <img src="assets/images/nero.png" alt="">
+                        </div>
+                </div>
+                <div class="item">
+                        <div class="header-item">
+                                <!-- <div class="price-tag">
                                         Rs. 333
                                     </div> -->
                             <img src="assets/images/AIDAN 2.png" alt="">
                         </div>
                     
-                </div>
-                <div class="item">
-                        <div class="header-item">
-                                <!-- <div class="price-tag">
-                                        Rs. 999
-                                    </div> -->
-                            <img src="assets/images/nero.png" alt="">
-                        </div>
                 </div>
                 <div class="item">
                         <div class="header-item">
@@ -121,17 +121,18 @@
                             <img src="assets/images/ceasar.png" alt="">
                             </div>
                         </div> 
-                        <div class='header-navigation-dot'>
-                                <div class="header-item-img">
-                                        <img src="assets/images/AIDAN 2.png" alt="">
-                                        </div>
-                        </div> 
+                        
                         <div class='header-navigation-dot'>
                                 <div class="header-item-img">
                                         <img src="assets/images/nero.png" alt="">
                                         </div>
                                 
-                        </div> 
+                        </div>
+                        <div class='header-navigation-dot'>
+                                <div class="header-item-img">
+                                        <img src="assets/images/AIDAN 2.png" alt="">
+                                        </div>
+                        </div>  
                         <div class='header-navigation-dot'>
                                 <div class="header-item-img">
                                         <img src="assets/images/AIDAN 3.png" alt="">
@@ -1155,11 +1156,14 @@
             $('.main-header').owlCarousel().on('changed.owl.carousel', function(event) {
                 $("#price-value").html(price_arr[event.page.index]);
                 $(`.header-navigation-dot:nth-child(${event.page.index+1})`).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');
+                delta = event.page.index - current_index
                 if(event.page.index > current_index){
-                    rotation+=90;
+                    delta = event.page.index - current_index
+                    rotation+=90*delta;
                 }
                 else{
-                    rotation-=90;
+                    delta = event.page.index - current_index
+                    rotation-=90*delta;
                 }
                 current_index = event.page.index;
                 // console.log(event);
