@@ -68,8 +68,14 @@ nav .lists {
 }
 
 .header-item{
-    width: 20rem;
-    width: 100%;
+    /* width: 20rem; */
+    /* width: 100%; */
+}
+.main-header .item{
+    /* width: 100%;
+    width: 55rem; */
+    /* margin: 0 auto; */
+    position: relative;
 }
 .section-main-header{
     position: relative;
@@ -82,14 +88,20 @@ nav .lists {
     flex-direction: column;
 }
 .main-header .header-item img{
+    display: block;
     margin: 0 auto;
     /*height: 60rem; */
-    width: 55rem;
+    /* width: 55rem; */
+    transform: scale(1.5);
     /* transform: translate(-9rem,7rem); */
     /* transform: rotate(26deg); */
 }
 .main-header .header-item {
+    /* background-color: aqua; */
+    margin: 0 auto;
     opacity: .3;
+    /* display: flex; */
+    justify-content: center;
 }
 .price-tag{
     font-style: italic;
