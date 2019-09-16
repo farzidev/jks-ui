@@ -85,6 +85,7 @@ nav .lists {
     margin: 0 auto;
     /*height: 60rem; */
     width: 60rem;
+    transform: translateX(-10rem);
     /* transform: rotate(26deg); */
 }
 .main-header .header-item {
