@@ -91,16 +91,16 @@
                                     <!-- <div class="price-tag">
                                         Rs. 333
                                     </div> -->
-                                    <img src="assets/images/nero.png" alt="">
-                        </div>
-                    
-                </div>
-                <div class="item">
-                        <div class="header-item">
-                                <!-- <div class="price-tag">
+                                    <img src="assets/images/AIDAN 3.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="header-item">
+                                    <!-- <div class="price-tag">
                                         Rs. 445
                                     </div> -->
-                            <img src="assets/images/AIDAN 3.png" alt="">
+                                    <img src="assets/images/nero.png" alt="">
                         </div>
                     
                 </div>
@@ -130,12 +130,12 @@
                             </div>
                             <div class='header-navigation-dot'>
                                 <div class="header-item-img">
-                                    <img src="assets/images/nero.png" alt="">
-                                        </div>
-                        </div>  
-                        <div class='header-navigation-dot'>
+                                    <img src="assets/images/AIDAN 3.png" alt="">
+                                </div>
+                            </div>  
+                            <div class='header-navigation-dot'>
                                 <div class="header-item-img">
-                                        <img src="assets/images/AIDAN 3.png" alt="">
+                                        <img src="assets/images/nero.png" alt="">
                                         </div>
                                 
                         </div> 
@@ -1136,7 +1136,7 @@
                 stagePadding: 200,
                 nav: false,
                 responsiveClass:true,
-                dotsContainer: '#carousel-custom-dots',
+                // dotsContainer: '#carousel-custom-dots',
         responsive:{
             0:{
                 // items:1,
@@ -1150,10 +1150,10 @@
             },
         }
     })
-        $('.header-navigation-dot').click(function () {
-            $(this).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');;
-            $('.main-header').owlCarousel().trigger('to.owl.carousel', [$(this).index(), 300]);
-    });
+    //     $('.header-navigation-dot').click(function () {
+    //         $(this).addClass('header-navigation-dot-active').siblings().removeClass('header-navigation-dot-active');;
+    //         $('.main-header').owlCarousel().trigger('to.owl.carousel', [$(this).index(), 300]);
+    // });
     
             $('.main-header').owlCarousel().on('changed.owl.carousel', function(event) {
                 $("#price-value").html(price_arr[event.page.index]);

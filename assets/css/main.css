@@ -193,7 +193,7 @@ nav .lists {
     
 }
 .header-navigation-dot{
-    cursor: pointer;
+    /* cursor: pointer; */
     margin: .5rem;
     height: 3rem;
     width: 3rem;
