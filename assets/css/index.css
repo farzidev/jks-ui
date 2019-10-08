@@ -1,4 +1,7 @@
 /* basic Starts */
+html {
+    overflow-x: hidden;
+}
 
 * {
     box-sizing: border-box;
@@ -9,6 +12,7 @@
 
 body {
     /* overflow-x:hidden; */
+    max-width: 100vw;
 }
 
 .flex {
@@ -124,6 +128,11 @@ ul li {
     .kitBackground .priceKit {
         margin-left: 35vw;
         height: 80px;
+        margin-top: 0px;
+    }
+    .kitBackground .kits {
+        margin-top: -20px;
+        margin-bottom: -10px;
     }
 }
 
@@ -562,13 +571,21 @@ ul li {
 @media(max-width: 600px) {
 
     .starReviews .owl-carousel .owl-stage {
-        max-height: 70vh;
+        max-height: 85vh;
         overflow-y: hidden;
     }
     .starReviewsMain {
         margin-bottom: 40px;
         position: relative;
         right: 20px;
+    }
+    .starReviewAbout .rating {
+        bottom: 3rem !important;
+
+    }
+    .starReviews .topic {
+        font-size: 1.2rem;
+        margin-left: -5dpx;
     }
 }
 
@@ -842,11 +859,44 @@ ul li {
 }
 
 @media(max-width:768px) {
+    .recommendImage{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .mpDiv{
+        min-height: 420px;
+    }
     .rpRecommends .recommendTopics {
         margin: 1.5rem 1.5rem;
     }
+    .rpRecommends .mainTopic {
+        max-width: 90vw;
+    }
     .priceKit {
         text-align: center;
+        margin-left: 40vw;
+        margin-top: 4vh;
+    }
+    .rpRecommends{
+        padding-top: 10vh;
+    }
+    .rpRecommends .topic {
+        font-size: 2.0rem;
+        margin-bottom: 7vh;
+    }
+    .rpRecommends .line {
+        height: 6px;
+        margin-top: 3.5vh;
+    }
+    .recommendTopic{
+        margin-left: 30px !important;
+        margin-top: 50px;
+    }
+    .recommendTopic h4{
+        font-size: 2.8rem !important;
+    }
+    .rpRecommends .recommendTopic p{
+        font-size: 1.2rem !important;
     }
 }
 
@@ -856,10 +906,10 @@ ul li {
     }
     .recommendTopic {
         margin-top: 30px;
-        margin-left: 30px;
+        margin-left: 0px !important;
     }
     .recommendTopic h4{
-        font-size: 1.8rem !important;
+        font-size: 1.5rem !important;
     }
 
     .recommendTopic p{
@@ -876,10 +926,33 @@ ul li {
         padding: 30px;
     }
 }
+@media(max-width: 450px){
+    .rpRecommends {
+        margin-top: -12vh;
+    }
+    .rpRecommends .topic{
+        font-size: 1.2rem;
+    }
+    .rpRecommends .line {
+        height: 4px;
+        width: 10vh;
+    }
+    .rpRecommends .recommendTopic h4{
+        font-size: 1.5rem !important;
+    }
+    .rpRecommends .recommendTopic p{
+        font-size: 1.0rem !important;
+    }
+    .mainTopic{
+        padding-bottom: 0px !important;
+        max-width: 92vw !important;
+    }
+}
 
 @media(max-width:1200px) {
     .wholeKit {
         text-align: center;
+        margin-top: 7vh;
     }
     .shopNowBtn {
         text-align: center;
@@ -2407,7 +2480,11 @@ ul li {
 @media(max-width:768px) {
     .footerBottom {
         display: block;
-        text-align: left;
+        text-align:center;
+    }
+    .logos ul {
+        margin-top: 35px;
+        justify-content: center;
     }
 }
 
@@ -2420,6 +2497,18 @@ ul li {
 @media(max-width: 450px){
     .fleFooter .footerComponent {
         width: 50%;
+    }
+    .footerBottom{
+        text-align: left;
+    }
+    .logos ul {
+        justify-content: left;
+    }
+    .fleFooter{
+        text-align: left;
+    }
+    .footer .footerContainer{
+        width: 90vw;
     }
 }
 
@@ -2448,7 +2537,7 @@ ul li {
 }
 
 .moreWeight .recommendImage {
-    margin-top: 0px !important;
+    margin-top: 0px;
 }
 
 .rpRecommends .loadMore {
@@ -2593,6 +2682,35 @@ ul li {
 #mostPopular .recommendImage {
     text-align: center;
     margin-left: 28px;
+}
+
+@media(max-width: 768px){
+    .theMostPop .mostPopRotate {
+        transform: rotate(0deg);
+        /* position: relative; */
+        margin-top: 10rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .theMostPop .lineMost {
+        position: absolute;
+        width: 10rem;
+        height: 0.7rem;
+        background-color: #051026;
+        top: 3.0rem;
+    }
+    .theMostPop .topicMost{
+        font-size: 4.5rem;
+    }
+    .theMostPop .popularMost {
+        font-size: 4.3rem;
+        margin-left: 8rem;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    
+
 }
 
 .kit-bag {
@@ -3468,6 +3586,47 @@ nav .lists {
         min-height: 230px;
     }
 }
+@media(max-width: 786px){
+    .popularCategories{
+        height: 70vh;
+    }
+    .popular1{
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+    }
+    .popularCategories .topic{
+        font-size: 2.5rem;
+        position: relative;
+        right: 1.5vw;
+    }
+    .popularCategories .line{
+        margin-top: 4vh;
+        height: 6px;
+    }
+    .popularCategories .oneBrand {
+        min-height: 40vh;
+    }
+    .popularCategories .catImage {
+        margin-top: 60px;
+    }
+    .popularCategories .topicPop h4{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .mainTopic {
+        padding-bottom: 70px;
+    }
+    .moreWeight .recommendImage {
+        margin-top: 20px;
+    }
+    .mainTopic .recommendTopic {
+        margin-left: 40px !important;
+    }
+    .loadMore {
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+}
 
 @media(max-width:689px) {
     .popularCategories .oneBrand {
@@ -3501,6 +3660,25 @@ nav .lists {
 
     .popularCategories .oneBrand h4 {
         font-size: 15px;
+    }
+}
+@media(max-width: 450px){
+    .popular1 {
+        margin-top: -10px;
+    }
+    .popularCategories .topic{
+        font-size: 1.2rem;
+    }
+    .popularCategories .line {
+        height: 4px;
+        margin-top: 3.5vh;
+        width: 10vh;
+    }
+    .popularCategories .owl-stage-outer{
+        margin-top: -15px;
+    }
+    .oneBrand .topicPop {
+        margin-top: -20px;
     }
 }
 
@@ -3554,7 +3732,7 @@ nav .lists {
 
 @media(max-width:1000px) {
     #mostPopular .owl-item {
-        min-height: 250px;
+        min-height: 330px;
     }
 }
 
@@ -3659,15 +3837,21 @@ nav .lists {
     html {
         overflow-x: hidden;
     }
+    .mpDiv {
+        min-height: 250px;
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
     .theMostPop {
-        padding-bottom: 1rem;
+        padding-bottom: 3rem;
+        padding-top: -1rem;
     }
     .theMostPopContainer {
         margin-top: 40px;
     }
     .theMostPop .topicMost {
         position: relative;
-        top: 1rem;
+        top: 4vh;
         font-size: 2.6rem;
         color: #051026;
         font-weight: 600;
@@ -3679,6 +3863,8 @@ nav .lists {
     .theMostPop .popularMost {
         font-size: 3.2rem;
         margin-left: 0rem;
+        position: relative;
+        top: 2vh;
         font-weight: 700;
     }
     .theMostPop .lineMost {
@@ -3686,7 +3872,7 @@ nav .lists {
         width: 5.0rem;
         height: 0.35rem;
         background-color: #051026;
-        top: 3.0rem;
+        top: 3.5rem;
     }
     .popularImg {
         transform: rotate(90deg);
@@ -3694,6 +3880,12 @@ nav .lists {
         width: 28%;
         top: -1.5rem;
         left: 4rem;
+    }
+    .starReviewAbout {
+        min-height: 580px !important;
+    }
+    .starReviewAbout .name {
+        margin-top: -10vh;
     }
 }
 

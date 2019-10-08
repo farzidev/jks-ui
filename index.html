@@ -73,7 +73,7 @@
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
-        <div class="owl-carousel main-header">
+        <div class="owl-carousel owl-carousel-main main-header">
             <div class="item">
                 <div class="header-item">
                     <!-- <div class="price-tag">
@@ -297,7 +297,7 @@
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-9 col-12" id="mostPopular">
-                    <div class="owl-carousel">
+                    <div class="owl-carousel owl-carousel-main">
                         <div class="mpDiv">
                             <div class="flex recommendGap">
                                 <div class="recommendTopic">
@@ -510,7 +510,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div class="flex">
+                    <div class="flex popular1">
                         <div class="line">
                             <!-- <span class="line"></span> -->
                         </div>
@@ -520,7 +520,7 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel">
+            <div class="owl-carousel owl-carousel-main">
                 <div class="oneBrand">
                     <div class="topicPop">
                         <h4>BATSMAN GLOVES</h4>
@@ -585,9 +585,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-xl-5 col-lg-5 col-md-5 col-11 moreWeight recommendTopics">
+                        <div class="col-xs-6 col-sm-6 col-xl-5 col-lg-5 col-md-12 col-11 moreWeight recommendTopics mainTopic">
                             <div class="flex recommendGap">
                                 <div class="recommendTopic">
                                     <h4>AIDAN</h4>
@@ -655,7 +655,7 @@
                 <div class="col-12">
                     <div class="row">
 
-                        <div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-5 col-11 recommendTopics">
+                        <div class="col-xs-12 col-sm-12 col-xl-3 col-lg-3 col-md-12 col-11 recommendTopics mainTopic">
                             <div class="flex recommendGap">
                                 <div class="recommendTopic">
                                     <h4>AIDAN COMBO</h4>
@@ -676,7 +676,7 @@
                                 <small>Fast Hands needs ninja speed</small>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-xl-5 col-lg-5 col-md-5 col-11 moreWeight recommendTopics">
+                        <div class="col-xs-6 col-sm-6 col-xl-5 col-lg-5 col-md-5 col-11 moreWeight recommendTopics ">
                             <div class="flex recommendGap">
                                 <div class="recommendTopic">
                                     <h4>AIDAN</h4>
@@ -788,7 +788,7 @@
                 </div>
             </div>
         </div>
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-carousel-starReview">
             <div class="starReviewAbout">
                 <div class="rating">
                     <span>
@@ -989,7 +989,7 @@
 
     <!-- Footer starts -->
     <div class="footer">
-        <div class="container">
+        <div class=" footerContainer container">
             <div class="row fleFooter">
                 <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6 ">
                     <div class="footerTopic">
@@ -1096,7 +1096,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $(".owl-carousel-main").owlCarousel({
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
@@ -1106,7 +1106,7 @@
                         nav: true,
                     },
                     605: {
-                        items: 1,
+                        items: 2,
                         nav: true,
                     },
                     940: {
@@ -1124,18 +1124,18 @@
                     },
                 }
             });
-            $("#owl-carousel-1").owlCarousel({
+            $(".owl-carousel-starReview").owlCarousel({
                 loop: true,
                 touchDrag: true,
                 margin: 10,
                 responsiveClass: true,
                 responsive: {
                     300: {
-                        items: 2,
+                        items: 1.3,
                         nav: true,
                     },
                     605: {
-                        items: 1,
+                        items: 2,
                         nav: true,
                     },
                     940: {
