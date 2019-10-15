@@ -36,7 +36,9 @@ a {
 ul li {
     list-style-type: none;
 }
-
+.wholeKit{
+    text-align: center;
+}
 .ruppeSign {
     display: inline-block;
     font-family: "Ping Fang SC";
@@ -91,7 +93,7 @@ ul li {
 }
 
 .shopNowBtn {
-    text-align: right;
+    text-align: center;
 }
 
 .costImg {
@@ -134,6 +136,13 @@ ul li {
         margin-top: -20px;
         margin-bottom: -10px;
     }
+
+}
+@media(max-width: 1100px){
+    .kitImage img{
+        /* margin-top: 30%; */
+    }
+
 }
 
 /* Kit Image Ends */
@@ -566,6 +575,18 @@ ul li {
         top: 32.5rem;
         left: -50rem;
     }
+    .starReviews .topic {
+        font-size: 2.0rem;
+        margin-left: -10px;
+    }
+    .starReviews .line {
+        width: 20vw;
+        height: 6px;
+        margin-top: 5vw;
+    }
+    .starReviews .starReviewsMain {
+        padding-bottom: 8vw;
+    }
 }
 
 @media(max-width: 600px) {
@@ -584,10 +605,17 @@ ul li {
 
     }
     .starReviews .topic {
-        font-size: 1.2rem;
+        font-size: 2.0rem;
         margin-left: -5dpx;
     }
 }
+
+@media(max-width: 450px){
+    .starReviews .topic {
+        font-size: 1.2rem;
+    }
+}
+
 
 .oneColReview {
     margin: 0 auto;
@@ -700,6 +728,12 @@ ul li {
     .popularCategories .indicateNow {
         top: 22rem;
         left: -60rem;
+    }
+}
+
+@media(max-width: 1100px){
+    .popularCategories .topic{
+        font-size: 1.2rem;
     }
 }
 
@@ -836,7 +870,7 @@ ul li {
 .rpRecommends .recommendImage img {
     /* margin-top: -3rem; */
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     filter: drop-shadow(-8px 7px 19px black);
 }
 
@@ -846,15 +880,43 @@ ul li {
 }
 
 @media(max-width:1155px) {
+    .rpRecommends .topic {
+        font-size: 1.2rem;
+    }
     .rpRecommends .recommendTopics {
         background-color: white;
         margin: 1rem 0.5rem;
+    }
+    .rpRecommends .mainTopic{
+        max-width: 91.5vw;
+    }
+    .rpRecommends .recommendTopic h4{
+        font-size: 2.0rem !important;
+    }
+    .rpRecommends .recommendTopic p{
+        font-size: 1.3rem !important;
     }
 }
 
 @media(max-width:992px) {
     .rpRecommends .recommendTopics {
         margin: 1rem 2rem;
+        height: 50vw
+    }
+    .rpRecommends .mainTopic{
+        height: 70vw;
+    }
+    .rpRecommends .topic {
+        font-size: 2.5rem;
+        margin-left: -2px;
+    }
+    .rpRecommends .line {
+        width: 20vw;
+        height: 6px;
+        margin-top: 5vw;
+    }
+    .rpRecommends .rpRecommendsTopic {
+        padding-bottom: 10vw;
     }
 }
 
@@ -886,11 +948,11 @@ ul li {
     }
     .rpRecommends .line {
         height: 6px;
-        margin-top: 3.5vh;
+        margin-top: 40px;
     }
     .recommendTopic{
-        margin-left: 30px !important;
-        margin-top: 50px;
+        margin-left: 0px !important;
+        margin-top: 20px;
     }
     .recommendTopic h4{
         font-size: 2.8rem !important;
@@ -898,14 +960,19 @@ ul li {
     .rpRecommends .recommendTopic p{
         font-size: 1.2rem !important;
     }
+    .mainTopic .recommendTopic{
+        /* margin: 0px !important; */
+    }
 }
+
 
 @media(max-width:600px) {
     .rpRecommends .recommendTopics {
         margin: 1.5rem 1rem;
+        height: 80vw;
     }
     .recommendTopic {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         margin-left: 0px !important;
     }
     .recommendTopic h4{
@@ -922,19 +989,33 @@ ul li {
         filter: drop-shadow(-8px 7px 19px black);
         padding: 30px;
     }
+    .rpRecommends .mainTopic img{
+        padding: 120px;
+    }
+    .rpRecommends .mainTopic {
+        height: 100vw;
+    }
     .kitImage img{
         padding: 30px;
+    }
+}
+@media(max-width: 599px){
+    .rpRecommends .recommendTopics {
+        margin: 1.5rem 1rem;
+        height: unset;
     }
 }
 @media(max-width: 450px){
     .rpRecommends {
         margin-top: -12vh;
+        padding-top: 4vw;
     }
     .rpRecommends .topic{
         font-size: 1.2rem;
     }
     .rpRecommends .line {
         height: 4px;
+        margin-top: 28px;
         width: 10vh;
     }
     .rpRecommends .recommendTopic h4{
@@ -947,12 +1028,34 @@ ul li {
         padding-bottom: 0px !important;
         max-width: 92vw !important;
     }
+    .rpRecommends .rpRecommendsTopic{
+        padding-bottom: 0vw;
+    }
+    .rpRecommends .recommendImage img{
+        padding: 40px;
+    }
+    .rpRecommends .mainTopic img{
+        padding: 70px;
+    }
+}
+@media(max-width: 350px){
+    .rpRecommends .topic{
+        font-size: 0.9rem;
+    }
+    .popularCategories .line{
+        height: 3px !important;
+    }
+    .rpRecommends .line {
+        height: 3px;
+        width: 10vh;
+        margin-top: 25px;
+    }
 }
 
 @media(max-width:1200px) {
     .wholeKit {
         text-align: center;
-        margin-top: 7vh;
+        margin-top: 0vw;
     }
     .shopNowBtn {
         text-align: center;
@@ -2178,6 +2281,10 @@ ul li {
     .featured .insideFeatureRight .codeRp {
         font-size: 10px;
     }
+    .wholeKit {
+        text-align: center;
+        margin-top: 15vw;
+    }
 }
 
 @media(max-width: 450px) {
@@ -2533,7 +2640,11 @@ ul li {
 
 .rpRecommends .recommendImage {
     text-align: center;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .moreWeight .recommendImage {
@@ -2661,7 +2772,7 @@ ul li {
 #mostPopular .recommendImage img {
     /* margin-top:-3rem; */
     width: 70%;
-    height: 70%;
+    /* height: 70%; */
     transition-duration: 0.5s;
     transform: scale(1, 1);
     filter: drop-shadow(-8px 7px 19px black);
@@ -2681,7 +2792,10 @@ ul li {
 
 #mostPopular .recommendImage {
     text-align: center;
-    margin-left: 28px;
+    /* margin-left: 28px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 768px){
@@ -2708,9 +2822,19 @@ ul li {
         position: relative;
         bottom: 2rem;
     }
+    .rpRecommends .recommendImage {
+        text-align: center;
+        /* margin-top: 6rem; */
+        height: 50%;
+    }
 
     
 
+}
+@media(max-width: 1100px){
+    .theMostPop .mostPopRotate{
+        margin-top: 8rem;
+    }
 }
 
 .kit-bag {
@@ -2757,10 +2881,50 @@ ul li {
     z-index: 98
 }
 
+
 .kit-bag .cart-tag a {
     z-index: 99;
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 1000px){
+    .kitBackground .priceKit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kit-bag{
+        margin-top: 8vw;
+        left: unset;
+        margin-top: 5vw;
+    }
+    .wholePriceKit{
+        /* left: 3vw; */
+    }
+}
+@media(max-width: 768px){
+    .kit-bag {
+        margin-top: 8vw;
+        left: 0%;
+        margin-top: 5vw;
+    }
+    .wholePriceKit{
+        left: 3vw;
+    }
+}
+@media(max-width: 600px) {
+    .kit-bag{
+        left: 0%;
+    }
+    .wholePriceKit{
+        left: 5vw;
+        top: 16%;
+    }
+    .starReviews .line{
+        height: 4px;
+        margin-top: 6.5vw;
+    }
 }
 
 #mostPopular .indicateMostPopular {
@@ -3574,7 +3738,7 @@ nav .lists {
         background-color: white;
         margin: 1rem 0.65rem;
         padding: 1rem;
-        min-height: 260px;
+        min-height: 280px;
     }
 }
 
@@ -3583,7 +3747,22 @@ nav .lists {
         background-color: white;
         margin: 1rem 0.65rem;
         padding: 1rem;
-        min-height: 230px;
+        min-height: 40vw;
+    }
+    .popular1 {
+        padding-bottom: 5vw;
+    }
+    .popularCategories .popular1 p{
+        font-size: 2.0rem;
+        margin-left: -2px;
+    }
+    .popularCategories .line{
+        width: 20vw;
+        height: 6px;
+        margin-top: 5vw;
+    }
+    .popularCategories .oneBrand img{
+        padding: 25px;
     }
 }
 @media(max-width: 786px){
@@ -3607,11 +3786,12 @@ nav .lists {
         min-height: 40vh;
     }
     .popularCategories .catImage {
-        margin-top: 60px;
+        /* margin-top: 60px; */
+        height: 40vw;
     }
     .popularCategories .topicPop h4{
-        margin-top: 30px;
-        font-size: 1.5rem;
+        margin-top: 10px;
+        font-size: 1.5rem !important;
     }
     .mainTopic {
         padding-bottom: 70px;
@@ -3620,14 +3800,22 @@ nav .lists {
         margin-top: 20px;
     }
     .mainTopic .recommendTopic {
-        margin-left: 40px !important;
+        /* margin-left: 40px !important; */
     }
     .loadMore {
         margin-top: 30px;
         margin-right: 20px;
     }
 }
-
+@media(max-width: 600px){
+    .popularCategories{
+        height: 120vw;
+    }
+    .popularCategories .topicPop h4 {
+        margin-top: 30px;
+        font-size: 1.2rem !important;
+    }
+}
 @media(max-width:689px) {
     .popularCategories .oneBrand {
         background-color: white;
@@ -3642,7 +3830,49 @@ nav .lists {
         background-color: white;
         margin: 1rem 0.65rem;
         padding: 1rem;
-        min-height: 460px;
+        max-height: 200px;
+    }
+    .popularCategories .popular1 p{
+        font-size: 2.0rem;
+        margin-left: -2px;
+    }
+    .popular1 {
+        margin-bottom: 0vw;
+    }
+    .popularCategories .oneBrand img{
+        padding: 2px;
+    }
+    .topicPop {
+        margin-top: -30px;
+    }
+    .catImage {
+        height: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 450px) {
+    .popularCategories .popular1 p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 350px){
+    .popularCategories .popular1 p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 650px){
+    .rpRecommends {
+        padding-top: unset;
+        margin-top: -5vw;
+    }
+    .moreWeight .recommendImage{
+        height: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -3651,17 +3881,26 @@ nav .lists {
         background-color: white;
         margin: 1rem 0.65rem;
         padding: 1rem;
-        min-height: 225px;
+        min-height: 45vw;
         text-align: left;
     }
     .popularCategories .oneBrand .catImage{
-        margin-top: 30px;
+        margin-top: unset;
     }
 
     .popularCategories .oneBrand h4 {
-        font-size: 15px;
+        font-size: 12px !important;
     }
+.popularCategories .catImage {
+    /* margin-top: 60px; */
+    height: 30vw;
 }
+}
+@media (max-width: 450px){}
+.popularCategories .oneBrand h4 {
+    font-size: 1.5rem;
+}
+
 @media(max-width: 450px){
     .popular1 {
         margin-top: -10px;
@@ -3671,14 +3910,14 @@ nav .lists {
     }
     .popularCategories .line {
         height: 4px;
-        margin-top: 3.5vh;
+        margin-top: 7vw;
         width: 10vh;
     }
     .popularCategories .owl-stage-outer{
         margin-top: -15px;
     }
     .oneBrand .topicPop {
-        margin-top: -20px;
+        margin-top: -40px;
     }
 }
 
@@ -3696,8 +3935,25 @@ nav .lists {
         background-color: white;
         margin: 1rem 0.65rem;
         padding: 1rem;
-        min-height: 260px;
+        min-height: 200px;
     }
+    .starReviews .line {
+        margin-top: 7vw;
+        height: 3px;
+    }
+
+}
+@media(max-width: 350px){
+    .starReviews .line {
+        margin-top: 8.5vw;
+        height: 3px;
+    }
+}
+@media(max-width:375px) {
+    .popularCategories .oneBrand {
+        min-height: 170px;
+    }
+
 }
 
 @media(max-width:2532px) {
@@ -3733,6 +3989,26 @@ nav .lists {
 @media(max-width:1000px) {
     #mostPopular .owl-item {
         min-height: 330px;
+    }
+    .theMostPop .mostPopRotate{
+        transform: rotate(0deg) ;
+        margin-top: 20vw;
+        margin-bottom: 8vw;
+    }
+    .mpDiv{
+        min-height: 70vw;
+    }
+    #mostPopular .recommendImage{
+        height: 55vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mostPopular .recommendTopic h4 {
+        font-size: 2.5rem;
+    }
+    #mostPopular .recommendTopic p {
+        font-size: 1.5rem;
     }
 }
 
@@ -3773,12 +4049,12 @@ nav .lists {
         font-size: 3.2rem;
         color: #051026;
         font-weight: 600;
-        margin-left: 3rem;
+        margin-left: 6rem;
     }
     .theMostPop .mostPopRotate {
         transform: rotate(0deg);
         position: relative;
-        margin-top: 5rem;
+        margin-top: 35vw;
     }
     .theMostPop .popularMost {
         font-size: 4rem;
@@ -3790,7 +4066,7 @@ nav .lists {
     }
     .theMostPop .lineMost {
         position: absolute;
-        width: 6rem;
+        width: 8.5rem;
         height: 0.5rem;
         background-color: #051026;
         top: 2.4rem;
@@ -3812,7 +4088,7 @@ nav .lists {
         transform: rotate(90deg);
         position: absolute;
         width: 26%;
-        top: -2.5rem;
+        top: -3.5rem;
         left: 5rem;
     }
 }
@@ -3847,7 +4123,7 @@ nav .lists {
         padding-top: -1rem;
     }
     .theMostPopContainer {
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .theMostPop .topicMost {
         position: relative;
@@ -3887,6 +4163,22 @@ nav .lists {
     .starReviewAbout .name {
         margin-top: -10vh;
     }
+    .theMostPop .mostPopRotate {
+        margin-top: 10vw;
+    }
+    .owl-carousel .owl-item img{
+        padding: 5px !important;
+    }
+}
+@media (max-width: 350px){
+.theMostPop .mostPopRotate {
+    margin-top: unset;
+}
+}
+@media (max-width: 375px){
+.theMostPopContainer {
+    margin-top: unset;
+}
 }
 
 @media(max-width:380px) {
@@ -3899,5 +4191,109 @@ nav .lists {
     }
     .theMostPop {
         margin-top: -6rem;
+    }
+}
+
+/* new carousel */
+.navbar {
+    background-color: white;
+}
+
+.landing-carousel {
+    min-height: 90vh;
+}
+.single-item img{
+    min-width: 100vw;
+    min-height: 90vh;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.single-item {
+    min-width: 100vw;
+    min-height: 90vh;
+}
+.explorebtn {
+    border-radius: 6px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    padding: 15px 20px;
+    color: rgb(173, 26, 48);
+    border: 2px solid rgb(173, 26, 48);
+    text-decoration: none;
+    position: absolute;
+    top: 55vh;
+    left: 20vw;
+}
+.explorebtn:hover {
+    background-color:  rgb(173, 26, 48);
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.btn2{
+    left: 64vw;
+}
+.btn3{
+    top: 70vh;
+}
+.catImage{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .owl-item img{
+    padding: 20px;
+}
+.subNav{
+    background-color: #051026;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2.6vw;
+}
+.subNav a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+.subNav a:hover {
+    color: rgb(165, 162, 162);
+}
+.landing-carousel .owl-dots{
+    display: none;
+}
+.landing-carousel .owl-nav {
+    margin-left: 2.5vw;
+    min-width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    position: absolute;
+    bottom: 45vh;
+}
+.landing-carousel .owl-nav span{
+    color: rgb(168, 167, 167);
+    margin-left: 0vw;
+    font-weight: 200;
+}
+.landing-carousel .owl-nav .owl-prev {
+    transform: scale(10);
+    padding-top: -40px;
+    /* margin-right: 4vw; */
+  
+}
+/* .landing-carousel .owl-nav .owl-prev:hover{
+    border: unset;
+} */
+
+.landing-carousel .owl-nav .owl-next {
+    transform: scale(10);
+}
+@media(max-width: 1024px){
+    .subNav{
+        display: none;
     }
 }
