@@ -379,7 +379,7 @@ ul li {
 /* Footer Starts  */
 
 .footerBottom {
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .footer {
@@ -428,6 +428,9 @@ ul li {
     padding: 6px 15px;
 }
 
+.footerComponent {
+    margin-right: 40px;
+}
 .footerBottom #mailButton {
     margin-top: -.3rem;
     border: none;
@@ -450,13 +453,16 @@ ul li {
     background-color: #da2957;
 }
 .jksLogo {
-    margin-left: 13vw;
-    margin-top: -7vw;
+    /* margin-left: 13vw;
+    margin-top: -7vw; */
+    margin-left: -100px;
 }
 
 .jksLogo img{
-    height: 250px;
-    width: 300px;
+    position: relative;
+    left: 50px;
+    height: 170px;
+    width: 150px;
 }
 /* blockquote {
     margin-top: -20px;
@@ -481,26 +487,14 @@ blockquote p::after {
 blockquote {
     border:none;
     font-family:Georgia, "Times New Roman", Times, serif;
-    margin-bottom:-30px;
+    /* margin-bottom:-30px; */
     }
     
     blockquote p {
-        font-size:16px;
-        margin-top: 10px;
+        font-size:15px;
+        margin-top: 100px;
     }
-    
-    blockquote p:before { 
-        content: open-quote;
-        font-weight: bold;
-        font-size:40px;
-        color:#da2957;
-    } 
-    blockquote p:after { 
-        content: close-quote;
-        font-weight: bold;
-        font-size:40px;
-        color:#da2957;
-    }
+
 
 .jksQuote{
     position: relative;
