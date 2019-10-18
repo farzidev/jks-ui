@@ -428,6 +428,9 @@ ul li {
     padding: 6px 15px;
 }
 
+.footerComponent {
+    margin-right: 40px;
+}
 .footerBottom #mailButton {
     margin-top: -.3rem;
     border: none;
@@ -437,7 +440,10 @@ ul li {
     border-radius: 0 4px 4px 0;
     background-color: #e02352;
 }
-
+.followUs {
+    margin-left: 7rem;
+    margin-top: 35px;
+}
 .followUs .logos li a {
     display: inline-block;
     border-radius: 50%;
@@ -446,7 +452,54 @@ ul li {
     margin: 0px 1.03rem;
     background-color: #da2957;
 }
+.jksLogo {
+    /* margin-left: 13vw;
+    margin-top: -7vw; */
+    margin-left: -100px;
+}
 
+.jksLogo img{
+    position: relative;
+    left: 50px;
+    height: 170px;
+    width: 150px;
+}
+/* blockquote {
+    margin-top: -20px;
+}
+
+blockquote h4 {
+    color: #e02352;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.808);
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+} */
+blockquote {
+    border:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    /* margin-bottom:-30px; */
+    }
+    
+    blockquote p {
+        font-size:15px;
+        margin-top: 100px;
+    }
+
+
+.jksQuote{
+    position: relative;
+    bottom: 15px;
+}
 /* Footer Ends  */
 
 /* Star Reviews Starts  */
