@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>JKS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <script src="https://kit.fontawesome.com/8a64417275.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <!-- navbar starting -->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <div class="logoImage">
+                        <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse lists" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto wholeLinks">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Categories<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Popular</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="allIcons">
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar starting -->
+
+            <div class="cartContainer">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="flex cartHeading">
+                        <div class="line">
+                            <!-- <span class="line"></span> -->
+                        </div>
+                        <div>
+                            <p class="topic">Shopping Cart</p>
+                        </div>
+                        <div>
+                            <p class="items">2 items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div>
+                        <div class="row classItem">
+                            <div class="prod-image">
+                                <img src="assets/images/cart-images/leg-pads.png">
+                            </div>
+                            <div class="prod-description">
+                                <div class="flex">
+                                    <h2>FALCON</h2>
+                                    <div class="color color-1">
+                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                            alt="img" />
+                                    </div>
+                                </div>
+                                <p>WICKETKEEPER PADS</p>
+                                <div class="flex add-btn">
+                                    <button type="button">+</button>
+                                    <h2>&nbsp 01 &nbsp</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <!--visible only on mobile-->
+                            <div class="mobile-btn">
+                                <div class="flex">
+                                    <button type="button">+</button>
+                                    <h2>01</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="flex">
+                                    <del>
+                                        <p><span class="rupeeSign">₹</span><span class="cost">1999 </span></p>
+                                    </del>
+                                    <p class="discount">&nbsp 30% OFF</p>
+                                </div>
+                                <h2>₹1277</h2>
+                            </div>
+                            <div class="delete">
+                                <i class="delIcon fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="cart col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div>
+                        <div class="row classItem">
+                            <div class="prod-image">
+                                <img src="assets/images/cart-images/gloves.png">
+                            </div>
+                            <div class="prod-description">
+                                <div class="flex">
+                                    <h2>NINjA</h2>
+                                    <div class="color color-2">
+                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                            alt="img" />
+                                    </div>
+                                </div>
+                                <p>WICKETKEEPER GLOVES</p>
+                                <div class="flex  add-btn">
+                                    <button type="button">+</button>
+                                    <h2>&nbsp 02 &nbsp</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="mobile-btn">
+                                <div class="flex">
+                                    <button type="button">+</button>
+                                    <h2>02</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="flex">
+                                    <del>
+                                        <p><span class="rupeeSign">₹</span><span class="cost">2999 </span></p>
+                                    </del>
+                                    <p class="discount">&nbsp 30% OFF</p>
+                                </div>
+                                <h2>₹2177</h2>
+                            </div>
+                            <div class="delete">
+                                <i class="delIcon fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div>
+                        <div class="row classItem">
+                            <div class="prod-image">
+                                <img class="img-responsive" src="assets/images/cart-images/leg-pads.png">
+                            </div>
+                            <div class="prod-description">
+                                <div class="flex">
+                                    <h2>FALCON</h2>
+                                    <div class="color color-3">
+                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                            alt="img" />
+                                    </div>
+                                </div>
+                                <p>WICKETKEEPER PADS</p>
+                                <div class="flex  add-btn">
+                                    <button type="button">+</button>
+                                    <h2>&nbsp 01 &nbsp</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="mobile-btn">
+                                <div class="flex">
+                                    <button type="button">+</button>
+                                    <h2>01</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="flex">
+                                    <del>
+                                        <p><span class="rupeeSign">₹</span><span class="cost">1999 </span></p>
+                                    </del>
+                                    <p class="discount">&nbsp 30% OFF</p>
+                                </div>
+                                <h2>₹1277</h2>
+                            </div>
+                            <div class="delete">
+                                <i class="delIcon fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                    <div>
+                        <div class="row classItem">
+                            <div class="prod-image">
+                                <img src="assets/images/cart-images/gloves.png">
+                            </div>
+                            <div class="prod-description">
+                                <div class="flex">
+                                    <h2>NINjA</h2>
+                                    <div class="color color-4">
+                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                            alt="img" />
+                                    </div>
+                                </div>
+                                <p>WICKETKEEPER GLOVES</p>
+                                <div class="flex add-btn">
+                                    <button type="button">+</button>
+                                    <h2>&nbsp 02 &nbsp</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="mobile-btn">
+                                <div class="flex">
+                                    <button type="button">+</button>
+                                    <h2>02</h3>
+                                        <button class="neg-button" type="button">-</button>
+                                </div>
+                            </div>
+                            <div class="itemPrice">
+                                <div class="flex">
+                                    <del>
+                                        <p><span class="rupeeSign">₹</span><span class="cost">2999 </span></p>
+                                    </del>
+                                    <p class="discount">&nbsp 30% OFF</p>
+                                </div>
+                                <h2>₹2177</h2>
+                            </div>
+                            <div class="delete">
+                                <i class="delIcon fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!-- cHECKOUT component-->
+        <div class="checkout col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="checkoutContainer">
+                <div class="checkoutHeading">
+                    <h2>CHECKOUT</h2>
+                    <p>Total 4 items</p>
+                </div>
+                <div class="totalPrice">
+                    <div class="flex" style="align-items: center; height: 90%;">
+                        <div class="totalPriceContainer flex">
+                            <p>Total Price &nbsp </p>
+                            <div class="discount flex">
+                                <del>
+                                    <p><span class="rupeeSign">₹</span><span class="cost">2999 </span></p>
+                                </del>
+                                <p class="off">&nbsp 30% OFF</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <h2 class="priceTag">₹2177</h2>
+                </div>
+                <div class="address">
+                    <div class="selector">
+                        <p>Select Delivery Address</p>
+                    </div>
+                    <div class="options">
+                        <div class="radio">
+                            <label class="flex"><input type="radio" name="optradio" checked>
+                                <div class="radio-option">
+                                    <h2>Piyush Tyagi</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sint?</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label class="flex"><input type="radio" name="optradio">
+                                <div class="radio-option">
+                                    <h2>Piyush Tyagi</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sint?</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio disabled">
+                            <label class="flex"><input type="radio" name="optradio" disabled>
+                                <div class="radio-option">
+                                    <h2>Piyush Tyagi</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sint?</p>
+                                </div>
+                            </label>
+                        </div>
+                        <p class="add-address">Add new address</p>
+                        <div class="payContainer">
+                        <button class="pay">Proceed to Pay</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="checkoutFooter">
+                    <p>SCROLL DOWN FOR DETAILS</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mobile-total flex col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="calc-total">
+                <h2>Total Price</h2>
+            </div>
+            <div class="discount flex">
+                <del>
+                    <p><span class="rupeeSign">₹</span><span class="cost">2999 </span></p>
+                </del>
+                <p class="off">&nbsp; 30% OFF</p>
+                <br />
+                <p class="price"><span class="rupeeSign">₹</span>2000</p>
+            </div>
+
+        </div>
+
+        <div class="mobile-pay flex col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>Proceed to Pay</h2>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
