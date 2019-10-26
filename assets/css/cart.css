@@ -29,7 +29,7 @@ body {
 /* Navbar css*/
 
 nav {
-    background-color: #fafafa;
+    background-color: white;
     padding: 0px !important;
     /* position:fixed !important;
     width:100% !important;
@@ -55,6 +55,7 @@ nav {
 
 .wholeLinks {
     display: flex;
+    margin-top: -15px;
 }
 
 .wholeLinks li {
@@ -75,6 +76,7 @@ nav {
 
 .allIcons {
     display: flex;
+    list-style: none;
     background-color: white;
     justify-content: space-evenly;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 66% 122%, 91% 100%, 19% 100%, -18% 20%, -8% -21%);
