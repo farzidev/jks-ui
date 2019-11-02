@@ -28,6 +28,8 @@ body {
 
 /* Navbar css*/
 
+/* Navbar css*/
+
 nav {
     background-color: white;
     padding: 0px !important;
@@ -99,9 +101,44 @@ nav {
     color: #051260;
 }
 
+.allIcons .total-cart-items{
+    color: white;
+    background-color: #051026;
+    padding: 1px 4px;
+    border-radius: 50%;
+    right: 0px;
+    font-weight: 500;
+}
+
 nav .lists {
     margin-bottom: -14.5px;
 }
+
+.subNav {
+    background-color: #051026;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2.6vw;
+}
+
+.subNav a {
+    text-decoration: none;
+    margin-top: 3px;
+    color: white;
+    font-size: 12px;
+}
+
+.subNav a:hover {
+    color: rgb(165, 162, 162);
+}
+
+@media(max-width: 700px) {
+    .subNav {
+        display: none;
+    }
+}
+
 
 /* Cart section starts */
 
@@ -243,6 +280,8 @@ nav .lists {
 
 .checkout {
     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    left: 75.5%;
 }
 
 .checkoutHeading {
@@ -320,7 +359,7 @@ nav .lists {
 }
 
 .address {
-    height: 65vh;
+    height: 60vh;
     background-color: white;
 }
 
@@ -612,6 +651,24 @@ input[type='radio']:checked:after {
     font-style: italic;
 }
 
+.delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.delete i:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.delete a{
+    color: #e71c4c; 
+    margin-left: -15px;
+}
+.delete a:hover{
+    color: #e71c4c; 
+    transform: scale(1.05);
+}
 @media(min-width: 1000px) {
     .mobile-pay {
         display: none;
@@ -697,6 +754,7 @@ input[type='radio']:checked:after {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: -25px;
 }
 .pay{
     /* margin-left: 70px; */
@@ -708,4 +766,13 @@ input[type='radio']:checked:after {
     padding: 10px 50px 10px 50px;
     margin-top: 20px;
     font-family: "Open Sans";
+    transition: 0.5s ease;
+}
+.pay:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: white;
+    color: #e71c4c;
+    border: 1px solid #e71c4c;
+    font-weight: 800;
 }
