@@ -97,7 +97,7 @@ nav {
     color: #051260;
 }
 
-.allIcons .total-cart-items{
+.allIcons .total-cart-items {
     color: white;
     background-color: #051026;
     padding: 1px 4px;
@@ -372,6 +372,52 @@ blockquote p {
 
 /* product container starts */
 
+.head-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .dropdown button {
+    /* Style for "Rectangle" */
+    width: 174px;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    background-color: #eeecec;
+    color: #000000;
+    margin-right: 30px;
+    transition: 0.35s ease;
+}
+.filter .dropdown button:hover{
+    transform: scale(1.05);
+    background-color: #051026;
+    color: #eeecec;
+}
+
+.sort-by .dropdown button {
+    width: 114px;
+    height: 39px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    background-color: #eeecec;
+    color: #000000;
+    transition: 0.35s ease;
+
+}
+
+.sort-by .dropdown button:hover{
+    transform: scale(1.05);
+    background-color: #051026;
+    color: #eeecec;
+}
+
+@media(max-width: 900px) {
+    .head-container {
+        display: unset;
+
+    }
+}
+
 /* Rps Recommends Starts  */
 
 .rpRecommends {
@@ -393,7 +439,7 @@ blockquote p {
     cursor: pointer;
 }
 
-.rpRecommendsTopic{
+.rpRecommendsTopic {
     margin-bottom: 50px;
 }
 
@@ -495,7 +541,7 @@ blockquote p {
     margin-right: 20px;
 }
 
-.clear-filters i{
+.clear-filters i {
     margin-top: 7px;
     transform: scale(1.25);
 }
@@ -726,7 +772,7 @@ blockquote p {
         display: flex;
         justify-content: space-between;
     }
-    .filter-links{
+    .filter-links {
         display: unset;
     }
     .rpRecommends {
@@ -2009,13 +2055,13 @@ blockquote p {
         text-align: center;
         margin-top: 15vw;
     }
-    .middle-mobile-only{
+    .middle-mobile-only {
         display: none
     }
 }
 
-@media(min-width: 960px){
-    .mobile-only{
+@media(min-width: 960px) {
+    .mobile-only {
         display: none;
     }
 }
@@ -2234,5 +2280,3 @@ blockquote p {
     padding: 10px 20px;
     border-radius: 3px;
 }
-
-
