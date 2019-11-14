@@ -417,7 +417,7 @@ blockquote p {
     margin-left: 45px;
 }
  .container .options{
-     border-right: 1px solid black;
+    box-shadow: 8px 5px 15px grey;
  }
  .container .current{
      background-color: #051026;
