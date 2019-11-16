@@ -403,7 +403,7 @@ blockquote p {
 
 .container .personalDetails{
     margin: 35px 0px;
-    transition: 0.25s ease;
+    transition: 0.20s ease;
 }
 .profileContainer{
     background-color: white;
@@ -417,7 +417,7 @@ blockquote p {
     margin-left: 45px;
 }
  .container .options{
-     border-right: 1px solid black;
+    box-shadow: 8px 5px 15px grey;
  }
  .container .current{
      background-color: #051026;
@@ -442,31 +442,22 @@ blockquote p {
      background-color: rgb(226, 225, 225);
  }
 
- .change .passwordChange{
-     display: flex;
-     justify-content: space-evenly;
-     margin-top: 20px;
- }
- .change .passwordChange p{
-     color: rgb(136, 136, 136)
- }
 
  .payContainer{
     width: 100%;
     display: flex;
     justify-content: left;
     margin-top: 25px;
-    margin-left: 150px;
+    margin-left: 10px;
 }
 .pay{
     /* margin-left: 70px; */
     font-size: 17px;
     color: white;
     border: unset;
-    border-radius: 40px;
+    border-radius: 5px;
     background-color: #e71c4c;
     padding: 10px 50px 10px 50px;
-    margin-top: 20px;
     font-family: "Open Sans";
     transition: 0.5s ease;
 }
@@ -478,7 +469,25 @@ blockquote p {
     border: 1px solid #e71c4c;
     font-weight: 800;
 }
+.address {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 30px;
+}
+.address-container{
+    margin-top: 50px;
+}
 
+.address h3{
+    font-weight: 600;
+}
+.icons i{
+    color: #da2957;
+}
+.icons i:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
 .container .personalDetails:hover{
     background-color: #051026;
     color: white;
