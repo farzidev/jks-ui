@@ -9,7 +9,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/profilePassword.css">
+    <link rel="stylesheet" href="./assets/css/profileOrderTrack.css">
     <script src="https://kit.fontawesome.com/8a64417275.js"></script>
     <title>Document</title>
 </head>
@@ -85,10 +85,10 @@
                 <div onclick=" window.location.href = 'profilePersonal.html';" class="personalDetails ">
                     <h2>Persona Details</h2>
                 </div>
-                <div onclick=" window.location.href = 'ProfileOrders.html';" class="personalDetails">
+                <div class="personalDetails current">
                     <h2>My Orders</h2>
                 </div>
-                <div  onclick=" window.location.href = 'profilePassword.html';"  class="personalDetails current">
+                <div onclick=" window.location.href = 'profilePassword.html';" class="personalDetails">
                     <h2>Change Password</h2>
                 </div>
                 <div onclick=" window.location.href = 'profileManage.html';" class="personalDetails">
@@ -101,23 +101,87 @@
                     <h2>Logout</h2>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-9">
-                <div class="change">
-                    <div class="flex passwordChange">
-                        <p>Current Passowrd</p>
-                        <input type="text" placeholder="enter password">
+            <div style="padding-bottom: 20px;" class="col-xl-9 col-lg-9">
+                <div class="container">
+                    <div class="track">
+                        <div class="id-container">
+                            <p>Order ID: AD23123HJ237K</p>
+                            <button href="#">Track</button>
+                        </div>
+                        <div class="cart col-lg-11 col-xl-11 col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <div class="row classItem">
+                                    <div class="prod-image">
+                                        <img src="assets/images/AJAX (2).png">
+                                    </div>
+                                    <div class="prod-description">
+                                        <div class="flex">
+                                            <h2>NINjA</h2>
+                                            <div class="color color-2">
+                                                <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                                    alt="img" />
+                                            </div>
+                                        </div>
+                                        <p>WICKETKEEPER GLOVES</p>
+                                        <p>Quantity: <span>01</span></p>
+                                    </div>
+
+                                    <div class="itemPrice">
+                                        <div class="flex">
+                                            <del>
+                                                <p><span class="rupeeSign">₹</span><span class="cost">2999 </span></p>
+                                            </del>
+                                            <p class="discount">&nbsp 30% OFF</p>
+                                        </div>
+                                        <h2>₹2177</h2>
+                                    </div>
+                                    <div class="itemPrice">
+                                        <div class="flex">
+                                            <p class="discount">Expected Date of Delivery</p>
+                                        </div>
+                                        <h2>27th November</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="orderTimeLine">
+                            <div class="timeline">
+                                <div class="event down">
+                                    <div class="detail">Ordered</div>
+                                </div>
+                                <div class="event down">
+                                    <div class="detail">Packed</div>
+                                </div>
+                                <div class="event down">
+                                    <div class="detail">Shipped</div>
+                                </div>
+                                <div class="event down">
+                                    <div class="detail">Delivered</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div style="margin-left: 50px;" class="cancelation">
+                            <p>You will get notified about the status of product on abc@yxz.com and on 9999900000</p>
+                            <div style="margin-bottom: 20px" class="flex btns">
+                                <button id="cancelBtn" style="color: red" href="#">Cancel order</button>
+                                <button href="#">Download invoice</button>
+                            </div>
+                            <div id="reason" style="margin-top: 20px;" class="reason">
+                                <textarea rows="4" cols="50">Your Reason for cancelation
+                                </textarea><br />
+                                <button style="color: red" href="#">Cancel order</button>
+                            </div>
+                        </div>
+
+
+
                     </div>
-                    <div class="flex passwordChange">
-                        <p>New Passowrd</p>
-                        <input style="margin-left: 19px;" placeholder="New password" type="password">
-                    </div>
-                    <div class="flex passwordChange">
-                        <p>Re-Enter Passowrd</p>
-                        <input style="margin-right: 5px;" placeholder="re-enter password" type="password">
-                    </div>
-                    <div class="payContainer">
-                        <button class="pay">Update Password</button>
-                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -241,6 +305,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#cancelBtn").click(e => {
+            document.getElementById("reason").style.display = "unset";
+            document.getElementById("cancelBtn").style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
