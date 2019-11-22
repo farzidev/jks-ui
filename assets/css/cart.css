@@ -134,6 +134,19 @@ nav {
     right: 0px;
     font-weight: 500;
 }
+.allIcons .total-cart-items {
+    color: white;
+    background-color: #051026;
+    padding: 1px 4px;
+    border-radius: 50%;
+    right: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    /* margin-bottom: 10px; */
+    /* margin-top: -10px; */
+    position: relative;
+    bottom: 10px;
+}
 
 nav .lists {
     margin-bottom: -14.5px;
