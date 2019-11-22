@@ -1,0 +1,411 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin-top: -15px;
+    background-color: #eeecec;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* overflow-x:hidden;  */
+}
+
+.col-lg-9 {
+    padding-right: unset;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Navbar css*/
+
+/* Navbar css*/
+
+nav {
+    background-color: white;
+    padding: 0px !important;
+    /* position:fixed !important;
+    width:100% !important;
+    top:0px;
+    z-index:1000; */
+}
+
+.navbar-brand {
+    text-align: center;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 68% 100%, 0% 100%);
+    background-color: white;
+    padding-right: 40px;
+    margin-top: 0px;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -8px;
+}
+
+.logoImage img {
+    width: 90%;
+}
+
+.wholeLinks {
+    display: flex;
+    margin-top: -15px;
+}
+
+.wholeLinks li {
+    margin: 0px 20px;
+    color: #051026 !important;
+}
+
+.wholeLinks li a {
+    color: #051026;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+.wholeLinks li a:hover {
+    text-decoration: none;
+    color: #051026;
+}
+
+.allIcons {
+    display: flex;
+    list-style: none;
+    background-color: white;
+    justify-content: space-evenly;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 66% 122%, 91% 100%, 19% 100%, -18% 20%, -8% -21%);
+}
+
+.allIcons li a {
+    color: #051026;
+}
+
+.allIcons li {
+    margin: 22px 20px;
+}
+
+.allIcons li a:hover {
+    text-decoration: none;
+    color: #051260;
+}
+
+.allIcons i {
+    color: #051260;
+}
+
+.allIcons .total-cart-items {
+    color: white;
+    background-color: #051026;
+    padding: 1px 4px;
+    border-radius: 50%;
+    right: 0px;
+    font-weight: 500;
+}
+
+nav .lists {
+    margin-bottom: -14.5px;
+}
+
+.subNav {
+    background-color: #051026;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2.6vw;
+}
+
+.subNav a {
+    text-decoration: none;
+    margin-top: 3px;
+    color: white;
+    font-size: 12px;
+}
+
+.subNav a:hover {
+    color: rgb(165, 162, 162);
+}
+
+@media(max-width: 700px) {
+    .subNav {
+        display: none;
+    }
+}
+
+/* footer css */
+
+/* footer css */
+
+.footerBottom {
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 2.5rem 0rem;
+    background-color: black;
+    color: white;
+}
+
+.footer .footerTopic {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+}
+
+.footer ul {
+    margin: 1rem 0rem;
+}
+
+.footer ul li a {
+    display: inline-block;
+    color: white;
+    letter-spacing: 0.2px;
+    font-size: 0.8rem;
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+}
+
+.footerBottom h4 {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.footerBottom .paraLetter {
+    font-size: 0.8rem;
+}
+
+.footerBottom input {
+    position: relative !important;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    padding: 6px 15px;
+}
+
+.footerComponent {
+    /* margin-right: 40px; */
+}
+
+.footerBottom #mailButton {
+    margin-top: -.3rem;
+    border: none;
+    /* left:21.9rem; */
+    color: white;
+    padding: 9px 17px;
+    border-radius: 0 4px 4px 0;
+    background-color: #e02352;
+}
+
+.followUs {
+    /* margin-left: 7rem; */
+    margin-top: 35px;
+}
+
+.followUs .logos li a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0px 1.03rem;
+    background-color: #da2957;
+}
+
+.followUs .logos ul {
+    list-style-type: none;
+}
+
+.jksLogo {
+    /* margin-left: 13vw;
+    margin-top: -7vw; */
+    margin-left: -80px;
+    margin-top: 30px;
+}
+
+.jksLogo img {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    height: 110px;
+    width: 90px;
+}
+
+.logoMain a i {
+    position: relative;
+    top: 7px;
+    bottom: 0px;
+    left: 10px;
+    font-size: 18px;
+}
+
+.mailIdBox {
+    position: relative !important;
+}
+
+.btnSend {
+    position: absolute;
+    right: -3px;
+    top: 0.9rem;
+}
+
+/* blockquote {
+    margin-top: -20px;
+}
+
+blockquote h4 {
+    color: #e02352;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.808);
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+} */
+
+blockquote {
+    border: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* margin-bottom:-30px; */
+}
+
+blockquote p {
+    font-size: 16px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.jksQuote {
+    position: relative;
+    bottom: 15px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+@media (max-width: 450px) {
+    .fleFooter .footerComponent {
+        width: 50%;
+    }
+    .fleFooter {
+        text-align: left;
+    }
+    .footer .footerContainer {
+        width: 90vw;
+    }
+    .footerBottom {
+        display: block;
+        text-align: left;
+    }
+    .logoMain a i {
+        left: 10px !important;
+    }
+}
+
+@media(max-width:1013px) {
+    .fleFooter {
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+    .footerBottom {
+        display: block;
+        text-align: center;
+    }
+    .logos ul {
+        margin-top: 35px;
+        justify-content: center;
+    }
+    .followUs {
+        margin-left: unset;
+    }
+    .logoMain a i {
+        left: 0px;
+    }
+}
+
+@media(max-width:767px) {
+    .footerBottom {
+        display: block;
+        text-align: bottom;
+    }
+}
+
+@media(max-width: 450px) {
+    .fleFooter .footerComponent {
+        width: 50%;
+    }
+    .footerBottom {
+        text-align: left;
+    }
+    .logos ul {
+        justify-content: left;
+    }
+    .fleFooter {
+        text-align: left;
+    }
+    .footer .footerContainer {
+        width: 90vw;
+    }
+    .col-lg-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .followUs {
+        margin-left: unset;
+    }
+}
+.line {
+    margin-top: 27px;
+    width: 6rem;
+    height: 5px;
+    background-color: #051026;
+    margin-left: 14px;
+    margin-right: -4px;
+}
+
+.topic {
+    color: #051026;
+    font-family: "Open Sans";
+    margin-left: -5px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.policy-container {
+    margin-top: 50px;
+    background-color: white;
+    margin-bottom: 200px;
+}
+
+.cont{
+    padding: 20px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.cont ul{
+    margin-left: 40px;
+}
