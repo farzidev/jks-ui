@@ -60,7 +60,7 @@
             <div>
                 <ul class="allIcons">
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                    <li><a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
                                 class="fas fa-user-alt"></i></a></li>
                     <li><a href="#"><i class="fas fa-heart"></i></a></li>
                     <li><a href="cart.html"><i class="fas fa-shopping-cart"></i><span
@@ -89,7 +89,8 @@
                                     <img src="assets/images/logo_jk_sports_FINAL.png">
                                 </div>
                                 <p>Login using social media to get quick access</p>
-                                <button style="display: block; background-color: rgb(221, 0, 0)" href="#"><i style="color: white;" class="fab fa-google"></i>&nbsp Signin with
+                                <button style="display: block; background-color: rgb(221, 0, 0)" href="#"><i
+                                        style="color: white;" class="fab fa-google"></i>&nbsp Signin with
                                     google</button>
                                 <button href="#" style="background-color: rgb(0, 0, 221); margin-bottom: 90px;"><i
                                         style="color: white;" class="fab fa-facebook-f"></i>&nbsp Signin
@@ -136,9 +137,10 @@
                                     we’ll send you a link to reset your password</p>
                                 <input placeholder="Email" type="text" />
                                 <button href="#">Sign Up</button>
-                                <p style="color: gray; margin-top: 10px;">Already have an account? <a id="signin" href="#">Sign In Now</a>
+                                <p style="color: gray; margin-top: 10px;">Already have an account? <a id="signin"
+                                        href="#">Sign In Now</a>
                                 </p>
-                                <p style="color: gray">Don't have an account? <a id = "signup" href="#">Sign Up Now</a>
+                                <p style="color: gray">Don't have an account? <a id="signup" href="#">Sign Up Now</a>
                                 </p>
 
                             </div>
@@ -1253,9 +1255,14 @@
             document.getElementById("login-section").style.display = "none";
             document.getElementById("password-section").style.display = "unset";
             document.getElementById("register-section").style.display = "none";
-        })
+        });
         $("#signin").click(() => {
             console.log("signin clicked")
+            document.getElementById("login-section").style.display = "unset";
+            document.getElementById("password-section").style.display = "none";
+            document.getElementById("register-section").style.display = "none";
+        });
+        $("#login-toggeler").click(() => {
             document.getElementById("login-section").style.display = "unset";
             document.getElementById("password-section").style.display = "none";
             document.getElementById("register-section").style.display = "none";

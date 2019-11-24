@@ -4620,10 +4620,10 @@ blockquote p {
     display: unset;
 }
 .register-section{
-    display: none;
+    display: unset;
 }
 .password-section{
-    display: none;
+    display: unset;
 }
 #forgot:hover{
     cursor: pointer;
