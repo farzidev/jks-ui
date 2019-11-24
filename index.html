@@ -60,9 +60,11 @@
             <div>
                 <ul class="allIcons">
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                class="fas fa-user-alt"></i></a></li>
                     <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i><span
+                                class="total-cart-items">1</span></a></li>
                 </ul>
             </div>
         </div>
@@ -74,6 +76,79 @@
         <a href="#">Rps Recommended</a>
         <a href="#">Super Saver Kit</a>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div style="max-width: 800px;" class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <div class="container">
+                                <div class="loginContainer">
+                                    <img src="assets/images/logo_jk_sports_FINAL.png">
+                                </div>
+                                <p>Login using social media to get quick access</p>
+                                <button style="display: block; background-color: rgb(221, 0, 0)" href="#"><i style="color: white;" class="fab fa-google"></i>&nbsp Signin with
+                                    google</button>
+                                <button href="#" style="background-color: rgb(0, 0, 221); margin-bottom: 90px;"><i
+                                        style="color: white;" class="fab fa-facebook-f"></i>&nbsp Signin
+                                    with facebook</button>
+                            </div>
+                        </div>
+                        <div id="login-section" style="background-color: #eeecec;"
+                            class="login-section col-lg-6 col-xl-6">
+                            <div style="text-align: center" class="container email">
+                                <h3>Log in to your account</h3>
+                                <p style="color: gray">Don't have an account? <a id="signup" href="#">Sign Up Now</a>
+                                </p>
+                                <input placeholder="Email" type="text" />
+                                <input placeholder="Password" type="password" />
+                                <div style="display: flex; justify-content: space-between; margin-top: 10px;"
+                                    class="remember flex">
+                                    <div class="flex">
+                                        <input type="checkbox" value="Bike">
+                                        <p>Remember me</p>
+
+                                    </div>
+                                    <a id="forgot" style="color: #F30056">Forgot Password?</a>
+                                </div>
+                                <button href="#">Login with Email</button>
+                            </div>
+                        </div>
+                        <div id="register-section" style="background-color: #eeecec;"
+                            class="register-section col-lg-6 col-xl-6">
+                            <div style="text-align: center" class="container email">
+                                <h3>Sign up for free!!</h3>
+                                <p style="color: gray">Already have an account? <a id="signin" href="#">Sign In Now</a>
+                                </p>
+                                <input placeholder="Name" type="text" />
+                                <input placeholder="Email" type="text" />
+                                <input placeholder="Password" type="password" />
+                                <button href="#">Sign Up</button>
+                            </div>
+                        </div>
+                        <div id="password-section" style="background-color: #eeecec;"
+                            class="password-section col-lg-6 col-xl-6">
+                            <div style="text-align: center" class="container email">
+                                <h3>Recover Your Password</h3>
+                                <p style="color: gray">Fill in your email address below and
+                                    we’ll send you a link to reset your password</p>
+                                <input placeholder="Email" type="text" />
+                                <button href="#">Sign Up</button>
+                                <p style="color: gray; margin-top: 10px;">Already have an account? <a id="signin" href="#">Sign In Now</a>
+                                </p>
+                                <p style="color: gray">Don't have an account? <a id = "signup" href="#">Sign Up Now</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- navbar ending -->
 
     <section class="">
@@ -365,10 +440,10 @@
 
     <!-- featured news starts -->
     <div class="featured">
-        <img src="assets/images/RP's web.png" alt="image" /> 
+        <img src="assets/images/RP's web.png" alt="image" />
     </div>
     <div class="mobile-featured">
-        <img src="assets/images/Rp's mobile.png" alt="image" /> 
+        <img src="assets/images/Rp's mobile.png" alt="image" />
     </div>
     <!-- featured news Ends -->
 
@@ -597,8 +672,8 @@
                 </div>
                 <div class="col-12">
                     <center>
-                        <button onclick=" window.location.href = 'products.html';" class="loadMore"
-                            type="submit">Load More</button>
+                        <button onclick=" window.location.href = 'products.html';" class="loadMore" type="submit">Load
+                            More</button>
                     </center>
                 </div>
             </div>
@@ -1166,6 +1241,24 @@
         // Go to the previous item
         $('.customPrevBtn').click(function () {
             $('.main-header').owlCarousel().trigger('prev.owl.carousel', [300]);
+        })
+        $("#signup").click(() => {
+            console.log("signup clicked")
+            document.getElementById("login-section").style.display = "none";
+            document.getElementById("password-section").style.display = "none";
+            document.getElementById("register-section").style.display = "unset";
+        });
+        $("#forgot").click(() => {
+            console.log("forgot clicked")
+            document.getElementById("login-section").style.display = "none";
+            document.getElementById("password-section").style.display = "unset";
+            document.getElementById("register-section").style.display = "none";
+        })
+        $("#signin").click(() => {
+            console.log("signin clicked")
+            document.getElementById("login-section").style.display = "unset";
+            document.getElementById("password-section").style.display = "none";
+            document.getElementById("register-section").style.display = "none";
         })
 
 
