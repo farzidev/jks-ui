@@ -30,4 +30,17 @@
     }
   }
 
-  
+.mobile-carousel {
+    display:none;
+}
+@media only screen and (max-width: 440px) {
+    .mobile-carousel {
+        display:block;
+    }
+    .carousel {
+        display:none;
+    }
+    /* .single-item img{
+        min-height: 0;
+    } */
+}  
