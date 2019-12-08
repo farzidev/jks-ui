@@ -23,11 +23,10 @@
     <!-- Navbar Starts -->
 
     <!-- navbar starting -->
-    <nav style="display:none;" class="navbar navbar-expand-lg">
+    <!-- <nav id="main-navbar" style="display:none;" class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <div class="logoImage">
                 <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
-                <!-- <img src="./assets/images/menu.svg" alt="logoImage"> -->
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -69,14 +68,14 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <nav class="subNav">
+    </nav> -->
+    <!-- <nav class="subNav">
         <a href="#">Best Selling</a>
         <a href="#">Most Discounted</a>
         <a href="#">New Arrival</a>
         <a href="#">Rps Recommended</a>
         <a href="#">Super Saver Kit</a>
-    </nav>
+    </nav> -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -154,12 +153,35 @@
 
     <!-- navbar ending -->
 
+    <!-- Mobile navbar starting-->
+
+    <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm" style="justify-content: flex-start;">
+        <img src="./assets/images/menu.svg" style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em">
+        <a class="navbar-brand" href="#">
+            <div class="logoImage" style="margin-right:auto">
+                <img src=" ./assets/images/logo_jk_sports_FINAL.png"
+                    style="width: 107px;height: 35px;padding-left: 0.5em">
+            </div>
+        </a>
+        <div style="margin-left:auto;margin-right: 1.5em;display:flex;flex-grow: 0.75;justify-content:space-around">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                    class="fas fa-user-alt"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
+        </div>
+    </nav>
+    <nav class="subNav">
+        <a href="#">Best Selling</a>
+        <a href="#">Most Discounted</a>
+        <a href="#">New Arrival</a>
+        <a href="#">RP's Recommended</a>
+        <a href="#">Super Saver Kit</a>
+    </nav>
+    <!-- Mobile navbar ending-->
+
     <section class="mobile-carousel">
         <div class="owl-carousel owl-carousel-landing landing-carousel">
-            <!-- <div class="single-item">
-                <img src="./assets/images/Screenshot1.png" alt="image1">
-                <a class="explorebtn btn1" href="#">EXPLORE MORE</a>
-            </div> -->
             <div class="single-item">
                 <img src="./assets/images/hero-mobile.png" alt="image2">
                 <a href="#" class="explorebtn btn2">EXPLORE MORE</a>

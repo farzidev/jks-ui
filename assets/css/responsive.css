@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 @media only screen and (max-width: 37.5em) {
     .main-header .header-item img{
         margin: 0 auto;
@@ -33,12 +34,32 @@
 .mobile-carousel {
     display:none;
 }
-@media only screen and (max-width: 440px) {
+#mobile-navbar {
+    display:none;
+}
+#mobile-navbar a {
+    color:black;
+}
+
+@media only screen and (max-width: 600px) {
     .mobile-carousel {
         display:block;
     }
     .carousel {
         display:none;
+    }
+    #mobile-navbar {
+        display: flex;
+    }
+    #main-navbar {
+        display:block;
+    }
+    .subNav {
+        height: 40px;
+    }
+    .subNav > a {
+        font-family: 'Open Sans';
+        font-weight: 400;
     }
     /* .single-item img{
         min-height: 0;
