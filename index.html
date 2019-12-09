@@ -157,7 +157,7 @@
 
     <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm" style="justify-content: flex-start;">
         <img id="burger" src="./assets/images/menu.svg"
-            style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em">
+            style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em;cursor: pointer;">
         <a class="navbar-brand" href="#">
             <div class="logoImage" style="margin-right:auto">
                 <img src=" ./assets/images/logo_jk_sports_FINAL.png"
@@ -215,6 +215,7 @@
             <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
                 <i class="fas fa-user-alt" style="padding-right: 10px"></i>
                 Login & Signup
+                <i id="close" class="fas fa-times" style="padding-left: 10px;cursor: pointer;"></i>
             </span>
         </div>
         <ul>
@@ -1336,6 +1337,9 @@
             document.getElementById("register-section").style.display = "none";
         })
         $("#burger").click(function () {
+            $(".sidebar").toggle();
+        });
+        $("#close").click(function () {
             $(".sidebar").toggle();
         });
     </script>
