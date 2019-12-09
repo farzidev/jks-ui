@@ -1,4 +1,5 @@
 /* basic Starts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 
 html {
     overflow-x: hidden;
@@ -4034,7 +4035,7 @@ nav .lists {
         margin-top: 10vw;
     }
     .owl-carousel .owl-item img {
-        padding: 5px !important;
+        /* padding: 5px !important; */
     }
 }
 
@@ -4137,6 +4138,8 @@ nav .lists {
     margin-top: 10px;
     color: white;
     font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 .subNav a:hover {
@@ -4148,13 +4151,13 @@ nav .lists {
 }
 
 .landing-carousel .owl-nav {
-    margin-left: 2.5vw;
-    min-width: 95vw !important;
+    margin-left: 5vw;
+    min-width: 90vw !important;
     display: flex;
     justify-content: space-between;
     /* justify-content: center; */
     position: absolute;
-    bottom: 45vh;
+    bottom: 15vh;
 }
 
 .landing-carousel .owl-nav span {

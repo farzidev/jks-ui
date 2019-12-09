@@ -156,7 +156,8 @@
     <!-- Mobile navbar starting-->
 
     <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm" style="justify-content: flex-start;">
-        <img src="./assets/images/menu.svg" style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em">
+        <img id="burger" src="./assets/images/menu.svg"
+            style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em">
         <a class="navbar-brand" href="#">
             <div class="logoImage" style="margin-right:auto">
                 <img src=" ./assets/images/logo_jk_sports_FINAL.png"
@@ -175,7 +176,7 @@
         <a href="#">Best Selling</a>
         <a href="#">Most Discounted</a>
         <a href="#">New Arrival</a>
-        <a href="#">RP's Recommended</a>
+        <a href="#">Rps Recommended</a>
         <a href="#">Super Saver Kit</a>
     </nav>
     <!-- Mobile navbar ending-->
@@ -195,10 +196,6 @@
 
     <section class="carousel">
         <div class="owl-carousel owl-carousel-landing landing-carousel">
-            <!-- <div class="single-item">
-                <img src="./assets/images/Screenshot1.png" alt="image1">
-                <a class="explorebtn btn1" href="#">EXPLORE MORE</a>
-            </div> -->
             <div class="single-item">
                 <img src="./assets/images/landing1.jpg" alt="image2">
                 <a href="#" class="explorebtn btn2">EXPLORE MORE</a>
@@ -209,7 +206,34 @@
             </div>
         </div>
     </section>
+
     <!-- Navbar Ends -->
+    <!-- Sidebar starting -->
+
+    <section class="sidebar" style="display:none">
+        <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
+            <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
+                <i class="fas fa-user-alt" style="padding-right: 10px"></i>
+                Login & Signup
+            </span>
+        </div>
+        <ul>
+            <li>Categories</li>
+            <li>Popular</li>
+            <li>Featured</li>
+            <li>Blog</li>
+        </ul>
+        <div style="width: 100%;height: 1px;background-color: grey;"></div>
+        <ul>
+            <li>My Orders</li>
+            <li>My Wishlist</li>
+            <li>My Cart</li>
+            <li>My Account</li>
+            <li>Logout</li>
+        </ul>
+    </section>
+
+    <!-- Sidebar Ending -->
     <!-- <div class="owl-carousel">
             <div class="item">
               <a href="#">
@@ -1096,8 +1120,9 @@
         $(document).ready(function () {
             $(".owl-carousel-main").owlCarousel({
                 loop: true,
-                margin: 10,
+                // margin: 10,
                 responsiveClass: true,
+                autoHeight: true,
                 responsive: {
                     300: {
                         items: 2,
@@ -1156,7 +1181,8 @@
                 loop: true,
                 touchDrag: true,
                 navigation: true,
-                margin: 10,
+                autoHeight: true,
+                // margin: 10,
                 responsiveClass: true,
                 responsive: {
                     300: {
@@ -1187,6 +1213,7 @@
             $(".owlMain").owlCarousel({
                 loop: true,
                 margin: 10,
+                autoHeight: true,
                 responsiveClass: true,
                 responsive: {
                     400: {
@@ -1224,6 +1251,7 @@
             center: true,
             items: 1.5,
             loop: true,
+            autoHeight: true,
             margin: 10,
             stagePadding: 200,
             nav: false,
@@ -1307,11 +1335,10 @@
             document.getElementById("password-section").style.display = "none";
             document.getElementById("register-section").style.display = "none";
         })
-
-
-
+        $("#burger").click(function () {
+            $(".sidebar").toggle();
+        });
     </script>
-
 </body>
 
 </html>

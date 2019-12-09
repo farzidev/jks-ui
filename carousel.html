@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +12,51 @@
             margin: 0;
             background-color: #eeecec;
         }
+
         .relative {
             position: relative;
         }
+
         .banner-images {
             padding-top: 100px;
         }
+
         .banner-images img {
             height: 400px;
         }
+
         img {
             max-width: 100%;
         }
+
         .banner-image {
             position: absolute;
         }
+
         .banner-image-1 {
             left: 50%;
             top: 70%;
             transform: translateX(-50%);
         }
+
         .banner-image-2 {
             left: 40%;
             top: -60%;
         }
+
         .banner-image-3 {
             left: 26%;
             top: 200%;
         }
+
         .thumbnails-container {
             margin-top: 100px;
         }
+
         .thumbnails {
             display: flex;
         }
+
         .thumbnails img {
             width: 30px;
             height: 30px;
@@ -52,28 +64,34 @@
             padding: 20px;
             border-radius: 50%;
         }
+
         .slider-image {
             text-align: center;
             opacity: 0.6;
         }
+
         .slider-image.tns-slide-active {
             opacity: 1;
         }
-        
+
         .slider-image img {
             max-width: 100%;
             transform: rotate(15deg);
             margin: auto;
         }
+
         li {
             list-style-type: none;
         }
+
         .slider-image.tns-item.tns-slide-active.Random {
             opacity: 1;
         }
+
         .slider-image.tns-item.tns-slide-active {
             opacity: 0.6;
         }
+
         .price-tag {
             background-color: #051026;
             padding: 20px;
@@ -81,40 +99,49 @@
             color: #fff;
             font-style: italic;
         }
+
         .flex {
             display: flex;
         }
+
         .vertical-center {
             align-items: center;
         }
+
         .shrink-0 {
             flex-shrink: 0;
         }
-        
+
         @media screen and (max-width: 900px) {
             .banner-image-3 {
                 left: 0;
             }
+
             .banner-image img {
                 height: auto;
             }
-            
+
             .banner-images .banner-image-1 {
                 width: 100%;
             }
+
             .banner-images .banner-image-2 {
                 height: 100px;
             }
+
             .banner-images .banner-image-3 {
                 height: 100px;
             }
+
             .slider-image img {
                 width: 60%;
                 max-width: 100%;
             }
+
             .thumbnails-container {
                 margin-top: 200px;
             }
+
             .thumbnails {
                 position: absolute;
                 bottom: 0;
@@ -126,16 +153,17 @@
     </style>
 
 </head>
+
 <body>
     <div class="relative banner-images">
         <div class="banner-image banner-image-1">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/BG-lines.png" alt="">
+            <img src="./assets/images/BG-lines.png" alt="">
         </div>
         <div class="banner-image banner-image-2">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/Particles%20(1).png" alt="">
+            <img src="./assets/images/Particles%20(1).png" alt="">
         </div>
         <div class="banner-image banner-image-3">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/Particles.png" alt="">
+            <img src="./assets/images/Particles.png" alt="">
         </div>
     </div>
     <div class="my-slider">
@@ -152,21 +180,20 @@
             <img src="https://farzidev.github.io/jks-ui/assets/images/AJAX.PNG" alt="">
         </div>
         <div class="slider-image">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+            <img src="./assets/images/AIDAN%20(1).PNG" alt="">
         </div>
         <div class="slider-image">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+            <img src="./assets/images/AIDAN%20(1).PNG" alt="">
         </div>
         <div class="slider-image">
-            <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
+            <img src="./assets/images/AIDAN%20(1).PNG" alt="">
         </div>
         <div class="slider-image">
-                <img src="https://farzidev.github.io/jks-ui/assets/images/AIDAN%20(1).PNG" alt="">
-            </div>
-    </div>
-    <div class="thumbnails-container relative">
+            <img src="./assets/images/AIDAN%20(1).PNG" alt="">
+        </div>.-container relative">
         <ul class="thumbnails" id="customize-thumbnails" aria-label="Carousel Pagination">
-            <li data-nav="0" aria-label="Carousel Page 1 (Current Slide)" aria-controls="customize" class="tns-nav-active">
+            <li data-nav="0" aria-label="Carousel Page 1 (Current Slide)" aria-controls="customize"
+                class="tns-nav-active">
                 <img src="https://source.unsplash.com/collection/993239/600x400" alt="" width="600" height="400">
             </li>
             <li data-nav="1" aria-label="Carousel Page 2" aria-controls="customize" class="" tabindex="-1">
@@ -182,42 +209,42 @@
         function isMobile() {
             return (window.innerWidth <= 900);
         }
-        
-        if(isMobile()) {
+
+        if (isMobile()) {
             var slider = tns({
-            container: '.my-slider',
-            "gutter": 250,
-            items: 1,
-            slideBy: 'page',
-            "navContainer": "#customize-thumbnails",
-            "swipeAngle": false,
-            "navAsThumbnails": true,
-            autoplay: false,
-            controls: false
-        });
+                container: '.my-slider',
+                "gutter": 250,
+                items: 1,
+                slideBy: 'page',
+                "navContainer": "#customize-thumbnails",
+                "swipeAngle": false,
+                "navAsThumbnails": true,
+                autoplay: false,
+                controls: false
+            });
         }
         else {
             var slider = tns({
-            container: '.my-slider',
-            "gutter": 250,
-            items: 3,
-            slideBy: 'page',
-            "navContainer": "#customize-thumbnails",
-            "navAsThumbnails": true,
-            "swipeAngle": false,
-            autoplay: false,
-            controlsText: false,
-            controls: false
-            
+                container: '.my-slider',
+                "gutter": 250,
+                items: 3,
+                slideBy: 'page',
+                "navContainer": "#customize-thumbnails",
+                "navAsThumbnails": true,
+                "swipeAngle": false,
+                autoplay: false,
+                controlsText: false,
+                controls: false
+
             });
         }
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             console.log('Working');
             var customizedFunction = function (info, eventName) {
-            // direct access to info object
-            console.log('Aajksnda')
+                // direct access to info object
+                console.log('Aajksnda')
                 let allImg = document.querySelectorAll(`.slider-image`);
-                allImg.forEach(function(item) {
+                allImg.forEach(function (item) {
                     item.classList.remove('Random');
                 })
                 let currentImg = document.querySelector(`#tns1-item${info.displayIndex}`);
@@ -227,8 +254,9 @@
             slider.events.on('indexChanged', customizedFunction);
         });
 
-        
+
     </script>
-    
+
 </body>
+
 </html>
