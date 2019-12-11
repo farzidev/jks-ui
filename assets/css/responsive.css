@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 @media only screen and (max-width: 37.5em) {
     .main-header .header-item img{
         margin: 0 auto;
@@ -30,4 +31,54 @@
     }
   }
 
-  
+.mobile-carousel {
+    display:none;
+}
+#mobile-navbar {
+    display:none;
+}
+#mobile-navbar a {
+    color:black;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-carousel {
+        display:block;
+    }
+    .carousel {
+        display:none;
+    }
+    #mobile-navbar {
+        display: flex;
+    }
+    #main-navbar {
+        display:none;
+    }
+    .subNav {
+        height: 40px;
+        overflow-x: scroll;
+    }
+    .subNav > a {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        white-space: nowrap;
+        padding: 8px;
+    }
+    .subNav a:first-of-type {
+        padding-left: 11em;
+    }
+    .single-item{
+        min-height: 10vh;
+    }
+    .single-item img{
+        min-height: 10vh;
+    }
+    .landing-carousel {
+        min-height: 10vh;
+    }
+    .landing-carousel .owl-nav {
+        min-width: 85vw;
+        bottom: 15vh;
+
+    }
+}  

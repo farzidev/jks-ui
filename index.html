@@ -23,7 +23,7 @@
     <!-- Navbar Starts -->
 
     <!-- navbar starting -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="main-navbar" class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
             <div class="logoImage">
                 <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
@@ -31,20 +31,35 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            <span style="float:left;" class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
 
         <div class="collapse navbar-collapse lists" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto wholeLinks">
                 <li class="nav-item active">
                     <div class="dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Categories&nbsp<span
-                                class="caret"></span><span class="sr-only">(current)</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">PADS</a></li>
-                            <li><a href="#">GLOVES</a></li>
-                            <li><a href="#">SPORTS KIT</a></li>
-                        </ul>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Categories&nbsp</span></a>
+                        <div class="dropdown-menu">
+                            <div id="category-menu">
+                                <div>
+                                    <h4>Bats</h4>
+                                    <p>English Willow</p>
+                                    <p>Kashmiri Willow</p>
+                                    <h4>Gloves</h4>
+                                    <p>Batting Gloves</p>
+                                    <p>Keeping GLoves</p>
+                                </div>
+                                <div>
+                                    <h4>Leg Guards</h4>
+                                    <p>Batting Leg Guard</p>
+                                    <p>Keeping Leg Guard</p>
+                                    <h4>Balls</h4>
+                                    <p>Leather</p>
+                                    <p>Synthetic</p>
+                                    <p>Tennis</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -69,13 +84,13 @@
             </div>
         </div>
     </nav>
-    <nav class="subNav">
+    <!-- <nav class="subNav">
         <a href="#">Best Selling</a>
         <a href="#">Most Discounted</a>
         <a href="#">New Arrival</a>
         <a href="#">Rps Recommended</a>
         <a href="#">Super Saver Kit</a>
-    </nav>
+    </nav> -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -153,12 +168,49 @@
 
     <!-- navbar ending -->
 
-    <section class="">
+    <!-- Mobile navbar starting-->
+
+    <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm" style="justify-content: flex-start;">
+        <img id="burger" src="./assets/images/menu.svg"
+            style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em;cursor: pointer;">
+        <a class="navbar-brand" href="#">
+            <div class="logoImage" style="margin-right:auto">
+                <img src=" ./assets/images/logo_jk_sports_FINAL.png"
+                    style="width: 107px;height: 35px;padding-left: 0.5em">
+            </div>
+        </a>
+        <div style="margin-left:auto;margin-right: 1.5em;display:flex;flex-grow: 0.75;justify-content:space-around">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                    class="fas fa-user-alt"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
+        </div>
+    </nav>
+    <nav class="subNav">
+        <a href="#">Best Selling</a>
+        <a href="#">Most Discounted</a>
+        <a href="#">New Arrival</a>
+        <a href="#">RP's Recommended</a>
+        <a href="#">Super Saver Kit</a>
+    </nav>
+    <!-- Mobile navbar ending-->
+
+    <section class="mobile-carousel">
         <div class="owl-carousel owl-carousel-landing landing-carousel">
-            <!-- <div class="single-item">
-                <img src="./assets/images/Screenshot1.png" alt="image1">
-                <a class="explorebtn btn1" href="#">EXPLORE MORE</a>
-            </div> -->
+            <div class="single-item">
+                <img src="./assets/images/hero-mobile.png" alt="image2">
+                <a href="#" class="explorebtn btn2">EXPLORE MORE</a>
+            </div>
+            <div class="single-item">
+                <img src="./assets/images/landing2.jpg" alt="image3">
+                <a href="#" class="explorebtn btn3">EXPLORE MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="owl-carousel owl-carousel-landing landing-carousel">
             <div class="single-item">
                 <img src="./assets/images/landing1.jpg" alt="image2">
                 <a href="#" class="explorebtn btn2">EXPLORE MORE</a>
@@ -169,7 +221,35 @@
             </div>
         </div>
     </section>
+
     <!-- Navbar Ends -->
+    <!-- Sidebar starting -->
+
+    <section class="sidebar" style="display:none">
+        <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
+            <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
+                <i class="fas fa-user-alt" style="padding-right: 10px"></i>
+                Login & Signup
+                <i id="close" class="fas fa-times" style="padding-left: 10px;cursor: pointer;"></i>
+            </span>
+        </div>
+        <ul>
+            <li>Categories</li>
+            <li>Popular</li>
+            <li>Featured</li>
+            <li>Blog</li>
+        </ul>
+        <div style="width: 100%;height: 1px;background-color: grey;"></div>
+        <ul>
+            <li>My Orders</li>
+            <li>My Wishlist</li>
+            <li>My Cart</li>
+            <li>My Account</li>
+            <li>Logout</li>
+        </ul>
+    </section>
+
+    <!-- Sidebar Ending -->
     <!-- <div class="owl-carousel">
             <div class="item">
               <a href="#">
@@ -1056,8 +1136,9 @@
         $(document).ready(function () {
             $(".owl-carousel-main").owlCarousel({
                 loop: true,
-                margin: 10,
+                // margin: 10,
                 responsiveClass: true,
+                autoHeight: true,
                 responsive: {
                     300: {
                         items: 2,
@@ -1116,7 +1197,8 @@
                 loop: true,
                 touchDrag: true,
                 navigation: true,
-                margin: 10,
+                autoHeight: true,
+                // margin: 10,
                 responsiveClass: true,
                 responsive: {
                     300: {
@@ -1147,6 +1229,7 @@
             $(".owlMain").owlCarousel({
                 loop: true,
                 margin: 10,
+                autoHeight: true,
                 responsiveClass: true,
                 responsive: {
                     400: {
@@ -1184,6 +1267,7 @@
             center: true,
             items: 1.5,
             loop: true,
+            autoHeight: true,
             margin: 10,
             stagePadding: 200,
             nav: false,
@@ -1267,11 +1351,13 @@
             document.getElementById("password-section").style.display = "none";
             document.getElementById("register-section").style.display = "none";
         })
-
-
-
+        $("#burger").click(function () {
+            $(".sidebar").toggle();
+        });
+        $("#close").click(function () {
+            $(".sidebar").toggle();
+        });
     </script>
-
 </body>
 
 </html>
