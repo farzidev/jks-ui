@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
 * {
     box-sizing: border-box;
     padding:0px;
     margin:0px;
     /* overflow: hidden; */
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     overflow-x:hidden;
@@ -66,7 +69,9 @@ nav {
 nav .lists {
     margin-bottom: -14.5px;
 }
-
+.dropdown-toggle::after {
+    content: none;
+}
 .header-item{
     /* width: 20rem; */
     /* width: 100%; */
@@ -265,20 +270,45 @@ nav .lists {
     cursor: pointer;
 }
 .sidebar {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 70vw; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 70vw; 
+    position: fixed; 
+    z-index: 100; 
+    top: 0; 
     left: 0;
-    background-color: white; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: white; 
+    overflow-x: hidden; 
     font-family: 'open sans';
     font-weight: 600;
   }
 .sidebar li {
     padding: 0.7em 1.5em;
+    list-style-type: none;
 }
 .sidebar ul {
     margin: 1em;
+}
+#category-menu {
+    display: flex;
+    width: max-content;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    margin-top:1em;
+}
+#category-menu > div {
+    padding: 10px;
+}
+#category-menu > div:nth-child(2){
+    background-color: #F7F7F7;
+}
+#category-menu p{
+    margin-bottom: 5px;
+    padding-right: 2em; 
+}
+#category-menu h4 {
+    margin: 1em 0;
+    font-weight:bold;
 }
