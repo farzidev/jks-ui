@@ -45,7 +45,9 @@
 }
 @media(max-width: 1000px) {
     .dropdown-menu {
-        margin-left: 1em;
+        margin-left: 2em;
+        position: absolute;
+        z-index: 1000;
     }
     .mobile-carousel {
         display:block;

@@ -4631,3 +4631,27 @@ blockquote p {
 #forgot:hover{
     cursor: pointer;
 }
+#bats-menu {
+    display: none;
+}
+#gloves-menu {
+    display: none;
+}
+#guards-menu {
+    display: none;
+}
+#balls-menu {
+    display: none;
+}
+#bats-bg:hover #bats-menu {
+    display: block;
+}
+#balls-bg:hover #balls-menu {
+    display: block;
+}
+#guards-bg:hover #guards-menu {
+    display: block;
+}
+#gloves-bg:hover #gloves-menu {
+    display: block;
+}
