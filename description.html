@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/description.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://kit.fontawesome.com/8a64417275.js"></script>
     <title>Description</title>
 </head>
@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <!-- navbar starting -->
-            <nav class="navbar navbar-expand-lg">
+            <nav id="main-navbar" class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
                     <div class="logoImage">
                         <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
@@ -64,16 +64,15 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <nav class="subNav">
-                <a href="#">Best Selling</a>
-                <a href="#">Most Discounted</a>
-                <a href="#">New Arrival</a>
-                <a href="#">Rps Recommended</a>
-                <a href="#">Super Saver Kit</a>
+                <!-- <nav class="subNav">
+                    <a href="#">Best Selling</a>
+                    <a href="#">Most Discounted</a>
+                    <a href="#">New Arrival</a>
+                    <a href="#">RP's Recommended</a>
+                    <a href="#">Super Saver Kit</a>
+                </nav> -->
             </nav>
             <!-- navbar ending -->
-
 
             <!-- Mobile navbar starting-->
 
@@ -96,8 +95,14 @@
                     <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
                 </div>
             </nav>
+            <nav class="subNav">
+                <a href="#">Best Selling</a>
+                <a href="#">Most Discounted</a>
+                <a href="#">New Arrival</a>
+                <a href="#">RP's Recommended</a>
+                <a href="#">Super Saver Kit</a>
+            </nav>
             <!-- Mobile navbar ending-->
-
 
             <!-- Sidebar starting -->
 
@@ -140,8 +145,9 @@
                     <li>Popular</li>
                     <li>Featured</li>
                     <li>Blog</li>
+                    <li class="divider"></li>
                 </ul>
-                <div style="width: 100%;height: 1px;background-color: grey;"></div>
+                <!-- <div style="width: 100%;height: 1px;background-color: grey;"></div> -->
                 <ul>
                     <li>My Orders</li>
                     <li>My Wishlist</li>
@@ -152,7 +158,6 @@
             </section>
 
             <!-- Sidebar Ending -->
-
 
             <div class="cartContainer">
 
@@ -926,6 +931,12 @@
                 //     document.getElementById("main-image").innerHTML = e.currentTarget;
             });
 
+            $("#burger").click(function () {
+                $(".sidebar").toggle();
+            });
+            $("#close").click(function () {
+                $(".sidebar").toggle();
+            });
 
         });
     </script>

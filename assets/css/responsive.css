@@ -40,8 +40,13 @@
 #mobile-navbar a {
     color:black;
 }
-
-@media only screen and (max-width: 768px) {
+.navbar-brand {
+    margin-left: 1em;
+}
+@media(max-width: 1000px) {
+    .dropdown-menu {
+        margin-left: 1em;
+    }
     .mobile-carousel {
         display:block;
     }
@@ -52,10 +57,10 @@
         display: flex;
     }
     #main-navbar {
-        display:none;
+        display:none !important;
     }
     .subNav {
-        height: 40px;
+        height: 12vw;
         overflow-x: scroll;
     }
     .subNav > a {
@@ -79,6 +84,5 @@
     .landing-carousel .owl-nav {
         min-width: 85vw;
         bottom: 15vh;
-
     }
 }  
