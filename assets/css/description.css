@@ -132,6 +132,8 @@ nav .lists {
     justify-content: space-evenly;
     align-items: center;
     height: 2.6vw;
+    font-family: 'open sans', sans-serif;
+    font-weight: bold;
 }
 
 .subNav a {
@@ -3278,4 +3280,10 @@ blockquote p {
 }
 #gloves-bg:hover #gloves-menu {
     display: block;
+}
+#search-button {
+    width: 100px;
+    border-radius: 0.4em;
+    border:1px solid grey;
+    margin:0.2em; 
 }

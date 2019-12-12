@@ -4655,3 +4655,9 @@ blockquote p {
 #gloves-bg:hover #gloves-menu {
     display: block;
 }
+#search-button {
+    width: 100px;
+    border-radius: 0.4em;
+    border:1px solid grey;
+    margin:0.2em; 
+}
