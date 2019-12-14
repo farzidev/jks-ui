@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
 html {
     overflow-x: hidden;
 }
@@ -10,6 +12,7 @@ body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'open sans', sans-serif;
     /* overflow-x:hidden;  */
 }
 
@@ -129,6 +132,8 @@ nav .lists {
     justify-content: space-evenly;
     align-items: center;
     height: 2.6vw;
+    font-family: 'open sans', sans-serif;
+    font-weight: bold;
 }
 
 .subNav a {
@@ -144,7 +149,7 @@ nav .lists {
 
 @media(max-width: 700px) {
     .subNav {
-        display: none;
+        /* display: none; */
     }
 }
 
@@ -3204,4 +3209,90 @@ blockquote p {
     /* margin-top: -10px; */
     position: relative;
     bottom: 10px;
+}
+
+.sidebar {
+    height: 100%; 
+    width: 70vw; 
+    position: fixed; 
+    z-index: 100; 
+    top: 0; 
+    left: 0;
+    background-color: white; 
+    overflow-x: hidden; 
+    font-family: 'open sans';
+    font-weight: 600;
+  }
+.sidebar li {
+    padding: 0.7em 1.5em;
+    list-style-type: none;
+}
+.sidebar ul {
+    margin: 1em;
+}
+#category-menu {
+    display: flex;
+    width: max-content;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    margin-top:1em;
+}
+#category-menu > div {
+    padding: 10px;
+}
+#category-menu > div:nth-child(2){
+    background-color: #F7F7F7;
+}
+#category-menu p{
+    margin-bottom: 5px;
+    padding-right: 2em; 
+}
+#category-menu h4 {
+    margin: 1em 0;
+    font-weight:bold;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+#bats-menu {
+    display: none;
+}
+#gloves-menu {
+    display: none;
+}
+#guards-menu {
+    display: none;
+}
+#balls-menu {
+    display: none;
+}
+#bats-bg:hover #bats-menu {
+    display: block;
+}
+#balls-bg:hover #balls-menu {
+    display: block;
+}
+#guards-bg:hover #guards-menu {
+    display: block;
+}
+#gloves-bg:hover #gloves-menu {
+    display: block;
+}
+#search-button {
+    width: 100px;
+    border-radius: 0.4em;
+    border:1px solid grey;
+    margin:0.2em; 
+}
+#mobile-footer {
+    position:fixed;
+    bottom:0;
+    padding:0;
+    margin:0;
+    width: 100%;
+    z-index: 500;
+    left:0;
 }

@@ -42,21 +42,37 @@
                         <div class="dropdown-menu">
                             <div id="category-menu">
                                 <div>
-                                    <h4>Bats</h4>
-                                    <p>English Willow</p>
-                                    <p>Kashmiri Willow</p>
-                                    <h4>Gloves</h4>
-                                    <p>Batting Gloves</p>
-                                    <p>Keeping GLoves</p>
+                                    <div id="bats-bg">
+                                        <h4 id="bats-button">Bats</h4>
+                                        <div id="bats-menu">
+                                            <p>English Willow</p>
+                                            <p>Kashmiri Willow</p>
+                                        </div>
+                                    </div>
+                                    <div id="gloves-bg">
+                                        <h4 id="gloves-button">Gloves</h4>
+                                        <div id="gloves-menu">
+                                            <p>Batting Gloves</p>
+                                            <p>Keeping GLoves</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
-                                    <h4>Leg Guards</h4>
-                                    <p>Batting Leg Guard</p>
-                                    <p>Keeping Leg Guard</p>
-                                    <h4>Balls</h4>
-                                    <p>Leather</p>
-                                    <p>Synthetic</p>
-                                    <p>Tennis</p>
+                                    <div id="guards-bg">
+                                        <h4 id="guards-button">Leg Guards</h4>
+                                        <div id="guards-menu">
+                                            <p>Batting Leg Guard</p>
+                                            <p>Keeping Leg Guard</p>
+                                        </div>
+                                    </div>
+                                    <div id="balls-bg">
+                                        <h4 id="balls-button">Balls</h4>
+                                        <div id="balls-menu">
+                                            <p>Leather</p>
+                                            <p>Synthetic</p>
+                                            <p>Tennis</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +90,9 @@
             </ul>
             <div>
                 <ul class="allIcons">
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li>
+                        <input type="text" id="search-button">
+                        <a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
                                 class="fas fa-user-alt"></i></a></li>
                     <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -234,7 +252,33 @@
             </span>
         </div>
         <ul>
-            <li>Categories</li>
+            <li>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                        style="color:black;padding:0; cursor: pointer;">Categories&nbsp</span></a>
+                    <div class="dropdown-menu">
+                        <div id="category-menu">
+                            <div>
+                                <h4>Bats</h4>
+                                <p>English Willow</p>
+                                <p>Kashmiri Willow</p>
+                                <h4>Gloves</h4>
+                                <p>Batting Gloves</p>
+                                <p>Keeping GLoves</p>
+                            </div>
+                            <div>
+                                <h4>Leg Guards</h4>
+                                <p>Batting Leg Guard</p>
+                                <p>Keeping Leg Guard</p>
+                                <h4>Balls</h4>
+                                <p>Leather</p>
+                                <p>Synthetic</p>
+                                <p>Tennis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li>Popular</li>
             <li>Featured</li>
             <li>Blog</li>
