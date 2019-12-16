@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
 @media only screen and (max-width: 37.5em) {
     .main-header .header-item img{
         margin: 0 auto;
@@ -72,7 +73,7 @@
         padding: 8px;
     }
     .subNav a:first-of-type {
-        padding-left: 11em;
+        padding-left: 1em;
     }
     .single-item{
         min-height: 10vh;

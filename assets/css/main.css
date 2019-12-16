@@ -20,6 +20,7 @@ nav {
 }
 .navbar-brand {
     text-align: center;
+    clip-path: polygon(0% 0%, 100% 0%, 68% 100%, 0% 100%);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 68% 100%, 0% 100%);
     background-color:white;
     padding-right:40px;
@@ -68,9 +69,6 @@ nav {
 }
 nav .lists {
     margin-bottom: -14.5px;
-}
-.dropdown-toggle::after {
-    content: none;
 }
 .header-item{
     /* width: 20rem; */

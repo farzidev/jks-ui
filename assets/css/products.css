@@ -162,10 +162,6 @@ nav .lists {
     margin: 1em 0;
     font-weight:bold;
 }
-.dropdown-toggle::after {
-    content:none;
-}
-/* footer css */
 
 /* footer css */
 
@@ -2315,9 +2311,6 @@ blockquote p {
 }
 #mobile-navbar {
     margin-top: 15px;
-}
-#subnav {
-
 }
 .allIcons .total-cart-items {
     color: white;

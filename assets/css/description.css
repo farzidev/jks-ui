@@ -3254,9 +3254,6 @@ blockquote p {
     margin: 1em 0;
     font-weight:bold;
 }
-.dropdown-toggle::after {
-    content: none;
-}
 #bats-menu {
     display: none;
 }
