@@ -247,11 +247,6 @@ ul li {
     background-color: #e02352;
 }
 
-.followUs {
-    margin-left: 7rem;
-    margin-top: 35px;
-}
-
 .followUs .logos li a {
     display: inline-block;
     border-radius: 50%;
@@ -260,16 +255,13 @@ ul li {
     margin: 0px 1.03rem;
     background-color: #da2957;
 }
-
 .jksLogo {
-    /* margin-left: 13vw;
-    margin-top: -7vw; */
-    margin-left: -100px;
+    display: flex;
+    justify-content: center;
 }
-
 .jksLogo img {
     position: relative;
-    left: 50px;
+    margin: auto;
     height: 150px;
     width: 130px;
 }
@@ -4281,7 +4273,7 @@ nav .lists {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 2.6vw;
+    min-height: 5vh;
 }
 
 .subNav a {
@@ -4353,10 +4345,6 @@ nav .lists {
     padding: 6px 15px;
 }
 
-.footerComponent {
-    /* margin-right: 40px; */
-}
-
 .footerBottom #mailButton {
     margin-top: -.3rem;
     border: none;
@@ -4365,11 +4353,6 @@ nav .lists {
     padding: 5.5px 17px;
     border-radius: 0 4px 4px 0;
     background-color: #e02352;
-}
-
-.followUs {
-    /* margin-left: 7rem; */
-    margin-top: 35px;
 }
 
 .followUs .logos li a {
@@ -4385,16 +4368,8 @@ nav .lists {
     list-style-type: none;
 }
 
-.jksLogo {
-    /* margin-left: 13vw;
-    margin-top: -7vw; */
-    margin-left: -80px;
-    margin-top: 30px;
-}
-
 .jksLogo img {
     position: relative;
-    left: 50px;
     height: 110px;
     width: 90px;
     margin-top: 20px;
@@ -4662,4 +4637,9 @@ blockquote p {
     border-radius: 0.4em;
     border:1px solid grey;
     margin: 0.2em; 
+}
+#cat{
+    position: absolute;
+    top:20vh;
+    left:5vw;
 }
