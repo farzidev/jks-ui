@@ -3210,7 +3210,11 @@ blockquote p {
     position: relative;
     bottom: 10px;
 }
-
+#cat{
+    position: absolute;
+    top:20vh;
+    left:5vw;
+}
 .sidebar {
     height: 100%; 
     width: 70vw; 
@@ -3253,9 +3257,6 @@ blockquote p {
 #category-menu h4 {
     margin: 1em 0;
     font-weight:bold;
-}
-.dropdown-toggle::after {
-    content: none;
 }
 #bats-menu {
     display: none;

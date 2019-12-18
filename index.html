@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./assets/css/index.css">
-    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -241,9 +240,10 @@
     </section>
 
     <!-- Navbar Ends -->
+
     <!-- Sidebar starting -->
 
-    <section class="sidebar" style="display:none">
+    <section class="sidebar" style="display:none;z-index:1000;">
         <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
             <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
                 <i class="fas fa-user-alt" style="padding-right: 10px"></i>
@@ -254,36 +254,17 @@
         <ul>
             <li>
                 <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                    <a id="cat-button" class="nav-link dropdown-toggle" data-toggle="dropdown"
                         style="color:black;padding:0; cursor: pointer;">Categories&nbsp</span></a>
-                    <div class="dropdown-menu">
-                        <div id="category-menu">
-                            <div>
-                                <h4>Bats</h4>
-                                <p>English Willow</p>
-                                <p>Kashmiri Willow</p>
-                                <h4>Gloves</h4>
-                                <p>Batting Gloves</p>
-                                <p>Keeping GLoves</p>
-                            </div>
-                            <div>
-                                <h4>Leg Guards</h4>
-                                <p>Batting Leg Guard</p>
-                                <p>Keeping Leg Guard</p>
-                                <h4>Balls</h4>
-                                <p>Leather</p>
-                                <p>Synthetic</p>
-                                <p>Tennis</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </li>
             <li>Popular</li>
             <li>Featured</li>
             <li>Blog</li>
+            <li class="divider"></li>
         </ul>
-        <div style="width: 100%;height: 1px;background-color: grey;"></div>
+        <!-- <div style="width: 100%;height: 1px;background-color: grey;"></div> -->
         <ul>
             <li>My Orders</li>
             <li>My Wishlist</li>
@@ -293,6 +274,27 @@
         </ul>
     </section>
 
+    <div id="cat" class="dropdown-menu">
+        <div id="category-menu">
+            <div>
+                <h4>Bats</h4>
+                <p>English Willow</p>
+                <p>Kashmiri Willow</p>
+                <h4>Gloves</h4>
+                <p>Batting Gloves</p>
+                <p>Keeping GLoves</p>
+            </div>
+            <div>
+                <h4>Leg Guards</h4>
+                <p>Batting Leg Guard</p>
+                <p>Keeping Leg Guard</p>
+                <h4>Balls</h4>
+                <p>Leather</p>
+                <p>Synthetic</p>
+                <p>Tennis</p>
+            </div>
+        </div>
+    </div>
     <!-- Sidebar Ending -->
     <!-- <div class="owl-carousel">
             <div class="item">
@@ -1068,7 +1070,7 @@
     <div class="footer">
         <div class=" footerContainer container">
             <div class="row fleFooter">
-                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6 ">
+                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="footerTopic">
                         <p>Top Categories</p>
                     </div>
@@ -1084,7 +1086,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="footerTopic">
                         <p>Help</p>
                     </div>
@@ -1099,7 +1101,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
                     <div class="footerTopic">
                         <p>About Us</p>
                     </div>
@@ -1115,12 +1117,12 @@
 
             </div>
             <div class="flex footerBottom">
-                <div class="footerComponent col-xs-6 col-sm-6 col-xl-1 col-lg-1 col-md-6">
+                <div class="footerComponent col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
                     <div class="jksLogo">
                         <img src="assets/images/jkWhiteLogo.png" alt="jks logo">
                     </div>
                 </div>
-                <div class="newsLetter">
+                <div class="newsLetter col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
                     <div class="topicLetter">
                         <h4>NEWSLETTER SUBSCRIPTION</h4>
                     </div>
@@ -1138,7 +1140,7 @@
 
                     <!-- </form> -->
                 </div>
-                <div class="followUs">
+                <div class="followUs col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
                     <div class="followUsTopic">
                         <h4>FOLLOW US</h4>
                     </div>
@@ -1401,6 +1403,12 @@
         $("#close").click(function () {
             $(".sidebar").toggle();
         });
+        $("#cat-button").click(function () {
+            $("#cat").toggle();
+        })
+        $(".sidebar").click(function () {
+            $("#cat").hide();
+        })
     </script>
 </body>
 
