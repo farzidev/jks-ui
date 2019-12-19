@@ -541,7 +541,7 @@ input[type='radio']:checked:after {
     text-decoration: none;
     background-color: white;
     border-radius: 50%;
-    border: 2px dashed #e2e0e0;
+    border: 2px solid #e2e0e0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -557,14 +557,14 @@ input[type='radio']:checked:after {
 }
 
 @media(max-width: 600px) {
-    .cartContainer .classItem .prod-image {
-        display: none;
-    }
     .add-btn {
         display: none
     }
     .cartContainer .topic {
-        font-size: 22px;
+        font-size: 2em;
+        font-style: italic;
+        padding: 0;
+        margin: 0;
     }
     .cartHeading {
         margin-left: unset;
@@ -578,7 +578,7 @@ input[type='radio']:checked:after {
         margin-left: 10px;
     }
     .cartContainer .classItem {
-        height: 100px;
+        height: auto;
         padding: 1em;
         margin: 1em;
     }
@@ -647,7 +647,10 @@ input[type='radio']:checked:after {
 
 @media(max-width: 400px) {
     .cartContainer .topic {
-        font-size: 18px;
+        font-size: 2em;
+        font-style: italic;
+        padding:0;
+        margin:0;
     }
     .cartContainer .line {
         height: 3px;
@@ -716,15 +719,11 @@ input[type='radio']:checked:after {
 }
 
 .mobile-pay h2 {
-    font-size: 25px;
-    font-style: italic;
+    font-size: 22px;
     color: #ffffff;
     font-family: "Open Sans";
     letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 600;
 }
 
 .delete {
@@ -871,7 +870,6 @@ input[type='radio']:checked:after {
 
 .footer {
     padding: 2.5rem 2.5rem;
-    /* background-color: black; */
     color: white;
     background: #051026 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -952,16 +950,13 @@ input[type='radio']:checked:after {
 }
 
 .jksLogo {
-    /* margin-left: 13vw;
-    margin-top: -7vw; */
-    margin-left: -80px;
     margin-top: 30px;
+    align-content: center;
+    justify-content: center;
 }
 
 .jksLogo img {
     position: relative;
-    left: 50px;
-    top: 20px;
     height: 110px;
     width: 90px;
 }
