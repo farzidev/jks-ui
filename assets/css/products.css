@@ -67,7 +67,7 @@ nav {
 .wholeLinks li a {
     color: #051026;
     font-size: 12.5px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .wholeLinks li a:hover {
@@ -118,8 +118,8 @@ nav .lists {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 3vw;
-    font-weight: bold;
+    min-height: 2vw;
+    font-weight: 600;
 }
 
 .subNav a {
@@ -171,13 +171,17 @@ nav .lists {
 
 .footer {
     padding: 2.5rem 0rem;
-    background-color: black;
+    /* background-color: black; */
     color: white;
+    background: #051026 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .footer .footerTopic {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1rem;
     letter-spacing: 1.2px;
 }
@@ -248,16 +252,11 @@ nav .lists {
 }
 
 .jksLogo {
-    /* margin-left: 13vw;
-    margin-top: -7vw; */
-    margin-left: -80px;
     margin-top: 30px;
 }
 
 .jksLogo img {
     position: relative;
-    left: 50px;
-    top: 20px;
     height: 110px;
     width: 90px;
 }
@@ -532,10 +531,11 @@ blockquote p {
 }
 
 .filters .filter-links a {
+    display:flex;
     text-align: center;
     text-decoration: none;
     color: white;
-    width: 153px;
+    width: 12em;
     height: 41px;
     border-radius: 40px;
     border: 2px solid #e71c4c;
@@ -545,6 +545,7 @@ blockquote p {
     font-weight: 400;
     margin-left: 30px;
     align-items: center;
+    justify-content: center;
     padding-top: 6px;
     transition-duration: 0.5s;
 }
@@ -558,7 +559,9 @@ blockquote p {
 .fa-times-circle {
     color: #e71c4c;
 }
-
+.clear-filters {
+    white-space: nowrap;
+}
 .clear-filters a {
     color: #e71c4c;
     font-family: "Open Sans";
@@ -770,8 +773,8 @@ blockquote p {
         text-align: center;
         text-decoration: none;
         color: white;
-        width: 153px;
-        padding: 7px 40px;
+        width: 12em;
+        padding: 0.5em 1em;
         height: 41px;
         border-radius: 40px;
         border: 2px solid #e71c4c;
@@ -780,7 +783,8 @@ blockquote p {
         font-size: 16px;
         font-weight: 400;
         line-height: 40px;
-        margin-left: unset;
+        margin: 0.5em;
+        margin-left: 1em;
         align-items: center;
         padding-top: 6px;
         transition-duration: 0.5s;
@@ -793,13 +797,8 @@ blockquote p {
         font-style: italic;
     }
     .filters {
-        margin-top: unset;
-        margin-left: unset;
         display: flex;
-        justify-content: space-between;
-    }
-    .filter-links {
-        display: unset;
+        justify-content: space-around;
     }
     .rpRecommends {
         /* margin-top: -12vh; */
@@ -2373,4 +2372,9 @@ blockquote p {
     border-radius: 0.4em;
     border:1px solid grey;
     margin:0.2em; 
+}
+#cat{
+    position: absolute;
+    top:22vh;
+    left:5vw;
 }

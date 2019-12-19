@@ -120,9 +120,10 @@
                 </div>
             </nav>
             <!-- Mobile navbar ending -->
+
             <!-- Sidebar starting -->
 
-            <section class="sidebar" style="display:none">
+            <section class="sidebar" style="display:none;z-index:1000;">
                 <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
                     <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
                         <i class="fas fa-user-alt" style="padding-right: 10px"></i>
@@ -132,39 +133,18 @@
                 </div>
                 <ul>
                     <li>
-                    <li>
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            <a id="cat-button" class="nav-link dropdown-toggle" data-toggle="dropdown"
                                 style="color:black;padding:0; cursor: pointer;">Categories&nbsp</span></a>
-                            <div class="dropdown-menu">
-                                <div id="category-menu">
-                                    <div>
-                                        <h4>Bats</h4>
-                                        <p>English Willow</p>
-                                        <p>Kashmiri Willow</p>
-                                        <h4>Gloves</h4>
-                                        <p>Batting Gloves</p>
-                                        <p>Keeping GLoves</p>
-                                    </div>
-                                    <div>
-                                        <h4>Leg Guards</h4>
-                                        <p>Batting Leg Guard</p>
-                                        <p>Keeping Leg Guard</p>
-                                        <h4>Balls</h4>
-                                        <p>Leather</p>
-                                        <p>Synthetic</p>
-                                        <p>Tennis</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                    </li>
                     </li>
                     <li>Popular</li>
                     <li>Featured</li>
                     <li>Blog</li>
+                    <li class="divider"></li>
                 </ul>
-                <div style="width: 100%;height: 1px;background-color: grey;"></div>
+                <!-- <div style="width: 100%;height: 1px;background-color: grey;"></div> -->
                 <ul>
                     <li>My Orders</li>
                     <li>My Wishlist</li>
@@ -174,6 +154,27 @@
                 </ul>
             </section>
 
+            <div id="cat" class="dropdown-menu">
+                <div id="category-menu">
+                    <div>
+                        <h4>Bats</h4>
+                        <p>English Willow</p>
+                        <p>Kashmiri Willow</p>
+                        <h4>Gloves</h4>
+                        <p>Batting Gloves</p>
+                        <p>Keeping GLoves</p>
+                    </div>
+                    <div>
+                        <h4>Leg Guards</h4>
+                        <p>Batting Leg Guard</p>
+                        <p>Keeping Leg Guard</p>
+                        <h4>Balls</h4>
+                        <p>Leather</p>
+                        <p>Synthetic</p>
+                        <p>Tennis</p>
+                    </div>
+                </div>
+            </div>
             <!-- Sidebar Ending -->
             <nav class="subNav">
                 <a href="#">Best Selling</a>
@@ -238,7 +239,7 @@
                                 </div>
                             </div>
                             <div class="col-12 flex filters">
-                                <div class="flex filter-links">
+                                <div class="flex filter-links" style="flex-wrap: wrap;">
                                     <a href="#">40% Discount</a>
                                     <a href="#">Exclusive</a>
                                     <a href="#">Lightweight</a>
@@ -511,7 +512,6 @@
         <!-- Footer section starts -->
         <footer class="col-lg-12">
             <!-- Footer starts -->
-            <!-- Footer starts -->
             <div class="footer">
                 <div class=" footerContainer container">
                     <div class="row fleFooter">
@@ -542,7 +542,6 @@
                                     <li><a href="#">Secure Payments</a></li>
                                     <li><a href="#">Track an order</a></li>
                                     <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Leave a feedback</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -552,22 +551,34 @@
                             </div>
                             <div>
                                 <ul>
-                                    <li><a href="#">Carrers</a></li>
+                                    <li><a href="#">Careers</a></li>
                                     <li><a href="#">Terms and Conditions</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Responsibility</a></li>
                                 </ul>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="flex footerBottom">
-                        <div class="footerComponent col-xs-6 col-sm-6 col-xl-1 col-lg-1 col-md-6">
-                            <div class="jksLogo">
-                                <img src="assets/images/jkWhiteLogo.png" alt="jks logo">
+                        <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6">
+                            <div class="footerTopic">
+                                <p>Feedback</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="#">Leave a Feedback</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="newsLetter">
+
+                    </div>
+                    <div class="row footerBottom">
+                        <div class="footerComponent col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
+                            <div class="jksLogo flex">
+                                <img src="assets/images/jkWhiteLogo.png" alt="jks logo">
+                                <h3 style="font-size:1em;align-self:center;position:relative">The JK Sporting is a JK
+                                    Group Company</h3>
+                            </div>
+                        </div>
+                        <div class="newsLetter col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
                             <div class="topicLetter">
                                 <h4>NEWSLETTER SUBSCRIPTION</h4>
                             </div>
@@ -586,7 +597,7 @@
 
                             <!-- </form> -->
                         </div>
-                        <div class="followUs">
+                        <div class="followUs col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
                             <div class="followUsTopic">
                                 <h4>FOLLOW US</h4>
                             </div>
@@ -636,6 +647,12 @@
         $("#close").click(function () {
             $(".sidebar").toggle();
         });
+        $("#cat-button").click(function () {
+            $("#cat").toggle();
+        })
+        $(".sidebar").click(function () {
+            $("#cat").hide();
+        })
     </script>
 </body>
 

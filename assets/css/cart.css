@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap');
-html {
-    overflow-x: hidden;
-}
-/* Navbar css*/
-html {
-    overflow-x: hidden;
-}
 
+html {
+    overflow-x: hidden;
+}
 
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     font-family: "Open Sans", sans-serif;
-    /* overflow-x:hidden;  */
 }
 
 .col-lg-9 {
@@ -32,14 +27,6 @@ html {
 body {
     overflow-x: hidden;
 }
-
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    /* overflow-x:hidden;  */
-}
-
 .col-lg-9 {
     padding-right: unset;
 }
@@ -138,7 +125,7 @@ nav navbar{
 .wholeLinks li a {
     color: #051026;
     font-size: 12.5px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .wholeLinks li a:hover {
@@ -203,7 +190,7 @@ nav .lists {
     justify-content: space-evenly;
     align-items: center;
     min-height: 2.6vw;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .subNav a {
@@ -582,6 +569,7 @@ input[type='radio']:checked:after {
     .cartHeading {
         margin-left: unset;
         padding-top: 40px;
+        display: block;
     }
     .cartContainer .line {
         width: 82px;
@@ -610,6 +598,17 @@ input[type='radio']:checked:after {
         height: 20px;
         width: 20px;
         top: 6px;
+    }
+    #fixed-footer {
+        position: fixed;
+        bottom:0;
+        width: 100%;
+    }
+    .cartHeading {
+        margin-left: 20px;
+    }
+    .line {
+        display: none;
     }
 }
 @media(min-width: 601px) {
@@ -670,14 +669,10 @@ input[type='radio']:checked:after {
     margin-top: 10px;
     font-size: 20px;
     font-style: italic;
-    color: #e71c4c;
+    color: white;
     font-family: "Open Sans";
     font-weight: 300;
     letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-family: "Open Sans - Bold Italic";
-    font-weight: 700;
     font-style: italic;
 }
 
@@ -876,8 +871,12 @@ input[type='radio']:checked:after {
 
 .footer {
     padding: 2.5rem 2.5rem;
-    background-color: black;
+    /* background-color: black; */
     color: white;
+    background: #051026 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .footer .footerTopic {

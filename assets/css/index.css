@@ -189,8 +189,12 @@ ul li {
 
 .footer {
     padding: 2.5rem 0rem;
-    background-color: black;
+    /* background-color: black; */
     color: white;
+    background: #051026 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .footer .footerTopic {
