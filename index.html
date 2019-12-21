@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -109,47 +110,57 @@
         <a href="#">Super Saver Kit</a>
     </nav> -->
     <!-- Modal -->
+   
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div style="max-width: 800px;" class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="text-align: right; position: absolute; z-index: 99; margin: 10px;">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-xl-6">
-                            <div class="container">
-                                <div class="loginContainer">
-                                    <img src="assets/images/logo_jk_sports_FINAL.png">
-                                </div>
-                                <p>Login using social media to get quick access</p>
-                                <button style="display: block; background-color: rgb(221, 0, 0)" href="#"><i
-                                        style="color: white;" class="fab fa-google"></i>&nbsp Signin with
-                                    google</button>
-                                <button href="#" style="background-color: rgb(0, 0, 221); margin-bottom: 90px;"><i
-                                        style="color: white;" class="fab fa-facebook-f"></i>&nbsp Signin
-                                    with facebook</button>
+                    <div class="login-popup">
+                        <div class="login-popup--left">
+                            <div class="loginContainer">
+                                <img src="assets/images/logo_jk_sports_FINAL.png">
                             </div>
+                            <p class="login-popup--left__text">Login using social media to get quick access</p>
+                            <button style="display: block; background-color: #CF4332" href="#"><i
+                                    style="color: white;" class="fab fa-google"></i>&nbsp Signin with
+                                google</button>
+                            <button href="#" style="background-color: #3C66C4; margin-bottom: 90px;"><i
+                                    style="color: white;" class="fab fa-facebook-f"></i>&nbsp Signin
+                                with facebook</button>
+                
                         </div>
-                        <div id="login-section" style="background-color: #eeecec;"
+                        <div class="login-popup--right">
+                            <div id="login-section"
                             class="login-section col-lg-6 col-xl-6">
                             <div style="text-align: center" class="container email">
-                                <h3>Log in to your account</h3>
+                                <div class="login-popup--right__heading">Log in to your account</div>
                                 <p style="color: gray">Don't have an account? <a id="signup" href="#">Sign Up Now</a>
                                 </p>
                                 <input placeholder="Email" type="text" />
                                 <input placeholder="Password" type="password" />
-                                <div style="display: flex; justify-content: space-between; margin-top: 10px;"
-                                    class="remember flex">
-                                    <div class="flex">
-                                        <input type="checkbox" value="Bike">
-                                        <p>Remember me</p>
-
+                                <div class="remember">
+                                    <div class="remember__box">
+                                        <div style="width: 20px">
+                                            <input type="checkbox" value="Bike">
+                                        </div>
+                                        
+                                        <div>
+                                            &nbsp;Remember me
+                                        </div>
+                
                                     </div>
-                                    <a id="forgot" style="color: #F30056">Forgot Password?</a>
+                                    <div>
+                                        <a id="forgot" style="color: #F30056">Forgot Password?</a>
+                                    </div>
                                 </div>
                                 <button href="#">Login with Email</button>
                             </div>
                         </div>
-                        <div id="register-section" style="background-color: #eeecec;"
+                        <div id="register-section"
                             class="register-section col-lg-6 col-xl-6">
                             <div style="text-align: center" class="container email">
                                 <h3>Sign up for free!!</h3>
@@ -174,10 +185,11 @@
                                 </p>
                                 <p style="color: gray">Don't have an account? <a id="signup" href="#">Sign Up Now</a>
                                 </p>
-
+                
                             </div>
                         </div>
-                    </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -240,10 +252,9 @@
     </section>
 
     <!-- Navbar Ends -->
-
     <!-- Sidebar starting -->
 
-    <section class="sidebar" style="display:none;z-index:1000;">
+    <section class="sidebar" style="display:none">
         <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
             <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
                 <i class="fas fa-user-alt" style="padding-right: 10px"></i>
@@ -254,17 +265,36 @@
         <ul>
             <li>
                 <div class="dropdown">
-                    <a id="cat-button" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
                         style="color:black;padding:0; cursor: pointer;">Categories&nbsp</span></a>
-
+                    <div class="dropdown-menu">
+                        <div id="category-menu">
+                            <div>
+                                <h4>Bats</h4>
+                                <p>English Willow</p>
+                                <p>Kashmiri Willow</p>
+                                <h4>Gloves</h4>
+                                <p>Batting Gloves</p>
+                                <p>Keeping GLoves</p>
+                            </div>
+                            <div>
+                                <h4>Leg Guards</h4>
+                                <p>Batting Leg Guard</p>
+                                <p>Keeping Leg Guard</p>
+                                <h4>Balls</h4>
+                                <p>Leather</p>
+                                <p>Synthetic</p>
+                                <p>Tennis</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>Popular</li>
             <li>Featured</li>
             <li>Blog</li>
-            <li class="divider"></li>
         </ul>
-        <!-- <div style="width: 100%;height: 1px;background-color: grey;"></div> -->
+        <div style="width: 100%;height: 1px;background-color: grey;"></div>
         <ul>
             <li>My Orders</li>
             <li>My Wishlist</li>
@@ -274,27 +304,6 @@
         </ul>
     </section>
 
-    <div id="cat" class="dropdown-menu">
-        <div id="category-menu">
-            <div>
-                <h4>Bats</h4>
-                <p>English Willow</p>
-                <p>Kashmiri Willow</p>
-                <h4>Gloves</h4>
-                <p>Batting Gloves</p>
-                <p>Keeping GLoves</p>
-            </div>
-            <div>
-                <h4>Leg Guards</h4>
-                <p>Batting Leg Guard</p>
-                <p>Keeping Leg Guard</p>
-                <h4>Balls</h4>
-                <p>Leather</p>
-                <p>Synthetic</p>
-                <p>Tennis</p>
-            </div>
-        </div>
-    </div>
     <!-- Sidebar Ending -->
     <!-- <div class="owl-carousel">
             <div class="item">
@@ -1070,7 +1079,7 @@
     <div class="footer">
         <div class=" footerContainer container">
             <div class="row fleFooter">
-                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6 ">
                     <div class="footerTopic">
                         <p>Top Categories</p>
                     </div>
@@ -1086,7 +1095,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6">
                     <div class="footerTopic">
                         <p>Help</p>
                     </div>
@@ -1101,7 +1110,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footerComponent col-xs-12 col-sm-4 col-xl-4 col-lg-4 col-md-4">
+                <div class="footerComponent col-xs-6 col-sm-6 col-xl-3 col-lg-3 col-md-6">
                     <div class="footerTopic">
                         <p>About Us</p>
                     </div>
@@ -1117,12 +1126,12 @@
 
             </div>
             <div class="flex footerBottom">
-                <div class="footerComponent col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
+                <div class="footerComponent col-xs-6 col-sm-6 col-xl-1 col-lg-1 col-md-6">
                     <div class="jksLogo">
                         <img src="assets/images/jkWhiteLogo.png" alt="jks logo">
                     </div>
                 </div>
-                <div class="newsLetter col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
+                <div class="newsLetter">
                     <div class="topicLetter">
                         <h4>NEWSLETTER SUBSCRIPTION</h4>
                     </div>
@@ -1140,7 +1149,7 @@
 
                     <!-- </form> -->
                 </div>
-                <div class="followUs col-xs-12 col-sm-12 col-xl-4 col-lg-4 col-md-4">
+                <div class="followUs">
                     <div class="followUsTopic">
                         <h4>FOLLOW US</h4>
                     </div>
@@ -1403,12 +1412,6 @@
         $("#close").click(function () {
             $(".sidebar").toggle();
         });
-        $("#cat-button").click(function () {
-            $("#cat").toggle();
-        })
-        $(".sidebar").click(function () {
-            $("#cat").hide();
-        })
     </script>
 </body>
 
