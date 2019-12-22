@@ -431,7 +431,7 @@ nav .lists {
 }
 
 .checkout-mobile {
-    height: 98px;
+    height: 64px;
     background-color: #051026;
     width: 100%;
     display: none; /* To be shown in mobile only*/
@@ -457,6 +457,9 @@ nav .lists {
 .checkout-mobile .discount .saving-amount{
     font-size: 10px;
 }
+.checkout-mobile .discount .priceTag{
+    font-size: 22px;
+}
 
 .checkout-mobile .discount .saving-amount .off{
     font-size: 12px;
@@ -465,7 +468,7 @@ nav .lists {
 
 .set-address-mobile{
     display: none;
-    height: 98px;
+    height: 64px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -686,33 +689,14 @@ input[type='radio']:checked:after {
         margin-top: 4px;
     }
 } */
-
-.mobile-total {
-    height: 80px;
-    background-color: #051026;
-    display: flex;
-    justify-content: space-evenly;
+.mobile-fixed{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%
 }
 
-.calc-total h2 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-style: italic;
-    color: #e71c4c;
-    font-family: "Open Sans";
-    font-weight: 300;
-    letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-family: "Open Sans - Bold Italic";
-    font-weight: 700;
-    font-style: italic;
-}
 
-.calc-total {
-    display: flex;
-    align-items: center;
-}
 
 .discount p {
     color: white;
@@ -740,25 +724,7 @@ input[type='radio']:checked:after {
     align-items: center;
 }
 
-.mobile-pay {
-    height: 80px;
-    background-color: #e71c4c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.mobile-pay h2 {
-    font-size: 25px;
-    font-style: italic;
-    color: #ffffff;
-    font-family: "Open Sans";
-    letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-weight: 700;
-    font-style: italic;
-}
 
 .delete {
     display: flex;
@@ -822,15 +788,6 @@ input[type='radio']:checked:after {
 }
 
 @media(min-width: 1000px) {
-    .mobile-pay {
-        display: none;
-    }
-    .mobile-total {
-        display: none;
-    }
-    .checkout {
-        /* margin-left: -40px; */
-    }
     .totalPrice .off {
         font-size: 12px;
     }

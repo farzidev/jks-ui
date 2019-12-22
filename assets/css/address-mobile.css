@@ -254,7 +254,7 @@ nav .lists {
 
 
 .checkout-button {
-    height: 98px;
+    height: 64px;
     background-color: #051026;
     width: 100%;
     display: flex; 
@@ -280,15 +280,23 @@ nav .lists {
 .checkout-button .discount .saving-amount{
     font-size: 10px;
 }
+.checkout-button .discount .priceTag{
+    font-size: 22px;
+}
 
 .checkout-button .discount .saving-amount .off{
     font-size: 12px;
 }
-
+.mobile-fixed{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%
+}
 
 .proceed{
     display: flex;
-    height: 98px;
+    height: 64px;
     justify-content: center;
     align-items: center;
     color: white;
