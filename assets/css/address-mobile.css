@@ -216,164 +216,12 @@ nav .lists {
 .subNav a:hover {
     color: rgb(165, 162, 162);
 }
-/* Cart section starts */
-
-.cartContainer {
-    background: #fafafa;
-    /* height: 100vh; */
-    min-height: 90vh;
-    width:80%;
-}
-
-.cartHeading {
-    margin-left: 30px;
-    padding-top: 3vw;
-}
-
-.cartContainer .cart {
-    margin-bottom: 20px;
-}
-
-.cartContainer .line {
-    margin-top: 11px;
-    width: 142px;
-    height: 4px;
-    background-color: #051026;
-}
-
-.cartContainer .topic {
-    /* width: 328px; */
-    height: 50px;
-    color: #051026;
-    font-family: "Open Sans", sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-left: -10px;
-}
-
-.cartContainer .items {
-    /* Style for "76 Items" */
-    margin-top: 2px;
-    margin-left: 10px;
-    width: 90px;
-    height: 32px;
-    color: #e71c4c;
-    font-family: "Open Sans";
-    font-size: 17px;
-    font-weight: 600;
-    font-style: italic;
-}
-.card--row{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.card--row__details{
-    width: 40%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.cartContainer .card--row {
-    background-color: white;
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1em;
-}
-
-.card--row .prod-image {
-    /* width: 200px; */
-    display: flex;
-    justify-content: center;
-}
-
-.cartContainer .card--row img {
-    /* Style for "Cricket-Ba" */
-    margin-left: 20px;
-    height: 126px;
-    box-shadow: -30px -30px 40px rgba
-}
-
-/* .cartContainer .prod-description {
-    width: 150px;
-} */
-
-.cartContainer .prod-description h2 {
-    color: #051026;
-    font-family: "Open Sans";
-    font-weight: 300;
-    letter-spacing: 0.64px;
-    line-height: 24px;
-    /* Text style for "FALCON" */
-    font-family: "Open Sans - Bold Italic";
-    font-size: 23px;
-    font-weight: 700;
-    font-style: italic;
-    position: relative;
-    /* top: 5px; */
-}
-
-.cartContainer .prod-description p {
-    margin-top: -10px;
-    font-size: 13px;
-    color: #959595;
-}
-
-.cartContainer .prod-description button {
-    color: #e71c4c;
-    font-weight: 700;
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid #e2e0e0;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-}
-
-.cartContainer .card--row .discount {
-    color: #e71c4c;
-}
-
-.cartContainer .card--row .itemPrice {
-    /* margin-top: -20px; */
-    width: 120px;
-    font-weight: 900;
-}
-
-.cartContainer .card--row .itemPrice p {
-    font-size: 15px;
-    font-style: italic;
-}
-
-.cartContainer .card--row .itemPrice h2 {
-    margin-top: -15px;
-    font-size: 25px;
-    font-style: italic;
-}
-
-.cartContainer .card--row .delIcon {
-    width: 40px;
-    margin-bottom: 50px;
-    color: #e71c4c;
-}
 
 /* Checkout Section */
 
-.checkout {
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.04);
-    position: absolute;
-    left: 75.5%;
-    top:25%;
-}
+/* .checkoutContainer{
+    margin-left: 20px;
+} */
 
 .checkoutHeading {
     margin-top: 50px;
@@ -404,37 +252,12 @@ nav .lists {
     font-style: italic;
 }
 
-.checkoutContainer .totalPrice {
-    height: 98px;
-    background-color: #051026;
-    border-radius: 10px 0px 0px 10px;
-    width: 380px;
-    margin-left: -25px;
-}
 
-.checkout .totalPrice .totalPriceContainer {
-    margin-left: 40px;
-}
-
-.checkout .totalPrice h2 {
-    color: white;
-}
-
-.checkoutContainer .totalPrice p {
-    color: white;
-    font-family: "Open Sans";
-    font-weight: 700;
-    letter-spacing: 0.64px;
-    /* line-height: 14px; */
-    /* Text style for "FALCON" */
-    font-style: italic;
-}
-
-.checkout-mobile {
+.checkout-button {
     height: 98px;
     background-color: #051026;
     width: 100%;
-    display: none; /* To be shown in mobile only*/
+    display: flex; 
     flex-direction: row;
     justify-content:space-evenly;
     color: white;
@@ -442,29 +265,29 @@ nav .lists {
 }
 
 
-.checkout-mobile .checkout-text p {
+.checkout-button .checkout-text p {
     color: white;
     font-family: "Open Sans";
     letter-spacing: 0.64px;
     font-style: italic;
 }
 
-.checkout-mobile .discount{
+.checkout-button .discount{
     display: flex;
     flex-direction: column;
 
 }
-.checkout-mobile .discount .saving-amount{
+.checkout-button .discount .saving-amount{
     font-size: 10px;
 }
 
-.checkout-mobile .discount .saving-amount .off{
+.checkout-button .discount .saving-amount .off{
     font-size: 12px;
 }
 
 
-.set-address-mobile{
-    display: none;
+.proceed{
+    display: flex;
     height: 98px;
     justify-content: center;
     align-items: center;
@@ -473,15 +296,6 @@ nav .lists {
     background-color: #E71C4C;
     text-transform: none;
     cursor: pointer;
-}
-
-@media(max-width: 470px) {
-    .set-address-mobile{
-        display: flex;
-    }
-    .checkout-mobile{
-        display: flex;
-    }
 }
 
 .totalPrice .off {
@@ -502,8 +316,8 @@ nav .lists {
 }
 
 .address {
-    height: 60vh;
     background-color: white;
+    margin-left: 20px;
 }
 
 .checkoutFooter {
@@ -526,7 +340,7 @@ nav .lists {
     margin-left: 20px;
     font-size: 15px;
     font-style: italic;
-    color: #959595;
+    /* color: #959595; */
     font-family: "Open Sans";
     font-weight: 300;
     letter-spacing: 0.64px;
@@ -596,124 +410,6 @@ input[type='radio']:checked:after {
     border: 2px solid #1f1f1f;
 }
 
-
-
-
-/* Media Queries */
-
-@media(max-width: 1000px) {
-    .checkout {
-        display: none;
-    }
-    .cartContainer {
-        width: 100%;
-    }
-}
-
-/* @media(max-width: 600px) {
-    .cartContainer .card--row .prod-image {
-        display: none;
-    }
-    .add-btn {
-        display: none
-    }
-    .cartContainer .topic {
-        font-size: 22px;
-    }
-    .cartHeading {
-        margin-left: unset;
-        padding-top: 40px;
-    }
-    .cartContainer .line {
-        width: 82px;
-    }
-    .cartContainer .prod-description {
-        margin-left: 10px;
-    }
-    .cartContainer .card--row {
-        height: 100px;
-        padding: 1em;
-        margin: 1em;
-    }
-    .cartContainer .card--row .itemPrice {
-        margin-top: unset;
-    }
-    .cartContainer .card--row .delIcon {
-        margin-bottom: unset;
-    }
-
-    .color {
-        height: 20px;
-        width: 20px;
-        top: 6px;
-    }
-}
-
-} */
-
-/* @media(max-width: 500px) {
-    .cartContainer .prod-description {
-        width: 120px;
-    }
-    .cartContainer .prod-description h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-    .cartContainer .prod-description p {
-        font-size: 10px;
-    }
-    .cartContainer .card--row .itemPrice h2 {
-        font-size: 20px;
-    }
-    .cartContainer .card--row .itemPrice p {
-        font-size: 13px;
-    }
-    .cartContainer .card--row .itemPrice {
-        width: 103px;
-    }
-
-} */
-
-/* @media(max-width: 400px) {
-    .cartContainer .topic {
-        font-size: 18px;
-    }
-    .cartContainer .line {
-        height: 3px;
-    }
-    .cartContainer .items {
-        font-size: 13px;
-        margin-top: 4px;
-    }
-} */
-
-.mobile-total {
-    height: 80px;
-    background-color: #051026;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.calc-total h2 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-style: italic;
-    color: #e71c4c;
-    font-family: "Open Sans";
-    font-weight: 300;
-    letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-family: "Open Sans - Bold Italic";
-    font-weight: 700;
-    font-style: italic;
-}
-
-.calc-total {
-    display: flex;
-    align-items: center;
-}
-
 .discount p {
     color: white;
     font-family: "Open Sans";
@@ -740,118 +436,6 @@ input[type='radio']:checked:after {
     align-items: center;
 }
 
-.mobile-pay {
-    height: 80px;
-    background-color: #e71c4c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-pay h2 {
-    font-size: 25px;
-    font-style: italic;
-    color: #ffffff;
-    font-family: "Open Sans";
-    letter-spacing: 0.64px;
-    /* line-height: 16px; */
-    /* Text style for "FALCON" */
-    font-weight: 700;
-    font-style: italic;
-}
-
-.delete {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-}
-
-.delete i:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.delete a {
-    color: #e71c4c;
-    margin-left: -15px;
-}
-
-.delete a:hover {
-    color: #e71c4c;
-    transform: scale(1.05);
-}
-
-
-@media(max-width: 470px) {
-    .card--row{
-        width: 100%;
-    }
-    .card--row .prod-image {
-        width:30%;
-        display: flex;
-        justify-content: center;
-        /* background-color: red; */
-    }
-    .card--row .prod-image img{
-        /* display:block; */
-        width: 80%;
-        height: 80%;
-    }
-    .cartContainer .prod-description h2 {
-        font-size: 16px;
-    }
-    .cartContainer .prod-description p {
-        font-size: 10px;
-    }
-    .card--row__details{
-        flex-direction: column;
-        width: 30%;
-    }
-    .cartContainer .card--row .itemPrice p {
-        margin-top: 10px;
-        font-size: 10px;
-    }
-    
-    .cartContainer .card--row .itemPrice h2 {
-        font-size: 17px;
-    }
-    .delete{
-        width: 20%;
-    }
-}
-
-@media(min-width: 1000px) {
-    .mobile-pay {
-        display: none;
-    }
-    .mobile-total {
-        display: none;
-    }
-    .checkout {
-        /* margin-left: -40px; */
-    }
-    .totalPrice .off {
-        font-size: 12px;
-    }
-}
-
-@media(min-width: 700px) {
-    .delete {
-        margin-right: 50px;
-    }
-    .cartHeading {
-        padding-bottom: 3vh;
-        padding-top: 7vw;
-    }
-}
-
-@media(min-width: 1000px) {
-    .cartHeading {
-        padding-bottom: unset;
-        padding-top: 3vw;
-    }
-}
 
 .color {
     /* Style for "Color" */
@@ -881,56 +465,15 @@ input[type='radio']:checked:after {
     background-color: #86190a;
 }
 
-.neg-button {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-}
-
-.subtraction {
-    width: 20px;
-    height: 15px !important;
-    background-color: transparent;
-    margin-top: -11px;
-    margin-left: unset !important;
-}
 
 .add-address {
-    margin-right: 30px;
-    text-align: end;
+    /* margin-right: 30px; */
+    text-align: center;
     font-family: "Open Sans";
     font-style: italic;
     font-size: 15px;
+    font-weight: bold;
     color: #e71c4c !important;
-}
-
-.payContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: -25px;
-}
-
-.pay {
-    /* margin-left: 70px; */
-    font-size: 17px;
-    color: white;
-    border: unset;
-    border-radius: 40px;
-    background-color: #e71c4c;
-    padding: 10px 50px 10px 50px;
-    margin-top: 20px;
-    font-family: "Open Sans";
-    box-shadow: 0px 16px 18px #E71C4C41;
-    transition: 0.5s ease;
-}
-
-.pay:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    background-color: white;
-    color: #e71c4c;
-    border: 1px solid #e71c4c;
-    font-weight: 800;
 }
 
 /* footer css */
