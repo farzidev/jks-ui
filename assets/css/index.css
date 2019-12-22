@@ -4526,14 +4526,55 @@ blockquote p {
 }
 
 /* modal css */
-
-.loginContainer {
+.login-popup{
     display: flex;
-    justify-content: center;
-    margin-top: 65px;
-    margin-bottom: 50px;
+    flex-direction: row;
 }
 
+.login-popup--left{
+    padding: 1rem 2rem;
+    width: 50%;
+}
+.login-popup--right{
+    padding: 1rem 2rem;
+    background-color: #eeecec;
+    width: 50%;
+}
+
+
+.loginContainer {
+    width: 100%;
+    margin: 65px auto;
+    margin-bottom: 50px;
+}
+.loginContainer img{
+    display: block;
+    margin: 0 auto;
+}
+.login-popup--right__heading{
+    font-weight: bold;
+}
+@media(max-width: 450px) {
+    .loginContainer{
+        display: none;
+    }
+    .login-popup--left__text{
+        display: none;
+    }
+    .login-popup{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .login-popup--left{
+        padding: 0rem 1rem;
+        width: 100%;
+    }
+    .login-popup--right{
+        padding: 1rem;
+        background-color: #eeecec;
+        width: 100%;
+    }
+}
 .modal-body button {
     width: 100%;
     margin-top: 15px;
@@ -4552,6 +4593,8 @@ blockquote p {
 
 .modal-body {
     padding: 0px !important;
+    display: flex;
+    flex-direction: row;
 }
 
 .email input {
@@ -4576,9 +4619,23 @@ blockquote p {
     position: relative;
     left: 20px;
 }
-
+.remember{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    /* margin-top: 10px; */
+}
+.remember__box{
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    /* display: inline-block; */
+}
 .remember p{
     font-size: 13px;
+    /* white-space: nowrap; */
+    /* margin-left: 15px; */
 }
 
 .email button{
@@ -4600,10 +4657,10 @@ blockquote p {
     display: unset;
 }
 .register-section{
-    display: unset;
+    display: none;
 }
 .password-section{
-    display: unset;
+    display: none;
 }
 #forgot:hover{
     cursor: pointer;
