@@ -800,4 +800,7 @@ blockquote p {
         overflow-x: scroll;
         
     }
+    footer{
+        margin-bottom: 128px;
+    }
 }

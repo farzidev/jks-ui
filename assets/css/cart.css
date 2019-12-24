@@ -218,6 +218,10 @@ nav .lists {
 }
 /* Cart section starts */
 
+.cart-body{
+    background-color: #FAFAFA;
+}
+
 .cartContainer {
     background: #fafafa;
     /* height: 100vh; */
@@ -370,6 +374,7 @@ nav .lists {
 
 .checkout {
     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.04);
+    /* background-color: #FAFAFA; */
     position: absolute;
     left: 75.5%;
     top:25%;
@@ -610,6 +615,9 @@ input[type='radio']:checked:after {
     }
     .cartContainer {
         width: 100%;
+    }
+    footer{
+        margin-bottom: 128px;
     }
 }
 
