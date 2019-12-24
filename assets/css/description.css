@@ -165,6 +165,7 @@ nav .lists {
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
+    z-index: 90;
 }
 .cartContainer .option-images img{
     height: 65px;
@@ -173,6 +174,7 @@ nav .lists {
     border: 2px solid rgb(66, 66, 66);
     border-radius: 5px;
     transition: 0.25s ease;
+    background-color: white;
 }
 .cartContainer .option-images img:hover{
     height: 70px;
@@ -198,6 +200,11 @@ nav .lists {
 }
 
 
+@media(max-width: 700px) {
+    .main-image img{
+        height: 35vh;
+    }
+}
 
 /* Checkout Section */
 
