@@ -344,11 +344,11 @@ nav .lists {
 }
 
 .selector p {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
-    /* color: #959595; */
+    color: #959595;
     font-family: "Open Sans";
     font-weight: 300;
     letter-spacing: 0.64px;
@@ -358,22 +358,14 @@ nav .lists {
 }
 
 .radio-option {
-    border: 2px solid;
-    border-radius: 7px;
+    /* border: 2px solid;
+    border-radius: 7px; */
     margin-left: 15px;
+    font-weight: 600;
 }
 
-.radio-option h2 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 10px;
-    font-family: "Open Sans";
-}
-
-.radio-option p {
-    font-size: 12px;
-    margin-left: 10px;
-    font-family: "Open Sans";
+.paytm-logo{
+    max-width: 60px;
 }
 
 .checkoutContainer .options {
@@ -381,11 +373,11 @@ nav .lists {
 }
 
 .radio {
-    width: 280px;
+    width: 100%;
 }
 
 input[type='radio'] {
-    margin-top: 40px;
+    margin-top: 5px;
 }
 
 input[type='radio']:after {
@@ -396,7 +388,7 @@ input[type='radio']:after {
     left: -1px;
     position: relative;
     background-color: white;
-    ;
+    
     content: '';
     display: inline-block;
     visibility: visible;
@@ -592,7 +584,9 @@ input[type='radio']:checked:after {
     left: 10px;
     font-size: 18px;
 }
-
+.checkoutHeading .item-count{
+    color: #E71C4C;
+}
 .mailIdBox {
     position: relative !important;
 }
