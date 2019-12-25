@@ -226,7 +226,7 @@ nav .lists {
     background: #fafafa;
     /* height: 100vh; */
     min-height: 90vh;
-    width:80%;
+    /* width:80%; */
 }
 
 .cartHeading {
@@ -374,10 +374,9 @@ nav .lists {
 
 .checkout {
     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.04);
-    /* background-color: #FAFAFA; */
-    position: absolute;
+    position: fixed;
     left: 75.5%;
-    top:25%;
+    bottom: 0;
 }
 
 .checkoutHeading {
@@ -702,7 +701,6 @@ input[type='radio']:checked:after {
     bottom: 0;
     z-index: 999;
     width: 100%;
-    margin-left: 15px;
 }
 
 
