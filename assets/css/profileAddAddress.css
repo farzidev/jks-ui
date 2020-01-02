@@ -455,9 +455,11 @@ blockquote p {
     background-color: rgb(226, 225, 225);
     border-radius: 5px;
 }
-.inputs{
+
+.inputs {
     margin-top: 40px;
 }
+
 .changeContainer {
     margin-top: 40px;
 }
@@ -527,4 +529,42 @@ blockquote p {
     /* margin-top: -10px; */
     position: relative;
     bottom: 10px;
+}
+
+/* responsive */
+
+@media(min-width: 786px) {
+    .options {
+        display: unset;
+    }
+}
+
+@media(max-width: 786px) {
+    .options {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .inputs input {
+        margin-top: 15px;
+        height: 40px;
+        width: 325px;
+        border: unset;
+        text-align: center;
+        font-family: "Open Sans";
+        background-color: rgb(226, 225, 225);
+        border-radius: 5px;
+    }
+    .changeContainer {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0px !important;
+        margin-left: 14px;
+    }
+    .payContainer{
+        margin-bottom: 40px;
+    }
 }

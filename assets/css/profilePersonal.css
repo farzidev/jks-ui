@@ -518,3 +518,30 @@ blockquote p {
     position: relative;
     bottom: 10px;
 }
+
+
+/* responsive */
+@media(min-width: 786px){
+    .options{
+        display: unset;
+    }
+}
+@media(max-width: 786px){
+    .options{
+        display: none;
+    }
+}
+@media(max-width: 600px){
+    .change{
+        padding-right: 0px;
+    }
+    .change input{
+        margin-left: 0px;
+        width: 260px;
+    }
+    .payContainer{
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 60px;
+    }
+}

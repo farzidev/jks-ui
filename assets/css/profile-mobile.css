@@ -377,18 +377,17 @@ blockquote p {
     }
 }
 
-/* profile css */
-.container .line{
+.line{
     margin-top: 11px;
-    width: 142px;
+    width: 82px;
     height: 5px;
     background-color: #051026;
 }
-.container .topic{
+.topic{
     height: 50px;
     color: #051026;
     font-family: "Open Sans";
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 900;
     letter-spacing: 1px;
     line-height: 24px;
@@ -396,166 +395,36 @@ blockquote p {
     margin-left: -7px;
 }
 
-.container .heading{
+.heading{
     margin-top: 50px;
     margin-bottom: 30px;
 }
+.container{
+    margin: 20px 5px;
+}
 
-.container .personalDetails{
-    margin: 35px 0px;
-    transition: 0.20s ease;
-}
-.profileContainer{
+.option-container{
+    border-radius: 10px;
     background-color: white;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 }
-.container .personalDetails h2{
-    font-size: 18px;
-    font-weight: 900;
+.option-container a{
+    color: black;
+    text-decoration: none;
     font-family: "Open Sans";
     font-style: italic;
-    margin-left: 45px;
-}
- .container .options{
-    box-shadow: 8px 5px 15px grey;
- }
- .container .current{
-     background-color: #051026;
-     color: white;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 40px;
-     margin-right: -40px;
-     z-index: 999;
-     overflow: visible;
-     border-radius: 0px 10px 10px 0px;
- }
- .container .current h2{
-     margin-left: -0px
- }
-.change{
-    margin-top: 50px;
-}
-
-.card-options{
-    margin-left: 150px;
-}
-.radio p{
-    margin-left: 30px;
-    font-weight: 600;
-}
-input[type='radio'] {
-    margin-top: 4px;
-}
-
-input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: white;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid #1f1f1f;
-}
-
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #e71c4c;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    padding: 1px;
-    border: 2px solid #1f1f1f;
-}
-
- .payContainer{
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    margin-top: 25px;
-    margin-left: 150px;
-}
-.pay{
-    /* margin-left: 70px; */
-    font-size: 17px;
-    color: white;
-    border: unset;
-    border-radius: 40px;
-    background-color: #e71c4c;
-    padding: 10px 50px 10px 50px;
-    margin-top: 20px;
-    font-family: "Open Sans";
-    transition: 0.25s ease;
-}
-.pay:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    background-color: white;
-    color: #e71c4c;
-    border: 1px solid #e71c4c;
-    font-weight: 800;
-}
-
-.container .personalDetails:hover{
-    background-color: #051026;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-}
-.container .current:hover{
-    background-color: #051026;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    margin-right: -40px;
-    z-index: 999;
-    overflow: visible;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.allIcons .total-cart-items {
-    color: white;
-    background-color: #051026;
-    padding: 1px 4px;
-    border-radius: 50%;
-    right: 0px;
     font-weight: 500;
-    font-size: 12px;
-    /* margin-bottom: 10px; */
-    /* margin-top: -10px; */
-    position: relative;
-    bottom: 10px;
+}
+.option-container a:hover{
+    cursor: pointer;
+    color: rgb(54, 54, 54);
 }
 
-/* responsive */
-@media(min-width: 786px){
-    .options{
-        display: unset;
-    }
-}
-@media(max-width: 786px){
-    .options{
-        display: none;
-    }
+.option{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 0px; */
+    padding-top: 10px;
+    margin: 0px 8px;
 }
 
-@media(max-width: 600px){
-    .card-options{
-        margin-left: 10px;
-    }
-    .payContainer{
-        margin-left: 20px;
-        margin-top: 0px;
-        margin-bottom: 50px;
-    }
-}

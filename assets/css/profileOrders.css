@@ -667,3 +667,24 @@ blockquote p {
     position: relative;
     bottom: 10px;
 }
+
+/* responsive */
+@media(min-width: 786px){
+    .options{
+        display: unset;
+    }
+}
+@media(max-width: 786px){
+    .options{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .track{
+        height: 682px;
+    }
+    .cart{
+        margin-bottom: 170px;
+    }
+}

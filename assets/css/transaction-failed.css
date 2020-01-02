@@ -2354,3 +2354,27 @@ blockquote p {
     /* padding: 5px 30px; */
     text-align: center;
 }
+
+/* resposive */
+@media(max-width: 600px){
+    .failedContainer {
+        height: 400px;
+        margin-left: 32px;
+    }
+    .failed{
+        display: flex;
+        flex-direction: column;
+    }
+    .failed-text{
+        margin-left: 0px !important;
+        margin-top: 22px;
+        text-align: center !important;
+        align-items: center;
+    }
+    body{
+        background-color: #eeecec 
+    }
+    .failedContainer h3 {
+        margin-left: 20px;
+    }
+}

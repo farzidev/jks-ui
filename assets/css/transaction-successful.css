@@ -2361,3 +2361,26 @@ blockquote p {
     font-size: 10px;
     font-weight: 400;
 }
+
+/* resposive */
+@media(max-width: 600px){
+    .failedContainer {
+        height: 372px;
+        margin-left: 32px;
+    }
+    .failed{
+        display: flex;
+        flex-direction: column;
+    }
+    .failed-text{
+        margin-left: 0px !important;
+        margin-top: 22px;
+        text-align: center !important;
+    }
+    body{
+        background-color: #eeecec 
+    }
+    .failedContainer h3 {
+        margin-left: 20px;
+    }
+}
