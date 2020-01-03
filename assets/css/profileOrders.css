@@ -682,9 +682,53 @@ blockquote p {
 
 @media(max-width: 600px){
     .track{
-        height: 682px;
+        height: 642px;
     }
     .cart{
         margin-bottom: 170px;
+    }
+    /* .classItem{
+        display: none;
+    }
+    .mobile-classItem{
+        display: unset;
+    } */
+    .mobile-cart{
+        display: unset;
+        margin-top: 50px;
+    }
+    .cart{
+        display: none;
+    }
+    .classItem .prod-image{
+        width:150px;
+        margin-right: 25px;
+    }
+    .classItem{
+        justify-content: center;
+        background-color: unset;
+    }
+    .classItem .itemPrice{
+        margin-top: unset;
+    }
+}
+@media(min-width: 600px){
+    /* .classItem{
+        display: unset;
+    }
+    .mobile-classItem{
+        display: none;
+    } */
+    .mobile-cart{
+        display: none;
+    }
+    .cart{
+        display: unset;
+    }
+    .classItem{
+        background-color: unset;
+    }
+    .classItem .itemPrice{
+        margin-right: 20px;
     }
 }
