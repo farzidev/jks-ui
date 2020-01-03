@@ -519,3 +519,15 @@ blockquote p {
     position: relative;
     bottom: 10px;
 }
+
+/* responsive */
+@media(min-width: 786px){
+    .options{
+        display: unset;
+    }
+}
+@media(max-width: 786px){
+    .options{
+        display: none;
+    }
+}
