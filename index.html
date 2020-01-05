@@ -171,9 +171,12 @@
                                 <input placeholder="Name" type="text" />
                                 <input placeholder="Email" type="text" />
                                 <input placeholder="Password" type="password" />
-                                <button href="#">Sign Up</button>
+                                <button id="signup-btn" href="#">Sign Up</button>
                             </div>
                         </div>
+
+                
+
                         <div id="password-section" style="background-color: #eeecec;"
                             class="password-section col-lg-6 col-xl-6">
                             <div style="text-align: center" class="container email">
@@ -196,6 +199,118 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="signup-mobile-popup" class="" tabindex="-1" role="dialog" aria-labelledby="signup-mobile-popupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content sign-up--popup">
+            <div class="modal-body">
+              <h6 class="sign-up--heading">We are happy to have you Piyush</h6>
+               <br>
+               <p class="sign-up--text">
+                   Please confirm your mobile number here, we'll send <br>you an OTP on the same number.
+                </p>
+                <br>
+               <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">+91</span>
+                </div>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <button id="signup-phone-submit" class="btn">Send OTP</button>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      
+    <div class="modal fade" id="signup-otp-popup" class="" tabindex="-1" role="dialog" aria-labelledby="signup-otp-popupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content sign-up--popup">
+            <div class="modal-body">
+              <h6 class="sign-up--heading">Enter OTP</h6>
+               <br>
+               <p class="sign-up--text">
+                   We have sent you an OTP on <strong>+91-9997xxxx23</strong>
+                </p>
+
+                <br>
+               <div class="input-group mb-3">
+                <div class="otp-outer">
+                    <div class="otp-inner">
+                        <input id="partitioned" placeholder="••••" class="form-control otp-input" type="text" maxlength="4" />
+                    </div>
+                </div>
+                <!-- <input type="text" class="form-control otp-input" maxlength="6"> -->
+            </div>
+            <div class="sign-up--row">
+                <a id="signup-otp-back" href="#">Change Number</a>
+                <a href="#">Resend OTP</a>
+            </div>
+              <button id="signup-otp-submit" class="btn">Verify</button>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      
+    <div class="modal fade" id="signup-document-popup" class="" tabindex="-1" role="dialog" aria-labelledby="signup-document-popupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content sign-up--popup">
+            <div class="modal-body">
+              <h6 class="sign-up--heading">Document Verification</h6>
+               <br>
+               <p class="sign-up--text">
+                   Please Upload the documnet as final step
+                </p>
+
+                <br>
+                <div class="sign-up--row">
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                          <label class="custom-file-label" for="inputGroupFile01">Pan Card</label>
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile02">
+                          <label class="custom-file-label" for="inputGroupFile02">Aadhar Front</label>
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile03">
+                          <label class="custom-file-label" for="inputGroupFile03">Aadhar Back</label>
+                        </div>
+                      </div>
+                </div>
+
+            <div class="sign-up--row">
+                <div>
+                    Want to add suppording documents?
+                    <br>
+                    <small>Not mandatory</small>
+                </div>
+                
+                <!-- <input type="text" class="form-control" placeholder=""> -->
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile04">
+                      <label class="custom-file-label" for="inputGroupFile04">Document</label>
+                    </div>
+                  </div>
+            </div>
+              <button id="signup-document-submit" class="btn">Upload and Finish</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- navbar ending -->
 
@@ -1193,13 +1308,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- <script src="./assets/js/carousel.js"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
@@ -1432,7 +1547,60 @@
         })
         $(".sidebar").click(function () {
             $("#cat").hide();
-        })
+        });
+        $("#signup-document-popup").modal();
+        
+        // $(window).load(function() {
+            $("#signup-btn").click(function(){
+                $("#exampleModalCenter").modal("hide");
+                $("#signup-mobile-popup").modal();
+            });
+            $("#signup-phone-submit").click(function(){
+                $("#signup-mobile-popup").modal("hide");
+                $("#signup-otp-popup").modal();
+            });
+            $("#signup-otp-back").click(function(){
+                $("#signup-otp-popup").modal("hide");
+                $("#signup-mobile-popup").modal();
+            });
+            $("#signup-otp-submit").click(function(){
+                $("#signup-otp-popup").modal("hide");
+                $("#signup-document-popup").modal();
+            });
+            $("#signup-document-submit").click(function(){
+                $("#signup-document-popup").modal("hide");
+                // $("#signup-otp-popup").modal();
+            });
+        // });
+
+        // for otp
+        var obj = document.getElementById('partitioned');
+        obj.addEventListener('keydown', stopCarret); 
+        obj.addEventListener('keyup', stopCarret); 
+
+        function stopCarret() {
+            if (obj.value.length > 3){
+                setCaretPosition(obj, 3);
+            }
+        }
+
+        function setCaretPosition(elem, caretPos) {
+            if(elem != null) {
+                if(elem.createTextRange) {
+                    var range = elem.createTextRange();
+                    range.move('character', caretPos);
+                    range.select();
+                }
+                else {
+                    if(elem.selectionStart) {
+                        elem.focus();
+                        elem.setSelectionRange(caretPos, caretPos);
+                    }
+                    else
+                        elem.focus();
+                }
+            }
+        }
     </script>
 </body>
 
