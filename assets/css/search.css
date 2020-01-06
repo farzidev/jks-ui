@@ -221,17 +221,12 @@ nav .lists {
     list-style-type: none;
 }
 
-.jksLogo {
-    /* margin-left: 13vw;
-    margin-top: -7vw; */
-    margin-left: -80px;
-    margin-top: 30px;
+ .jksLogo { 
+    text-align:center;
 }
 
 .jksLogo img {
     position: relative;
-    left: 50px;
-    top: 20px;
     height: 110px;
     width: 90px;
 }

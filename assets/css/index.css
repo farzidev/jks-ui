@@ -259,7 +259,8 @@ ul li {
     margin: 0px 1.03rem;
     background-color: #da2957;
 }
-.jksLogo {
+ .jksLogo { 
+    text-align:center;
     display: flex;
     justify-content: center;
 }

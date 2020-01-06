@@ -221,7 +221,8 @@ nav .lists {
     list-style-type: none;
 }
 
-.jksLogo {
+ .jksLogo { 
+    text-align:center;
     /* margin-left: 13vw;
     margin-top: -7vw; */
     margin-left: -80px;
