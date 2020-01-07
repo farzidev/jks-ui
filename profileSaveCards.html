@@ -18,7 +18,8 @@
     <!-- Header -->
     <div class="col-lg-12">
         <!-- navbar starting -->
-        <nav class="navbar navbar-expand-lg">
+        <!-- navbar starting -->
+        <nav id="mainNavbar" class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <div class="logoImage">
                     <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
@@ -33,13 +34,45 @@
                 <ul class="navbar-nav mr-auto wholeLinks">
                     <li class="nav-item active">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Categories&nbsp<span
-                                    class="caret"></span><span class="sr-only">(current)</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">PADS</a></li>
-                                <li><a href="#">GLOVES</a></li>
-                                <li><a href="#">SPORTS KIT</a></li>
-                            </ul>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                href="#">Categories&nbsp</span></a>
+                            <div class="dropdown-menu">
+                                <div id="category-menu">
+                                    <div>
+                                        <div id="bats-bg">
+                                            <h4 id="bats-button">Bats</h4>
+                                            <div id="bats-menu">
+                                                <p>English Willow</p>
+                                                <p>Kashmiri Willow</p>
+                                            </div>
+                                        </div>
+                                        <div id="gloves-bg">
+                                            <h4 id="gloves-button">Gloves</h4>
+                                            <div id="gloves-menu">
+                                                <p>Batting Gloves</p>
+                                                <p>Keeping GLoves</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div id="guards-bg">
+                                            <h4 id="guards-button">Leg Guards</h4>
+                                            <div id="guards-menu">
+                                                <p>Batting Leg Guard</p>
+                                                <p>Keeping Leg Guard</p>
+                                            </div>
+                                        </div>
+                                        <div id="balls-bg">
+                                            <h4 id="balls-button">Balls</h4>
+                                            <div id="balls-menu">
+                                                <p>Leather</p>
+                                                <p>Synthetic</p>
+                                                <p>Tennis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item active">
@@ -54,11 +87,14 @@
                 </ul>
                 <div>
                     <ul class="allIcons">
-                        <li><a href="#"><i class="fas fa-search"></i></a></li>
-                        <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+                        <li>
+                            <input type="text" id="search-button">
+                            <a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                    class="fas fa-user-alt"></i></a></li>
                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
-                        </li>
+                        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i><span
+                                    class="total-cart-items">1</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -67,10 +103,92 @@
             <a href="#">Best Selling</a>
             <a href="#">Most Discounted</a>
             <a href="#">New Arrival</a>
-            <a href="#">Rps Recommended</a>
+            <a href="#">RP's Recommended</a>
             <a href="#">Super Saver Kit</a>
         </nav>
         <!-- navbar ending -->
+
+        <!-- Mobile navbar starting-->
+
+        <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm" style="justify-content: flex-start;">
+            <img id="burger" src="./assets/images/menu.svg"
+                style="top: 35px;left: 13px;width: 32px;height: 16px;margin: 1.5em 0.75em;cursor: pointer;">
+            <a class="navbar-brand" href="#">
+                <div class="logoImage" style="margin-right:auto">
+                    <img src=" ./assets/images/logo_jk_sports_FINAL.png"
+                        style="width: 107px;height: 35px;padding-left: 0.5em">
+                </div>
+            </a>
+            <div style="margin-left:auto;margin-right: 1.5em;display:flex;flex-grow: 0.75;justify-content:space-around">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                        class="fas fa-user-alt"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
+            </div>
+        </nav>
+        <nav class="subNav">
+            <a href="#">Best Selling</a>
+            <a href="#">Most Discounted</a>
+            <a href="#">New Arrival</a>
+            <a href="#">RP's Recommended</a>
+            <a href="#">Super Saver Kit</a>
+        </nav>
+        <!-- Mobile navbar ending-->
+
+        <!-- Sidebar starting -->
+
+        <section class="sidebar" style="display:none;z-index:1000;">
+            <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
+                <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
+                    <i class="fas fa-user-alt" style="padding-right: 10px"></i>
+                    Login & Signup
+                    <i id="close" class="fas fa-times" style="padding-left: 10px;cursor: pointer;"></i>
+                </span>
+            </div>
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <a id="cat-button" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            style="color:black;padding:0; cursor: pointer;">Categories&nbsp</span></a>
+                    </div>
+                </li>
+                <li>Popular</li>
+                <li>Featured</li>
+                <li>Blog</li>
+                <li class="divider"></li>
+            </ul>
+            <!-- <div style="width: 100%;height: 1px;background-color: grey;"></div> -->
+            <ul>
+                <li>My Orders</li>
+                <li>My Wishlist</li>
+                <li>My Cart</li>
+                <li>My Account</li>
+                <li>Logout</li>
+            </ul>
+        </section>
+        <div id="cat" class="dropdown-menu">
+            <div id="category-menu">
+                <div>
+                    <h4>Bats</h4>
+                    <p>English Willow</p>
+                    <p>Kashmiri Willow</p>
+                    <h4>Gloves</h4>
+                    <p>Batting Gloves</p>
+                    <p>Keeping GLoves</p>
+                </div>
+                <div>
+                    <h4>Leg Guards</h4>
+                    <p>Batting Leg Guard</p>
+                    <p>Keeping Leg Guard</p>
+                    <h4>Balls</h4>
+                    <p>Leather</p>
+                    <p>Synthetic</p>
+                    <p>Tennis</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar Ending -->
 
     </div>
     <!-- header ends -->
@@ -88,7 +206,7 @@
                 <div onclick=" window.location.href = 'ProfileOrders.html';" class="personalDetails">
                     <h2>My Orders</h2>
                 </div>
-                <div  onclick=" window.location.href = 'profilePassword.html';"  class="personalDetails">
+                <div onclick=" window.location.href = 'profilePassword.html';" class="personalDetails">
                     <h2>Change Password</h2>
                 </div>
                 <div onclick=" window.location.href = 'profileManage.html';" class="personalDetails">
@@ -255,6 +373,22 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $("#burger").click(function () {
+            $(".sidebar").toggle();
+        });
+        $("#close").click(function () {
+            $(".sidebar").toggle();
+        });
+        $("#cat-button").click(function () {
+            $("#cat").toggle();
+        })
+        $(".sidebar").click(function () {
+            $("#cat").hide();
+        })
+    </script>
+
+
 </body>
 
 </html>

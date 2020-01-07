@@ -93,6 +93,7 @@ nav {
     list-style: none;
     background-color: white;
     justify-content: space-evenly;
+    align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 66% 122%, 91% 100%, 19% 100%, -18% 20%, -8% -21%);
 }
 
@@ -2874,13 +2875,11 @@ nav .lists {
 .jksLogo {
     /* margin-left: 13vw;
     margin-top: -7vw; */
-    margin-left: -80px;
-    margin-top: 30px;
+    text-align: center;
 }
 
 .jksLogo img {
     position: relative;
-    left: 50px;
     height: 150px;
     width: 130px;
 }
