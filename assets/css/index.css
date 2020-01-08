@@ -4212,6 +4212,7 @@ nav navbar{
     list-style: none;
     background-color: white;
     justify-content: space-evenly;
+    align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 66% 122%, 91% 100%, 19% 100%, -18% 20%, -8% -21%);
 }
 
