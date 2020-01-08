@@ -54,6 +54,19 @@ body {
 /* Navbar css*/
 
 /* Navbar css*/
+.mobile-search-bar {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .mobile-search-bar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}
 
 nav navbar {
   background-color: white;
@@ -113,7 +126,6 @@ nav navbar {
 }
 #category-menu p {
   margin-bottom: 5px;
-  padding-right: 2em;
 }
 #category-menu h4 {
   margin: 1em 0;
@@ -212,6 +224,7 @@ nav .lists {
   align-items: center;
   min-height: 2.6vw;
   font-weight: bold;
+  width: 100%;
 }
 
 .subNav a {
@@ -768,7 +781,6 @@ blockquote p {
 }
 #category-menu p {
   margin-bottom: 5px;
-  padding-right: 2em;
 }
 #category-menu h4 {
   margin: 1em 0;
@@ -783,6 +795,7 @@ blockquote p {
 @media (max-width: 1000px) {
   #mobile-navbar {
     display: flex;
+    width: 100%;
   }
   #mobile-navbar + .subNav {
     display: flex;

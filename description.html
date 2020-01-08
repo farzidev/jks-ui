@@ -99,7 +99,6 @@
                 </div>
             </nav>
             <!-- navbar ending -->
-
             <!-- Mobile navbar starting-->
 
             <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm"
@@ -114,27 +113,26 @@
                 </a>
                 <div
                     style="margin-left:auto;margin-right: 1.5em;display:flex;flex-grow: 0.75;justify-content:space-around">
-                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#" class="mobile-hide"><i class="fas fa-search"></i></a>
                     <a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
                             class="fas fa-user-alt"></i></a>
-                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="profile-mobile.html"><i class="fas fa-heart"></i></a>
                     <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
                 </div>
             </nav>
-            <nav class="subNav">
-                <a href="#">Best Selling</a>
-                <a href="#">Most Discounted</a>
-                <a href="#">New Arrival</a>
-                <a href="#">RP's Recommended</a>
-                <a href="#">Super Saver Kit</a>
-            </nav>
-            <!-- Mobile navbar ending-->
 
+            <div class="input-group mb-3 mobile-search-bar">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="mobile-search-bar"><i class="fas fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="mobile-search-bar">
+            </div>
+            <!-- Mobile navbar ending-->
             <!-- Sidebar starting -->
 
             <section class="sidebar" style="display:none;z-index:1000;">
                 <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
-                    <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
+                    <span style="left:10%;top: 35%;position:relative">
                         <i class="fas fa-user-alt" style="padding-right: 10px"></i>
                         Login & Signup
                         <i id="close" class="fas fa-times" style="padding-left: 10px;cursor: pointer;"></i>

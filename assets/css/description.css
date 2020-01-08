@@ -55,12 +55,6 @@ nav {
     text-align: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 68% 100%, 0% 100%);
     background-color: white;
-    padding-right: 40px;
-    margin-top: 0px;
-    margin-top: -20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: -8px;
 }
 
 .logoImage img {
@@ -102,7 +96,7 @@ nav {
 }
 
 .allIcons li {
-    margin: 22px 20px;
+    margin: 1em;
 }
 
 .allIcons li a:hover {
@@ -3302,4 +3296,17 @@ blockquote p {
     width: 100%;
     z-index: 500;
     left:0;
+}
+.mobile-search-bar{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .mobile-search-bar{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .mobile-hide{
+        display: none;
+    }
 }

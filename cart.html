@@ -124,13 +124,22 @@
                 </a>
                 <div
                     style="margin-left:auto;margin-right: 1.5em;display:flex;flex-grow: 0.75;justify-content:space-around">
-                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#" class="mobile-hide"><i class="fas fa-search"></i></a>
                     <a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
                             class="fas fa-user-alt"></i></a>
-                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="profile-mobile.html"><i class="fas fa-heart"></i></a>
                     <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="total-cart-items">1</span></a>
                 </div>
             </nav>
+
+            <div class="input-group mb-3 mobile-search-bar">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="mobile-search-bar"><i class="fas fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="mobile-search-bar">
+            </div>
+            <!-- Mobile navbar ending-->
+
             <nav class="subNav">
                 <a href="#">Best Selling</a>
                 <a href="#">Most Discounted</a>
@@ -138,13 +147,11 @@
                 <a href="#">RP's Recommended</a>
                 <a href="#">Super Saver Kit</a>
             </nav>
-            <!-- Mobile navbar ending-->
-
             <!-- Sidebar starting -->
 
             <section class="sidebar" style="display:none;z-index:1000;">
                 <div style="color:white;background-color: #121926;height: 15vh;width:100%;">
-                    <span style="padding: 35px;margin: 20px;top: 35%;position:relative">
+                    <span style="left:10%;top: 35%;position:relative">
                         <i class="fas fa-user-alt" style="padding-right: 10px"></i>
                         Login & Signup
                         <i id="close" class="fas fa-times" style="padding-left: 10px;cursor: pointer;"></i>
@@ -217,23 +224,23 @@
                             <div class="prod-image">
                                 <img src="assets/images/AJAX (2).png">
                             </div>
-                         <div class="card--row__details">
-                            <div class="prod-description">
-                                <div class="flex">
-                                    <h2>NINjA</h2>
-                                    <div class="color color-2">
-                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
-                                            alt="img" />
+                            <div class="card--row__details">
+                                <div class="prod-description">
+                                    <div class="flex">
+                                        <h2>NINjA</h2>
+                                        <div class="color color-2">
+                                            <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                                alt="img" />
+                                        </div>
+                                    </div>
+                                    <p>WICKETKEEPER GLOVES</p>
+                                    <div class="flex  add-btn">
+                                        <button type="button">+</button>
+                                        <h2>&nbsp 02 &nbsp</h3>
+                                            <button class="neg-button" type="button">-</button>
                                     </div>
                                 </div>
-                                <p>WICKETKEEPER GLOVES</p>
-                                <div class="flex  add-btn">
-                                    <button type="button">+</button>
-                                    <h2>&nbsp 02 &nbsp</h3>
-                                        <button class="neg-button" type="button">-</button>
-                                </div>
-                            </div>
-                            
+
                                 <div class="itemPrice">
                                     <div class="flex">
                                         <del>
@@ -258,29 +265,28 @@
                             <div class="prod-image">
                                 <img src="assets/images/AIDAN 2.png">
                             </div>
-                         <div class="card--row__details">
-                            <div class="prod-description">
-                                <div class="flex">
-                                    <h2>FALCON</h2>
-                                    <div class="color color-2">
-                                        <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
-                                            alt="img" />
+                            <div class="card--row__details">
+                                <div class="prod-description">
+                                    <div class="flex">
+                                        <h2>FALCON</h2>
+                                        <div class="color color-2">
+                                            <img class="subtraction" src="assets/images/cart-images/Subtraction.png"
+                                                alt="img" />
+                                        </div>
+                                    </div>
+                                    <p>WICKETKEEPER PADS</p>
+                                    <div class="flex  add-btn">
+                                        <button type="button">+</button>
+                                        <h2>&nbsp 02 &nbsp</h3>
+                                            <button class="neg-button" type="button">-</button>
                                     </div>
                                 </div>
-                                <p>WICKETKEEPER PADS</p>
-                                <div class="flex  add-btn">
-                                    <button type="button">+</button>
-                                    <h2>&nbsp 02 &nbsp</h3>
-                                        <button class="neg-button" type="button">-</button>
-                                </div>
-                            </div>
-                            
+
                                 <div class="itemPrice">
                                     <div class="flex">
                                         <del>
-                                            <p><span class="rupeeSign">₹</span><span class="cost"1999 </span></p>
-                                        </del>
-                                        <p class="discount">&nbsp 30% OFF</p>
+                                            <p><span class="rupeeSign">₹</span><span class="cost" 1999 </span> </p>
+                                                    </del> <p class="discount">&nbsp 30% OFF</p>
                                     </div>
                                     <h2>₹1277</h2>
                                 </div>
@@ -294,7 +300,7 @@
 
                 </div>
                 <div class="mobile-fixed">
-                    
+
                     <div class="checkout-mobile">
                         <div class="checkout-text">
                             <p>Total Price &nbsp </p>
@@ -308,14 +314,14 @@
                             </div>
                             <div>
                                 <h2 class="priceTag">₹2177</h2>
-                                
+
                             </div>
                         </div>
                     </div>
                     <a href="address-mobile.html" class="set-address-mobile">
                         Set Delivery Address
                     </a>
-                    
+
                 </div>
                 <!-- Footer starts -->
 
