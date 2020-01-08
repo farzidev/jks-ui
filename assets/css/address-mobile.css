@@ -310,7 +310,6 @@ nav .lists {
   bottom: 0;
   z-index: 999;
   width: 100%;
-  margin-left: 15px;
 }
 
 .proceed {
@@ -509,7 +508,7 @@ input[type="radio"]:checked:after {
 }
 
 .footer {
-  padding: 2.5rem 2.5rem;
+  padding: 2rem;
   background-color: black;
   color: white;
 }
