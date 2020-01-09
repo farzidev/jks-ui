@@ -201,7 +201,7 @@ nav .lists {
   border: none;
   /* left:21.9rem; */
   color: white;
-  padding: 9px 17px;
+  padding: 5px 15px;
   border-radius: 0 4px 4px 0;
   background-color: #e02352;
 }
@@ -251,7 +251,7 @@ nav .lists {
 .btnSend {
   position: absolute;
   right: -3px;
-  top: 0.9rem;
+  top: 1.77rem;
 }
 
 /* blockquote {
