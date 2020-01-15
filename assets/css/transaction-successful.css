@@ -593,7 +593,6 @@ blockquote p {
     /* margin-top: -3rem; */
     width: 50%;
     /* height: 100%; */
-    filter: drop-shadow(-8px 7px 19px black);
 }
 
 .recommendTopics {
@@ -706,7 +705,6 @@ blockquote p {
         /* margin-top: -3rem; */
         width: 100%;
         /* height: 100%; */
-        filter: drop-shadow(-8px 7px 19px black);
         padding: 30px;
     }
     .rpRecommends .mainTopic img {
