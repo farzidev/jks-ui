@@ -71,6 +71,8 @@ nav navbar {
   background-color: white;
   margin: 0 auto;
   margin-top: -10px;
+  min-height: 20px;
+  min-width: 100px;
 }
 .sidebar {
   height: 100%;
@@ -162,7 +164,7 @@ nav navbar {
 }
 
 .allIcons li {
-  margin: 22px 20px;
+  margin: 22px 15px;
 }
 
 .allIcons li a:hover {
@@ -614,6 +616,10 @@ input[type="radio"]:checked:after {
   footer {
     margin-bottom: 128px;
   }
+}
+
+.add-btn {
+  max-height: 31px;
 }
 
 /* @media(max-width: 600px) {

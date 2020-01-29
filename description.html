@@ -20,7 +20,8 @@
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 
             <!-- navbar starting -->
-            <nav id="main-navbar" class="navbar navbar-expand-lg">
+            <!-- navbar starting -->
+            <nav id="mainNavbar" class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
                     <div class="logoImage">
                         <img src="./assets/images/logo_jk_sports_FINAL.png" alt="logoImage">
@@ -89,16 +90,18 @@
                     </ul>
                     <div>
                         <ul class="allIcons">
-                            <li><input type="text" id="search-button"><a href="#"><i class="fas fa-search"></i></a></li>
-                            <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+                            <li style="display: flex;">
+                                <input type="text" id="search-button">
+                                <a style="margin-top: 3px" href="#"><i class="fas fa-search"></i></a></li>
+                            <li><a id="login-toggeler" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i
+                                        class="fas fa-user-alt"></i></a></li>
                             <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i><span
+                            <li><a style="display: flex;" href="cart.html"><i class="fas fa-shopping-cart"></i><span
                                         class="total-cart-items">1</span></a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- navbar ending -->
+            </nav><!-- navbar ending -->
             <!-- Mobile navbar starting-->
 
             <nav id="mobile-navbar" class="navbar navbar-expand-xs navbar-expand-sm"
